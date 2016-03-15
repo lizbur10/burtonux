@@ -16,11 +16,21 @@
 	}
 
 	aside {
+		margin-top: 50px;
 		font-size: 0.9em;
-		padding-left: 5%;
-		margin-top: -16px;
-		margin-left: -50px;
 		background-color: $color-beige;
+	}
+
+	.right {
+			padding-left: 3%;
+			padding-right: 3%;
+	}
+
+	.classwork {
+		@include clearfix();
+		.right {
+			padding: 0;
+		}
 	}
 
 }

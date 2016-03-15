@@ -250,7 +250,7 @@ h3 > span:first-of-type {
   width: 100%;
   max-width: 600px;
   margin: 2em 0; }
-.project h4, .project p {
+.project h4 {
   display: inline; }
 .project .goal, .project .approach, .project .result {
   display: block; }
@@ -332,11 +332,20 @@ h3 > span:first-of-type {
     width: 100%; }
 
   aside {
+    margin-top: 50px;
     font-size: 0.9em;
-    padding-left: 5%;
-    margin-top: -16px;
-    margin-left: -50px;
-    background-color: #E4E5CE; } }
+    background-color: #E4E5CE; }
+
+  .right {
+    padding-left: 3%;
+    padding-right: 3%; }
+
+  .classwork {
+    content: "";
+    display: table;
+    clear: both; }
+    .classwork .right {
+      padding: 0; } }
 @media screen and (min-width: 641px) {
   .project p {
     display: block; }
