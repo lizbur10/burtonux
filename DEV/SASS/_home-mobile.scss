@@ -1,0 +1,10 @@
+section  ul {
+	margin-left: 2em;
+	li {
+		@include list-style();
+	}
+}
+
+h2 {
+	margin-top: 1.5em;
+}

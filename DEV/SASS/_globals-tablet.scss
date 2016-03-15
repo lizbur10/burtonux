@@ -1,0 +1,49 @@
+@media screen and (min-width: 641px) {
+
+	.one-half {
+		width: 50%;
+	}
+
+	.one-third {
+		width: 33%;
+	}
+
+	.two-thirds {
+		width: 66%;
+	}
+
+	.left {
+		float: left;
+		padding-right: 5%;
+	}
+
+	.right {
+		float: right;
+	}
+
+	footer {
+		@include clearfix();
+		width: 100%;
+		padding: 1% 5%;
+		span {
+			padding-left: 0.1em;
+		}
+		ul {
+			text-align: center;
+		}
+		li {
+			float: left;
+			padding-right: 1.5em;
+			&#phone span {
+		        top: -6px;
+		    }
+		    &#email span {
+				top: -6px;
+		    }
+		    &#linkedin span {
+				top: -5px;
+		    }
+		}
+	}
+
+}

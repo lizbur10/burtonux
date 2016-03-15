@@ -1,0 +1,71 @@
+.projects, .project-header { 
+	article {
+		border: 1px solid $color-dark-blue;
+		background-color: $color-off-white;
+		border-radius: 5px;
+		box-shadow: 5px 5px 5px $color-light-green;
+		margin: 1em 2em 2em 0;
+		padding: 0.5em;
+		width: 100%;
+		max-width: 350px;
+		img {
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+	}
+
+	h2, h3, h4 {
+		margin: 0;
+	}
+
+	h2 {
+		border-bottom: 1px solid $color-dark-blue;
+		padding-bottom: 0.5em;
+	}
+
+	h3 {
+		margin-left: 10px;
+		@include list-style();
+	}
+}
+
+.project-header {
+	max-width: 350px;
+	margin-top: 3em;
+}
+
+.project {
+	img {
+		width: 100%;
+		max-width: 600px;
+		margin: 2em 0;
+	}
+
+	h4, p {
+		display: inline;
+	}
+
+	.goal, .approach, .result {
+		display: block;
+		img {
+			max-width: 400px;
+		}
+	}
+
+	h4:after {
+		content: ": ";
+	}
+
+	.project-header h4:after {
+		content: " ";
+	}
+ 
+	.goal {
+		margin-top: 1em;
+	}
+
+	.goal, .approach {
+		padding-bottom: 0.5em;
+	}
+
+}

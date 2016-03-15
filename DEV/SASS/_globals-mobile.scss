@@ -1,0 +1,111 @@
+.visually-hidden {
+  @include visually-hidden();
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+body {
+	font-family: $fontstack-text;
+  color: $color-black;
+	font-size: 12pt;
+}
+
+header {
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+
+.logo {
+  @include logo();
+}
+
+nav {
+  @include main-nav();
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: $fontstack-headers;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: $color-medium-blue;
+}
+
+h2 {
+  font-size: 1.3em;
+  color: $color-medium-blue;
+}
+
+h3 {
+  font-size: 1.1em;
+  color: $color-dark-blue;
+}
+
+h4 {
+  font-size: 0.9em;
+  color: $color-dark-blue;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.button {
+  @include button-style();
+  margin-bottom: 2em;
+}
+
+a.button {
+  @include button-label();
+}
+
+.text-link {
+  color: $color-medium-blue;
+  font-weight: bold;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+body section:first-of-type {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {      /* Footer heights: desktop, 66px; laptop, 95px; mobile, 155px  */
+  background-color: $color-beige;
+  width: 100%;
+  padding: 2% 5%;
+  @include contact-style();
+  font-size: .8em;
+  margin-top: 3em;
+  a {
+    color: $color-black;
+  }
+}

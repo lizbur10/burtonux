@@ -1,0 +1,27 @@
+/* @import 'variables';
+@import 'mixins';
+@import 'globals'; 
+
+//Home Page
+
+@import 'home-mobile';
+@import 'home-tablet';
+@import 'home-desktop';
+ */
+   /*
+//Projects Page
+@import 'projects-mobile';
+@import 'projects-tablet';
+@import 'projects-desktop';
+
+//Resume Page
+@import 'resume-mobile';
+@import 'resume-tablet';
+@import 'resume-desktop';
+
+//Contact Page
+@import 'contact-mobile';
+@import 'contact-tablet';
+@import 'contact-desktop'; */
+
+/*# sourceMappingURL=main-orig.css.map */

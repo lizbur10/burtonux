@@ -1,0 +1,23 @@
+@media screen and (min-width: 641px) {
+
+	.project {
+
+		p {
+		display: block;
+		}
+
+		.goal {
+			margin-top: 0;
+			@include clearfix();
+		}
+
+ 		h3 {
+			margin-top: 2em;
+		}
+
+		.approach, .result {
+			margin-top: 1em;
+		}
+	}
+
+}

@@ -1,0 +1,36 @@
+@media screen and (min-width: 801px) {
+	
+	header {
+		.logo {
+			box-shadow: 3px 5px 5px $color-light-green;
+			background-color: $color-off-white;
+		}
+
+		img.logo {
+			margin-left: 2em;
+		}
+
+		nav {
+			position: absolute;
+			width: 100%;
+			top: 2em;
+			font-size: 1.1em;
+			ul {
+				margin-left: 52%;
+			}
+			li a {
+				padding-top: 1.25em;
+			}
+		}
+	}
+
+	footer {
+		span {
+			padding-left: 0.2em;
+		}
+		h3 {
+			float: left;
+			padding-right: 3em;
+		}
+	}
+}

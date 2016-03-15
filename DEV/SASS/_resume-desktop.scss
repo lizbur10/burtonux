@@ -1,0 +1,25 @@
+@media screen and (min-width: 801px) {
+
+	.classwork .left {
+		float: left;
+		width: 50%;
+	}
+
+	.classwork .right {
+		float: right;
+		width: 50%;
+	}
+
+	.tools .left, .skillset .left {
+		width: 40%;
+	}
+
+	.tools .right, .skillset .right {
+		width: 60%;
+	}
+
+	footer {
+		position: relative;
+	}
+
+}
