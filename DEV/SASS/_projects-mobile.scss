@@ -1,3 +1,12 @@
+header {
+ 	a.right {
+		float: right;
+		padding-top: 0;
+		padding-right: 5%;
+ 	}
+
+}
+
 .projects, .project-header { 
 	article {
 		border: 1px solid $color-dark-blue;
@@ -20,52 +29,44 @@
 
 	h2 {
 		border-bottom: 1px solid $color-dark-blue;
-		padding-bottom: 0.5em;
+		padding-bottom: 0.4em;
 	}
 
-	h3 {
-		margin-left: 10px;
-		@include list-style();
+	h4 {
+		margin-top: 0.5em;
 	}
+
 }
 
 .project-header {
-	max-width: 350px;
+	max-width: 400px;
 	margin-top: 3em;
+	position: relative;
+	a.right {
+		float: right;
+	}
 }
+
 
 .project {
 	img {
-		width: 100%;
-		max-width: 600px;
-		margin: 2em 0;
+		padding-bottom: 1em;
 	}
 
 	h4 {
 		display: inline;
 	}
 
-	.goal, .approach, .result {
-		display: block;
-		img {
-			max-width: 400px;
-		}
-	}
-
 	h4:after {
 		content: ": ";
 	}
 
-	.project-header h4:after {
-		content: " ";
-	}
- 
-	.goal {
-		margin-top: 1em;
-	}
-
-	.goal, .approach {
-		padding-bottom: 0.5em;
-	}
+	.project-header h4 {
+		display: block;
+		margin-top: 0.5em;
+		&:after {
+			content: " ";
+		}
+ 	}
 
 }

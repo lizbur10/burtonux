@@ -1,8 +1,5 @@
 section  ul {
 	margin-left: 2em;
-	li {
-		@include list-style();
-	}
 }
 
 h2 {

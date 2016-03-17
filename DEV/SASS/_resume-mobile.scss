@@ -8,12 +8,15 @@ h3>span:first-of-type {
 	display: block;
 }
 
+.triangle-list {
+	margin-left: 1em;
+}
+
 .hanging-indent {
 	margin-left: 0;
 	padding-left: 1em ;
 	text-indent: -1em ;
 	li {
-		@include no-list-style();
 		padding-bottom: 1em;
 	}
 

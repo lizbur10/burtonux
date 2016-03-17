@@ -7,7 +7,7 @@
 		<title>Contact Me</title>
 		<link rel="icon" type="image/ico" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">		
-		<link rel="stylesheet" type="text/css" href="CSS/main.css">
+		<link rel="stylesheet" type="text/css" href="CSS/contact.css">
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
 	</head>
 
@@ -44,7 +44,7 @@
 			?>
 
 			<h2>Contact Me</h2>
-				<form method="post" action="index.php">
+				<form method="post" action="contact.php">
 				  <input type="text" name="name" placeholder="Name"><br>
 				  <input type="email" name="email" placeholder="*Email" required><br>
 				  <input type="textarea" name="message" placeholder="*Message" required><br>

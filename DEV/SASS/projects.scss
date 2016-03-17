@@ -1,0 +1,16 @@
+//projects.scss
+
+@import 'variables';
+@import 'mixins';
+
+//Mobile versions
+@import 'globals-mobile'; 
+@import 'projects-mobile';
+
+//Tablet versions
+@import 'globals-tablet';
+@import 'projects-tablet';
+
+//Desktop versions
+@import 'globals-desktop';
+@import 'projects-desktop'; 

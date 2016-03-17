@@ -6,18 +6,15 @@
 		display: block;
 		}
 
-		.goal {
-			margin-top: 0;
-			@include clearfix();
-		}
-
  		h3 {
 			margin-top: 2em;
 		}
-
-		.approach, .result {
-			margin-top: 1em;
+		img.right {
+			max-width: 600px;
+			float: none;
+			padding-left: 0;
 		}
+
 	}
 
 }
