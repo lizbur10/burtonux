@@ -49,6 +49,7 @@ header {
 
 
 .project {
+	@include clearfix();
 	img {
 		padding-bottom: 1em;
 	}

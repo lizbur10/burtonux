@@ -111,39 +111,29 @@ a.button {
 .text-link:hover {
   text-decoration: underline; }
 
-hr.end-dot {
-  color: #2F4550;
-  background-color: #2F4550;
-  text-align: center;
-  margin-top: 3em;
-  width: 100%;
-  margin-left: 0;
-  height: 1px; }
-  hr.end-dot:after {
-    content: "\2666";
-    position: relative;
-    top: -0.6em;
-    color: #820263;
-    font-size: 1em; }
+hr:after {
+  content: " "; }
 
 body section:first-of-type {
   width: 90%;
   max-width: 960px;
   margin: 0 auto; }
 
-.triangle-list li {
-  position: relative;
-  padding-left: 10px; }
-  .triangle-list li:before {
-    content: '';
-    position: absolute;
-    top: 4px;
-    left: 0px;
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid #820263; }
+ul.triangle-list {
+  margin-left: 1em; }
+  ul.triangle-list li {
+    position: relative;
+    padding-left: 10px; }
+    ul.triangle-list li:before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0px;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid #820263; }
 
 footer {
   /* Footer heights: desktop, 66px; laptop, 95px; mobile, 155px  */
@@ -179,9 +169,6 @@ footer {
 h3 > span:first-of-type {
   font-size: .8em;
   display: block; }
-
-.triangle-list {
-  margin-left: 1em; }
 
 .hanging-indent {
   margin-left: 0;

@@ -136,22 +136,9 @@ a.button {
   text-decoration: underline;
 }
 
-hr.end-dot {
-  color: $color-dark-blue;
-  background-color: $color-dark-blue;
-  text-align: center;
-  margin-top: 3em;
-  width: 100%;
-  margin-left: 0;
-  height: 1px;
-  &:after {
-    content: "\2666";
-    position: relative;
-    top: -0.6em;
-    color: $color-purple;
-    font-size: 1em;
+hr:after {
+    content: " ";
   }
-}
 
 body section:first-of-type {
   width: 90%;
@@ -159,19 +146,22 @@ body section:first-of-type {
   margin: 0 auto;
 }
 
-.triangle-list li {
-  position: relative;
-  padding-left: 10px;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 4px;
-    left: 0px;
-    width: 0; 
-    height: 0; 
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid $color-purple;
+ul.triangle-list {
+  margin-left: 1em;
+  li {
+    position: relative;
+    padding-left: 10px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0px;
+      width: 0; 
+      height: 0; 
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid $color-purple;
+    }
   }
 }
 
