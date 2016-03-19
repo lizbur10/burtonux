@@ -42,9 +42,6 @@ header {
 	max-width: 400px;
 	margin-top: 3em;
 	position: relative;
-	a.right {
-		float: right;
-	}
 }
 
 
@@ -68,6 +65,10 @@ header {
 		&:after {
 			content: " ";
 		}
+ 	}
+
+ 	.left {
+ 		width: 40%;
  	}
 
 }

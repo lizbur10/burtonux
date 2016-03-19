@@ -34,6 +34,7 @@ header {
   background-color: white; }
 
 nav {
+  position: relative;
   width: 100%;
   height: 3em;
   text-align: center;
@@ -49,13 +50,36 @@ nav {
       color: white;
       margin-left: -5px;
       padding: 1.2em 4% 0.95em 4%; }
-      nav li a:hover, nav li a.selected {
+      nav li a.selected {
         background-color: #E4E5CE;
         color: #820263;
         font-weight: bold; }
       nav li a.selected {
         background-color: #586F7C;
         color: white; }
+
+nav .sub-nav {
+  z-index: 2;
+  opacity: 0.95;
+  position: absolute;
+  top: 2.35em;
+  left: 25%;
+  width: 250px;
+  background-color: #2F4550;
+  color: white; }
+  nav .sub-nav li {
+    display: block;
+    text-align: center;
+    font-size: 1em; }
+  nav .sub-nav a {
+    display: block;
+    margin-left: 0;
+    padding: 1.5em; }
+
+.menu-hover-state {
+  background-color: #E4E5CE;
+  color: #820263;
+  font-weight: bold; }
 
 a {
   text-decoration: none; }
@@ -191,8 +215,6 @@ header a.right {
   max-width: 400px;
   margin-top: 3em;
   position: relative; }
-  .project-header a.right {
-    float: right; }
 
 .project {
   content: "";
@@ -209,6 +231,8 @@ header a.right {
     margin-top: 0.5em; }
     .project .project-header h4:after {
       content: " "; }
+  .project .left {
+    width: 40%; }
 
 @media screen and (min-width: 641px) {
   .one-half {
@@ -228,8 +252,8 @@ header a.right {
     float: right;
     padding-left: 2em; }
 
-  hr.end-dot {
-    width: 90%; }
+  nav .sub-nav {
+    left: 30%; }
 
   footer {
     content: "";
@@ -274,6 +298,8 @@ header a.right {
       margin-left: 52%; }
     header nav li a {
       padding-top: 1.25em; }
+    header nav .sub-nav {
+      left: 10%; }
 
   footer span {
     padding-left: 0.2em; }

@@ -22,9 +22,10 @@
 		padding-left: 2em;
 	}
 
-	hr.end-dot {
-		width: 90%;
+	nav .sub-nav {
+		left: 30%;
 	}
+
 
 	footer {
 		@include clearfix();
