@@ -50,7 +50,7 @@
 							<li><a href="projects/np-site-visits.html">Non-profit Site Visits</a></li>
 							<li><a href="projects/seniors-outdoors.html">Seniors Outdoors</a></li>
 							<li><a href="projects/knitty.html">Knitty.com</a></li>
-							<li><a href="projects/class-projects.html">Development class projects</a></li>
+							<li><a href="projects/class-projects.html">Development projects</a></li>
 						</ul>
 					</li>
 					<li><a href="resume.html">Resum&eacute;</a></li>
