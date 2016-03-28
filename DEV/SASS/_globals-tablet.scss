@@ -22,22 +22,36 @@
 		padding-left: 2em;
 	}
 
-	nav .sub-nav {
-		left: 30%;
+	nav  {
+		font-size: 1.1em;
+		li.project-menu-item .sub-nav {
+			top: 1.95em;
+		}
+
 	}
 
+	section:first-of-type {
+		@include clearfix();
+		margin-bottom: 0;
+	}
 
 	footer {
 		@include clearfix();
-		width: 100%;
-		padding: 1% 5%;
-		span {
-			padding-left: 0.1em;
+		div {
+			margin-top: 4em;
 		}
 		ul {
 			text-align: center;
+			display: block;
+			width: 620px;
+			margin: 0 auto;
 		}
-		li {
+
+		span {
+			padding-left: 0.1em;
+		}
+
+ 		li {
 			float: left;
 			padding-right: 1.5em;
 			&#phone span {
@@ -50,6 +64,6 @@
 				top: -5px;
 		    }
 		}
-	}
+ 	}
 
 }

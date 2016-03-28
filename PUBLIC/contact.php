@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="modernizr.js"></script>
 		<script src="jquery-1.11.3.min.js"></script>
 		<script>
 		    $(function() {
 		    	var selected = false;
-				$("nav li a").hover(function() {
+				$(".no-touchevents nav li a").hover(function() {
 					if ( $(this).attr("class") == "selected") {
 						selected = true;
 						$(this).toggleClass("selected").toggleClass("menu-hover-state");
@@ -22,10 +23,10 @@
 						$(this).toggleClass("menu-hover-state");
 					}
 				});
-				$(".project-menu-item").hover(function() {
+				$(".no-touchevents .project-menu-item").hover(function() {
 					$("ul.sub-nav").toggleClass("visually-hidden");
 				});
-				$("nav li li").hover(function() {
+				$(".no-touchevents nav li li").hover(function() {
 					$(".project-menu-item>a").toggleClass("menu-hover-state");
 				});
 			});
@@ -88,12 +89,15 @@
 		</section>
 
 		<footer>
-			<h3>Contact:</h3>
 			<ul>
 				<li id="email"><a href="mailto:liz.burton147@gmail.com"><span>liz.burton147@gmail.com</span></a></li>
 				<li id="linkedin"><a href="https://www.linkedin.com/in/burtonux" target="_blank"><span>www.linkedin.com/in/burtonux</span></a></li>
 				<li id="phone"><span>(773) 710-8686</span></li>
 			</ul>
+			<div>
+				<p class="copyright">&copy; Liz Burton 2016</p>
+				<p>Site <a href="projects/class-projects.html" class="text-link">designed and developed</a> by Liz Burton</p>
+			</div>
 		</footer>
 	</body>
 </html>

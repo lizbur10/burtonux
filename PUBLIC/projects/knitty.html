@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="../modernizr.js"></script>
 		<script src="../jquery-1.11.3.min.js"></script>
 		<script>
 		    $(function() {
 		    	var selected = false;
-				$("nav li a").hover(function() {
+				$(".no-touchevents nav li a").hover(function() {
 					if ( this.className.indexOf("selected") > -1 ) {
 						selected = true;
 						$(this).toggleClass("selected").toggleClass("menu-hover-state");
@@ -22,10 +23,10 @@
 						$(this).toggleClass("menu-hover-state");
 					}
 				});
-				$(".project-menu-item").hover(function() {
+				$(".no-touchevents .project-menu-item").hover(function() {
 					$("ul.sub-nav").toggleClass("visually-hidden");
 				});
-				$("nav li li a").hover(function() {
+				$(".no-touchevents nav li li a").hover(function() {
 					$(".project-menu-item>a").toggleClass("menu-hover-state").toggleClass("selected");
 				});
 			});
@@ -81,7 +82,7 @@
 
 			<div>
 				<h3>The Approach</h3>
-				<p>For the Information Architecture class, I conducted a content inventory and expert review of the site, developed a proposed site map using PowerPoint, and created paper &amp; pencil and <a class="text-link" target="_blank" href="http://qfflzm.axshare.com/home.html">Axure prototypes</a> of the proposed redesign. For the Responsive Design class, I created a <a class="text-link" target="_blank" href="http://burtonux.com/knitty/">mobile-first coded prototype</a> of a redesigned home page.</p>
+				<p>For the Information Architecture class, I conducted a content inventory and expert review of the site, developed a proposed site map using PowerPoint, and created paper &amp; pencil prototypes as well as annotated <a class="text-link" target="_blank" href="http://qfflzm.axshare.com/home.html">Axure prototypes</a> of the proposed redesign. For the Responsive Design class, I created a <a class="text-link" target="_blank" href="http://burtonux.com/knitty/">mobile-first coded prototype</a> of a redesigned home page.</p>
 			</div>
 
 			<div>
@@ -96,18 +97,21 @@
 
 			<div>
 				<h3>My Role</h3>
-				<p>Solo project</p>
+				<p>Solo project: I did all research, design, and development work.</p>
 			</div>
 			<a class="right" href="class-projects.html"><p class="text-link">next project &raquo;</p></a>
 		</section>
 
 		<footer>
-			<h3>Contact:</h3>
 			<ul>
 				<li id="email"><a href="mailto:liz.burton147@gmail.com"><span>liz.burton147@gmail.com</span></a></li>
 				<li id="linkedin"><a href="https://www.linkedin.com/in/burtonux" target="_blank"><span>www.linkedin.com/in/burtonux</span></a></li>
 				<li id="phone"><span>(773) 710-8686</span></li>
 			</ul>
+			<div>
+				<p class="copyright">&copy; Liz Burton 2016</p>
+				<p>Site <a href="class-projects.html" class="text-link">designed and developed</a> by Liz Burton</p>
+			</div>
 		</footer>
 	</body>
 </html>

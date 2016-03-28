@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="modernizr.js"></script>
 		<script src="jquery-1.11.3.min.js"></script>
 		<script>
 		    $(function() {
 		    	var selected = false;
-				$("nav li a").hover(function() {
+				$(".no-touchevents nav li a").hover(function() {
 					if ( $(this).attr("class") == "selected") {
 						selected = true;
 						$(this).toggleClass("selected").toggleClass("menu-hover-state");
@@ -22,10 +23,10 @@
 						$(this).toggleClass("menu-hover-state");
 					}
 				});
-				$(".project-menu-item").hover(function() {
+				$(".no-touchevents .project-menu-item").hover(function() {
 					$("ul.sub-nav").toggleClass("visually-hidden");
 				});
-				$("nav li li").hover(function() {
+				$(".no-touchevents nav li li").hover(function() {
 					$(".project-menu-item>a").toggleClass("menu-hover-state");
 				});
 			});
@@ -70,19 +71,22 @@
 					<li>hands-on experience with a wide array of research methods,</li>
 					<li>the ability to communicate research results clearly and effectively,</li> 
 					<li>the ability to collaborate successfully with a diverse range of stakeholders, and</li> 
-					<li>a proven record of providing actionable recommendations based on best design practices and thoughtful user research.</li>
+					<li>a proven record of providing actionable recommendations based on design best practices and thoughtful user research.</li>
 				</ul>
-				<p>My ideal role would allow me to continue to use and develop both my research and design skills, and provide opportunities to work in close collaboration with design teams, project owners, and other stakeholders.</p>
+				<p>My ideal role would allow me to use and develop both my research and design skills, and provide opportunities to work in close collaboration with design teams, project owners, and other stakeholders.</p>
 			</article>
 		</section>
 
 		<footer>
-			<h3>Contact:</h3>
 			<ul>
 				<li id="email"><a href="mailto:liz.burton147@gmail.com"><span>liz.burton147@gmail.com</span></a></li>
 				<li id="linkedin"><a href="https://www.linkedin.com/in/burtonux" target="_blank"><span>www.linkedin.com/in/burtonux</span></a></li>
 				<li id="phone"><span>(773) 710-8686</span></li>
 			</ul>
+			<div>
+				<p class="copyright">&copy; Liz Burton 2016</p>
+				<p>Site <a href="projects/class-projects.html" class="text-link">designed and developed</a> by Liz Burton</p>
+			</div>
 		</footer>
 	</body>
 </html>

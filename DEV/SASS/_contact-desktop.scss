@@ -1,12 +1,13 @@
 @media screen and (min-width: 801px) {
 	
-	body section:first-of-type {
-	  margin-top: 2em;
-	}
-
-	.contact footer {
-		position: absolute;
-		bottom: 0;
+	.contact {
+		section:first-of-type {
+			margin-top: 7em;
+		}
+		footer {
+			position: absolute;
+			bottom: 0;
+		}
 	}
 
 }

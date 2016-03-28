@@ -1,74 +1,55 @@
-header {
- 	a.right {
-		float: right;
-		padding-top: 0;
-		padding-right: 5%;
- 	}
-
+.projects .text-link {
+	text-decoration: none;
 }
 
-.projects, .project-header { 
-	article {
-		border: 1px solid $color-dark-blue;
-		background-color: $color-off-white;
-		border-radius: 5px;
-		box-shadow: 5px 5px 5px $color-light-green;
-		margin: 1em 2em 2em 0;
-		padding: 0.5em;
-		width: 100%;
-		max-width: 350px;
-		img {
-			margin-top: 1em;
-			margin-bottom: 1em;
-		}
-	}
-
-	h2, h3, h4 {
-		margin: 0;
-	}
-
-	h2 {
-		border-bottom: 1px solid $color-dark-blue;
-		padding-bottom: 0.4em;
-	}
-
-	h4 {
-		margin-top: 0.5em;
-	}
-
+.right {
+	float: right;
+	padding-top: 0;
+	padding-right: 5%;
 }
-
-.project-header {
-	max-width: 400px;
-	margin-top: 3em;
-	position: relative;
-}
-
 
 .project {
-	@include clearfix();
+	margin-top: 3em;
 	img {
-		padding-bottom: 1em;
+		padding: 1em;
 	}
 
 	h4 {
 		display: inline;
+		margin: 0;
 	}
 
 	h4:after {
 		content: ": ";
 	}
 
-	.project-header h4 {
-		display: block;
-		margin-top: 0.5em;
-		&:after {
-			content: " ";
+	.project-header {
+		max-width: 400px;
+		position: relative;
+		h2 {
+			border-bottom: 1px solid $color-dark-blue;
+			padding-bottom: 0.4em;
+			margin: 0;
 		}
- 	}
 
- 	.left {
- 		width: 40%;
- 	}
+		h3 {
+			margin: 0;
+		}
 
+		h4 {
+			display: block;
+			margin-top: 0.5em;
+			&:after {
+				content: " ";
+			}
+		}
+		img {
+			margin-top: 2em;
+		}
+	}
+
+}
+
+footer {
+	@include clearfix();
 }

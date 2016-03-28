@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="../modernizr.js"></script>
 		<script src="../jquery-1.11.3.min.js"></script>
 		<script>
 		    $(function() {
 		    	var selected = false;
-				$("nav li a").hover(function() {
+				$(".no-touchevents nav li a").hover(function() {
 					if ( this.className.indexOf("selected") > -1 ) {
 						selected = true;
 						$(this).toggleClass("selected").toggleClass("menu-hover-state");
@@ -22,10 +23,10 @@
 						$(this).toggleClass("menu-hover-state");
 					}
 				});
-				$(".project-menu-item").hover(function() {
+				$(".no-touchevents .project-menu-item").hover(function() {
 					$("ul.sub-nav").toggleClass("visually-hidden");
 				});
-				$("nav li li a").hover(function() {
+				$(".no-touchevents nav li li a").hover(function() {
 					$(".project-menu-item>a").toggleClass("menu-hover-state").toggleClass("selected");
 				});
 			});
@@ -63,10 +64,10 @@
 
 		<section class="project">
 			<div class="project-header">
-				<h2>Seniors Outdoors Redesign</h2>
+				<h2>Seniors Outdoors Redesign (in progress)</h2>
 				<h4>Information architecture, Axure, user testing, HTML/CSS, Wordpress/PHP, JavaScript/jQuery</h4>
 			</div>
-			<img class="right" src="../img/projects/SO_old.jpg" alt="Seniors Outdoors Redesign">
+			<img class="right" src="../img/projects/SO_old.jpg" alt="Current Seniors Outdoors site">
 
 			<div>
 				<h3>The Project</h3>
@@ -104,18 +105,21 @@
 
 			<div>
 				<h3>My Role</h3>
-				<p>Solo project</p>
+				<p>Solo project: I did all research and design work and am currently developing the site.</p>
 			</div>
 			<a class="right" href="knitty.html"><p class="text-link">next project &raquo;</p></a>
 		</section>
 
 		<footer>
-			<h3>Contact:</h3>
 			<ul>
 				<li id="email"><a href="mailto:liz.burton147@gmail.com"><span>liz.burton147@gmail.com</span></a></li>
 				<li id="linkedin"><a href="https://www.linkedin.com/in/burtonux" target="_blank"><span>www.linkedin.com/in/burtonux</span></a></li>
 				<li id="phone"><span>(773) 710-8686</span></li>
 			</ul>
+			<div>
+				<p class="copyright">&copy; Liz Burton 2016</p>
+				<p>Site <a href="class-projects.html" class="text-link">designed and developed</a> by Liz Burton</p>
+			</div>
 		</footer>
 	</body>
 </html>
