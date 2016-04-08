@@ -1,9 +1,5 @@
 @media screen and (min-width: 801px) {
 
-	body {
-		background-color: white;
-	}
-
 	header {
 		.logo {
 			box-shadow: 3px 5px 5px $color-light-green;
@@ -24,7 +20,7 @@
  				display: block;
 				float: left;
 				&:first-of-type {
-			    	margin-left: 2%;
+			    	margin-left: 4%;
 				}
 				li {
 					font-size: 1em;
@@ -34,8 +30,8 @@
 				}
 				a {
 					display: block;
-					padding-left: 15px;
-					padding-right: 15px;
+					padding-left: 1em;
+					padding-right: 1em;
 				}
 				&.project-menu-item .sub-nav {
 					top: 3em;

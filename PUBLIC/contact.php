@@ -39,6 +39,7 @@
 	</head>
 
 	<body class="contact">
+		<?php include_once("analyticstracking.php") ?>
 		<header>
 			<a href="index.html"><img class="logo" src="img/logos/logo_purple.png" onmouseover="this.src='img/logos/logo_blue.png';" onmouseout="this.src='img/logos/logo_purple.png';" alt="liz burton's logo"></a>
 			<nav>
@@ -49,9 +50,9 @@
 							<li><a href="projects/mobile-app.html">Constant Contact Mobile App</a></li>
 							<li><a href="projects/galileo.html">Constant Contact Email Editor</a></li>
 							<li><a href="projects/np-site-visits.html">Non-profit Site Visits</a></li>
+							<li><a href="projects/class-projects.html">Development projects</a></li>
 							<li><a href="projects/seniors-outdoors.html">Seniors Outdoors</a></li>
 							<li><a href="projects/knitty.html">Knitty.com</a></li>
-							<li><a href="projects/class-projects.html">Development projects</a></li>
 						</ul>
 					</li>
 					<li><a href="resume.html">Resum&eacute;</a></li>
