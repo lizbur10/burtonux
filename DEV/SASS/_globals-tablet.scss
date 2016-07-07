@@ -23,8 +23,20 @@
 		padding-left: 2em;
 	}
 
+	.logo {
+		max-width: 100%;
+  		padding-top: 1em;
+		margin-top: 0;
+	}
+
 	nav  {
-		font-size: 1.1em;
+		&.hamburger-menu {
+			display: none;
+		}
+		&.main-menu {
+			display: block;
+		}
+		font-size: 1.2em;
 		li.project-menu-item .sub-nav {
 			top: 1.95em;
 		}
@@ -38,10 +50,10 @@
 
 	footer {
 		@include clearfix();
-		div {
+/* 		div {
 			margin-top: 4em;
 		}
-		ul {
+ */		ul {
 			text-align: center;
 			display: block;
 			width: 620px;
