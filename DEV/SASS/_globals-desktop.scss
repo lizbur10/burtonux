@@ -11,27 +11,25 @@
 
 		img.logo {
 			margin-left: 2em;
+			margin-bottom: 2em;
 		}
 
 		nav {
-  			text-align: left;
-			top: 2em;
 			li {
- 				display: block;
-				float: left;
-				&:first-of-type {
+				font-size: 1.2em;
+				padding: 0 1.5em;
+/* 				&:first-of-type {
 			    	margin-left: 4%;
 				}
 				li {
-					font-size: 1em;
+					font-size: 1.2em;
 					&:first-of-type {
 						margin-left: 0;
 					}
 				}
+*/
 				a {
 					display: block;
-					padding-left: 1em;
-					padding-right: 1em;
 				}
 				&.project-menu-item .sub-nav {
 					top: 3em;
@@ -42,7 +40,7 @@
 
 	section:first-of-type {
 	    width: 90%;
-	    margin: 8em auto 1em auto;
+	    margin: 1em auto 1em auto;
 	}
 
 	footer {

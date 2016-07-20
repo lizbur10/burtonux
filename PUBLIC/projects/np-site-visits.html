@@ -8,7 +8,7 @@
 		<script>
 		    $(function() {
 		    	var selected = false;
-				$(".no-touchevents nav li a").hover(function() {
+				$(".no-touchevents nav li").hover(function() {
 					if ( this.className.indexOf("selected") > -1 ) {
 						selected = true;
 						$(this).toggleClass("selected").toggleClass("menu-hover-state");
@@ -41,24 +41,25 @@
 	<body>
 		<header>
 			<nav class="hamburger-menu">
-				<img class="hamburger" src="img/hamburger.png">
+				<img class="hamburger" src="../img/hamburger.png">
 			</nav>
 			<h1 class="visually-hidden">Site Visits to Non-profit Customers</h1>
 			<a href="../index.html"><img class="logo" src="../img/logos/logo_purple.png" onmouseover="this.src='../img/logos/logo_blue.png';" onmouseout="this.src='../img/logos/logo_purple.png';" alt="liz burton's logo"></a>
 			<nav class="main-menu">
 				<ul>
 					<li><a href="../index.html">Home</a></li>
-					<li class="project-menu-item"><a class="selected" href="../projects.html">UX Research</a>
-						<ul class="sub-nav visually-hidden">
+					<li class="project-menu-item"><a class="selected" href="../ux-projects.html">UX Research &amp; Design</a>
+<!-- 						<ul class="sub-nav visually-hidden">
 							<li><a href="../projects/mobile-app.html">Constant Contact Mobile App</a></li>
 							<li><a href="../projects/galileo.html">Constant Contact Email Editor</a></li>
 							<li><a href="../projects/np-site-visits.html">Non-profit Site Visits</a></li>
 							<li><a href="../projects/seniors-outdoors.html">Seniors Outdoors</a></li>
 							<li><a href="../projects/knitty.html">Knitty.com</a></li>
 						</ul>
-					</li>
-					<li><a href="../projects/class-projects.html">Development</a></li>
+ -->					</li>
+					<li><a href="../dev-projects.html">Development</a></li>
 					<li><a href="../resume.html">Resum&eacute;</a></li>
+					<li><a href="../contact.html">Contact</a></li>
 				</ul>
 			</nav>
 			<a class="right" href="seniors-outdoors.html"><p class="text-link">next project &raquo;</p></a>			
@@ -116,7 +117,7 @@
 			</ul>
  -->			<div>
 				<p class="copyright">&copy; Liz Burton 2016</p>
-				<p>Site <a href="class-projects.html" class="text-link">designed and developed</a> by Liz Burton</p>
+				<p>Site <a href="../dev-projects.html#burtonux" class="text-link">designed and developed</a> by Liz Burton</p>
 			</div>
 		</footer>
 		<script>

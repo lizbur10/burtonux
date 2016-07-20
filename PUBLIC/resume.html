@@ -8,7 +8,7 @@
 		<script>
 		    $(function() {
 		    	var selected = false;
-				$(".no-touchevents nav li a").hover(function() {
+				$(".no-touchevents nav li").hover(function() {
 					if ( $(this).attr("class") == "selected") {
 						selected = true;
 						$(this).toggleClass("selected").toggleClass("menu-hover-state");
@@ -47,17 +47,18 @@
 			<nav class="main-menu">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li class="project-menu-item"><a href="projects.html">UX Research</a>
- 						<ul class="sub-nav visually-hidden">
+					<li class="project-menu-item"><a href="ux-projects.html">UX Research &amp; Design</a>
+<!--  						<ul class="sub-nav visually-hidden">
 							<li><a href="projects/mobile-app.html">Constant Contact Mobile App</a></li>
 							<li><a href="projects/galileo.html">Constant Contact Email Editor</a></li>
 							<li><a href="projects/np-site-visits.html">Non-profit Site Visits</a></li>
 							<li><a href="projects/seniors-outdoors.html">Seniors Outdoors</a></li>
 							<li><a href="projects/knitty.html">Knitty.com</a></li>
 						</ul>
-					</li>
-					<li><a href="projects/class-projects.html">Development</a></li>
+ -->					</li>
+					<li><a href="dev-projects.html">Development</a></li>
 					<li><a class="selected" href="resume.html">Resum&eacute;</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -221,7 +222,7 @@
 							<li>Web Development: HTML + CSS</li>
 							<li>Web Development: PHP + Wordpress</li>
 							<li>Web Development: JavaScript + jQuery</li>
-							<li>Responsive Design (Spring 2016)</li>
+							<li>Responsive Design</li>
 						</ul>
 					<h3>University of Colorado</h3>
 					<ul>
@@ -241,7 +242,7 @@
 			</ul>
  -->			<div>
 				<p class="copyright">&copy; Liz Burton 2016</p>
-				<p>Site <a href="projects/class-projects.html" class="text-link">designed and developed</a> by Liz Burton</p>
+				<p>Site <a href="dev-projects.html#burtonux" class="text-link">designed and developed</a> by Liz Burton</p>
 			</div>
 		</footer>
 		<script>

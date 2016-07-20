@@ -30,17 +30,39 @@
 	}
 
 	nav  {
+		text-align: center;
 		&.hamburger-menu {
 			display: none;
 		}
 		&.main-menu {
-			display: block;
+			display: initial;
 		}
-		font-size: 1.2em;
+		font-size: 1em;
 		li.project-menu-item .sub-nav {
 			top: 1.95em;
 		}
+		ul {
+			width: 100%;
+			margin: 1em auto 0 auto;
 
+			position: relative;
+			display: inline-block;
+			top: initial;
+			right: initial;
+			background-color: white;
+			li {
+				display: inline-block;
+				line-height: 2;
+				font-weight: bold;
+				padding: 0 0.8em;
+				a {
+					color: $color-medium-blue;
+					&.selected {
+						border-bottom: 2px solid $color-dark-blue;
+					}
+				}
+			}
+		}
 	}
 
 	section:first-of-type {
