@@ -8,8 +8,12 @@
  	display: initial;
  }
 
+html,body {
+	height: 100%;
+}
+
  footer {
-  height:62px;
+  height:60px;
   position:absolute;
   bottom:0;
   left:0;
