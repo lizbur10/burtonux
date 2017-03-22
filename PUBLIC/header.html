@@ -1,0 +1,75 @@
+<!--
+Working on making the header and nav dynamic
+Need to create .php files for each page
+Also need to create code for nav to correctly show selected page!!!!
+-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="modernizr.js"></script>
+		<script src="jquery-1.11.3.min.js"></script>
+		<script src="mobile-menu.js"></script>
+		<script async charset="utf-8" src="//cdn.thinglink.me/jse/embed.js"></script>
+		<script>
+		    $(function() {
+		    	var selected = false;
+				$(".no-touchevents nav li").hover(function() {
+					if ( $(this).attr("class") == "selected") {
+						selected = true;
+						$(this).toggleClass("selected").toggleClass("menu-hover-state");
+					} else {
+						$(this).toggleClass("menu-hover-state");
+					}
+				}, function() {
+					if (selected) {
+						$(this).toggleClass("selected").toggleClass("menu-hover-state");
+						selected = false;
+					} else {
+						$(this).toggleClass("menu-hover-state");
+					}
+				});
+				$(".no-touchevents .project-menu-item").hover(function() {
+					$("ul.sub-nav").toggleClass("visually-hidden");
+				});
+				$(".no-touchevents nav li li").hover(function() {
+					$(".project-menu-item>a").toggleClass("menu-hover-state");
+				});
+			});
+
+		</script>
+		<title>burtonux.com</title>
+		<link rel="icon" type="image/ico" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">		
+		<link rel="stylesheet" type="text/css" href="CSS/home.css">
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header>
+				<nav class="hamburger-menu">
+					<img class="hamburger" src="img/hamburger.png">
+				</nav>
+				<a href="index.php"><img class="logo" src="img/logos/logo_purple.png" onmouseover="this.src='img/logos/logo_blue_new.png';" onmouseout="this.src='img/logos/logo_purple.png';" alt="liz burton's logo"></a>
+				<nav class="main-menu">
+	 				<ul>
+						<li><a class="selected" href="index.php">About</a></li>
+						<li class="project-menu-item"><a href="ux-projects.php">UX Research &amp; Design</a>
+	<!-- 						<ul class="sub-nav visually-hidden">
+								<li><a href="projects/mobile-app.html">Constant Contact Mobile App</a></li>
+								<li><a href="projects/galileo.html">Constant Contact Email Editor</a></li>
+								<li><a href="projects/np-site-visits.html">Non-profit Site Visits</a></li>
+								<li><a href="projects/seniors-outdoors.html">Seniors Outdoors</a></li>
+								<li><a href="projects/knitty.html">Knitty.com</a></li>
+							</ul>
+	 -->					</li>
+						<li><a href="dev-projects.html">Web Development</a></li>
+						<li><a href="resume.html">Resum&eacute;</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
