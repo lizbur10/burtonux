@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="modernizr.js"></script>
 		<script src="jquery-1.11.3.min.js"></script>
+		<script src="mobile-menu.js"></script>
 		<script>
 		    $(function() {
 		    	var selected = false;
@@ -32,7 +33,7 @@
 			});
 
 		</script>
-		<title>Development Projects</title>
+		<title>Web Development Projects</title>
 		<link rel="icon" type="image/ico" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">		
 		<link rel="stylesheet" type="text/css" href="CSS/projects.css">
@@ -44,10 +45,10 @@
 			<nav class="hamburger-menu">
 				<img class="hamburger" src="img/hamburger.png">
 			</nav>
-			<a href="index.html"><img class="logo" src="img/logos/logo_purple.png" onmouseover="this.src='img/logos/logo_blue.png';" onmouseout="this.src='img/logos/logo_purple.png';" alt="liz burton's logo"></a>
+			<a href="index.html"><img class="logo" src="img/logos/logo_purple.png" onmouseover="this.src='img/logos/logo_blue_new.png';" onmouseout="this.src='img/logos/logo_purple.png';" alt="liz burton's logo"></a>
 			<nav class="main-menu">
 				<ul>
-					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html">About</a></li>
 					<li class="project-menu-item"><a href="ux-projects.html">UX Research &amp; Design</a>
 <!-- 						<ul class="sub-nav visually-hidden">
 							<li><a href="projects/mobile-app.html">Constant Contact Mobile App</a></li>
@@ -57,7 +58,7 @@
 							<li><a href="projects/knitty.html">Knitty.com</a></li>
 						</ul>
  -->					</li>
-					<li><a class="selected" href="dev-projects.html">Development</a></li>
+					<li><a class="selected" href="dev-projects.html">Web Development</a></li>
 					<li><a href="resume.html">Resum&eacute;</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -65,35 +66,39 @@
 		</header>
 
 		<section class="projects">
-			<h1>Selected Development Projects</h1>
+			<h1>Web Development Projects</h1>
 
-			<article class="project">
+			<article class="project" id="appledore-banding">
 				<div class="project-header">
-					<h2>Volunteer Project: AppledoreBanding.org</h2>
+					<h2>Freelance Project: AppledoreBanding.org</h2>
 					<h4>Wordpress theming, PHP, HTML/CSS, SASS, responsive design, mobile first, Javascript/jQuery</h4>
 				</div>
-				<a target="_blank" href="http://appledorebanding.org/"><img class="right" src="img/projects/appledore_frontPage.jpg" alt="BurtonUX Portfolio Site"></a>
+				<figure class="right">
+					<a target="_blank" href="http://appledorebanding.org/"><img src="img/projects/appledore_frontPage.jpg" alt="BurtonUX Portfolio Site"></a>
+				</figure>
 
 				<div class="left">
-					<h3>Volunteer Project: Website for the Appledore Island Migration Station</h3>
-					<p>Designed, developed, and maintain a new website for the Appledore Island Migration Station (AIMS).</p>
+					<h3>Project: Website for the Appledore Island Migration Station</h3>
+					<p><a class="text-link" href="projects/appledore-banding.html">Designed</a> and developed a new website for the Appledore Island Migration Station (AIMS); continue to maintain the site as webmaster.</p>
 					<p><a class="text-link" href="http://appledorebanding.org/" target="_blank">Live site</a></p>
 					<p><a class="text-link" href="https://github.com/lizbur10/appledorebanding" target="_blank">Github repo</a></p>
 				</div>
 			</article>
 
-			<article class="project">
+			<article class="project" id="seniors-outdoors">
 				<div class="project-header">
-					<h2>Volunteer Project: Seniors Outdoors!</h2>
+					<h2>Freelance Project: Seniors Outdoors!</h2>
 					<h4>Wordpress theming, PHP, HTML/CSS, responsive design, Javascript/jQuery</h4>
 				</div>
-				<img class="right" src="img/projects/soHomePage.jpg" alt="BurtonUX Portfolio Site">
+				<figure class="right">
+					<img src="img/projects/soHomePage.jpg" alt="BurtonUX Portfolio Site">
+				</figure>
 
 				<div class="left">
-					<h3>Project: Design and develop a Website for Seniors Outdoors!</h3>
-					<p>Development phase of volunteer research, design, and development project. Currently developing the new site for Seniors Outdoors, a club for active seniors in Durango, Colorado. </p>
+					<h3>Project: Design and develop a website for Seniors Outdoors!</h3>
+					<p>Development phase of freelance research, design, and development project. Currently developing the new site for Seniors Outdoors, a club for active seniors in Durango, Colorado. </p>
 					<p>I customized a Wordpress Events plugin to enable dynamic display of the club's outings on the home page and calendar page, and wrote the code to create a printable list version of the schedule. I also designed a system to enable the club's webmaster to upload the events using an Excel spreadsheet.</p> 
-					<p>The site is still a work in progress, with a tentative goal of launching it for the fall season.</p>
+					<p>The site is still a work in progress, with a tentative goal of launching it in Fall 2016.</p>
 					<p><a class="text-link" href="projects/seniors-outdoors.html" target="_blank">Details of research phase</a></p>
 					<p><a class="text-link" href="http://burtonux.com/seniorsoutdoors/" target="_blank">Test installation of site in progress</a></p>
 					<p><a class="text-link" href="https://github.com/lizbur10/appledorebanding" target="_blank">Github repo</a></p>
@@ -105,7 +110,9 @@
 					<h2>Class Project: BurtonUX.com</h2>
 					<h4>HTML/CSS, SASS, responsive design, mobile first, Javascript/jQuery</h4>
 				</div>
-				<img class="right" src="img/projects/burtonux_large.jpg" alt="BurtonUX Portfolio Site">
+				<figure class="right">
+					<img src="img/projects/burtonux_large.jpg" alt="BurtonUX Portfolio Site">
+				</figure>
 
 				<div class="left">
 					<h3>Assignment: Minneapolis College of Art and Design (MCAD) Responsive Design Class</h3>
@@ -114,7 +121,7 @@
 				</div>
 			</article>
 
-			<article class="project">
+<!--			<article class="project">
 				<div class="project-header">
 					<h2>Class Project: Knitty.com</h2>
 					<h4>HTML/CSS, SASS, responsive design, mobile first, Javascript/jQuery</h4>
@@ -131,7 +138,7 @@
 				</div>
 			</article>
 
-			<article class="project">
+ 			<article class="project">
 				<div class="project-header">
 					<h2>Class Project: Landon Hotel Image Slider</h2>
 					<h4>jQuery</h4>
@@ -196,7 +203,7 @@
 					<p><a class="text-link" href="https://github.com/lizbur10/mcad-sdblog" target="_blank">Github repo</a></p>					
 				</div>
 			</article>
-		</section>
+ -->		</section>
 
 		<footer>
 <!-- 			<ul>

@@ -37,7 +37,7 @@
 		&.main-menu {
 			display: initial;
 		}
-		font-size: 1em;
+		font-size: .9em;
 		li.project-menu-item .sub-nav {
 			top: 1.95em;
 		}
@@ -56,7 +56,7 @@
 				font-weight: bold;
 				padding: 0 0.8em;
 				a {
-					color: $color-medium-blue;
+					color: $color-dark-blue;
 					&.selected {
 						border-bottom: 2px solid $color-dark-blue;
 					}
@@ -102,3 +102,4 @@
  	}
 
 }
+

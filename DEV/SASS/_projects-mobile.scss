@@ -10,17 +10,26 @@
 
 .project {
 	margin-top: 3em;
-	img {
+/* 	img {
 		padding: 1em;
 	}
-
+ */
 	h4 {
 		display: inline;
-		margin: 0;
+		margin: 0 0 .5em 0;
+		font-family: $fontstack-text;
+		font-size: 1.1em;
+		font-weight: normal;
+
 	}
 
 	h4:after {
 		content: ": ";
+	}
+
+	figcaption {
+		text-align: center;
+		font-style: italic;
 	}
 
 	.project-header {

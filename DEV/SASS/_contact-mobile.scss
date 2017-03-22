@@ -9,9 +9,40 @@
 	position:relative;
 }
  */
+
+html, body {
+ 	height: 100%;
+}
+
 section:first-of-type {
 	padding-bottom: 4em;
 }
+
+li#phone {
+list-style: inside url('../img/icons/phone_small.png');
+padding-top: 5px;
+  span {
+  	position: relative;
+    top: -3px;
+  }
+}
+
+li#email {
+list-style: inside url('../img/icons/email_small.png');
+  span {
+  	position: relative;
+    top: -5px;
+  }
+}
+
+li#linkedin {
+list-style: inside url('../img/icons/linkedin_small.png');
+  span {
+  	position: relative;
+    top: -2px;
+  }
+}
+
 
 footer {
   height:62px;
