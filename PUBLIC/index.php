@@ -2,18 +2,18 @@
 include("header.html");
 ?>
 
-			<section class="main">
+			<section id="content" class="main">
 				<h1 class="visually-hidden">Liz Burton's Home Page</h1>
-				<h2>About Me</h2>
-	 			<p>I am an experienced UX professional and tenacious user advocate with a solid understanding of UX design principles. I also have front-end development skills and my understanding of development implications gives me additional insight into the design process. </p>
-	 			<p>My skills and background include: </p>
+				<h2>The Design-Build Concept</h2>
+	 			<p>In the construction industry there is an approach known as Design-Build, in which the same contractor is responsible for both the design and construction of the project: </p>
+				<blockquote>"One entity, one contract, one unified flow of work from initial concept through completion &mdash; thereby re-integrating the roles of designer and constructor." (<a class="text-link" href="http://www.dbia.org/about/Pages/What-is-Design-Build.aspx" target="_blank">Design-Build Institute of America</a>)</blockquote>
+				<p>What I offer is analogous &mdash; knowledge and training in user experience design and research along with front-end development skills. This enables me to:</p>
 				<ul class="triangle-list">
-					<li> a deep understanding of user experience and interaction design</li>
-					<li> hands-on experience with a wide array of research methods</li>
-					<li> excellent communication and collaboration skills</li>
-					<li> a proven record of providing actionable design recommendations based on best practice, user and business needs, and thoughtful user research</li>
+					<li> take into consideration both UX and development implications in making design recommendations,</li>
+					<li> know when and how to conduct and apply user research, and</li>
+					<li> develop solutions that follow UX principles, meet business and user needs, and reflect state of the art, solid coding practices.</li>
 				</ul>
-				<p>On this site, you can see <a class="text-link" href="ux-projects.html">examples of my research and design work</a> and <a class="text-link" href="dev-projects.html">some of my development projects</a>. You can also <a class="text-link" href="resume.html">view my resume</a>.</p>
+				<p>On this site, you can see <a class="text-link" href="#">examples of my research and design work</a> and <a class="text-link" href="#">some of my development projects</a>. You can also <a class="text-link" href="#">view my resume</a>.</p>
 	<!-- 			<p>My skillset includes:</p>
 				<ul>
 					<li>User research</li>
@@ -28,32 +28,6 @@ include("header.html");
 						</ul>
 					</li>
 				</ul>
+	 -->		</section>
 
-	 -->		
-
-	</section>
-
-			<footer>
-<!-- 				<ul>
-					<li id="email"><a href="mailto:liz.burton147@gmail.com"><span>liz.burton147@gmail.com</span></a></li>
-					<li id="linkedin"><a href="https://www.linkedin.com/in/burtonux" target="_blank"><span>www.linkedin.com/in/burtonux</span></a></li>
-					<li id="phone"><span>(773) 710-8686</span></li>
-				</ul>
-	 -->			<div>
-					<p class="copyright">&copy; Liz Burton 2017</p>
-					<p>Site <a href="dev-projects.html#burtonux" class="text-link">designed and developed</a> by Liz Burton</p>
-				</div>
-			</footer>
-			<script>
-			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			  ga('create', 'UA-75714954-1', 'auto');
-			  ga('send', 'pageview');
-
-			</script>
-		</div>
-	</body>
-</html>
+<?php include("footer.html"); ?>

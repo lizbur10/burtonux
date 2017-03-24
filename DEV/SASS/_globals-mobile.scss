@@ -34,15 +34,16 @@ body {
   font-size: 12pt;
 }
 
-.wrapper {
+/* .wrapper {
   min-height:100%;
   position:relative;
 }
-
+ */
+/* Height of the footer element
 .main {
-  padding-bottom:60px; /* Height of the footer element */
+  padding-bottom:60px; 
 }
-
+ */
 header {
   padding-top: 1em;
   margin-bottom: 2em;
@@ -141,6 +142,9 @@ h4 {
 
 img {
   max-width: 100%;
+  &.add-border {  //this is for images where I neglected to add the border in Photoshop - will eventually transition all to this
+    border: 1px solid #bbb;
+  }
 }
 
 ul {

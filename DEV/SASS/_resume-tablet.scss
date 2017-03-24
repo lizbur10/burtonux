@@ -26,10 +26,12 @@
 			padding-right: 3%;
 	}
 
+
 	.classes {
 		@include clearfix();
 		.right {
 			padding: 0;
+			margin-top: 0;
 		}
 	}
 

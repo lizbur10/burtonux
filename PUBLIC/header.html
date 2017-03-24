@@ -15,6 +15,27 @@ Also need to create code for nav to correctly show selected page!!!!
 		<script src="mobile-menu.js"></script>
 		<script async charset="utf-8" src="//cdn.thinglink.me/jse/embed.js"></script>
 		<script>
+			 // function to set the height on fly
+			 function autoHeight() {
+			   $('#content').css('min-height', 0);
+			   $('#content').css('min-height', (
+			     $(document).height() 
+			     - $('#header').height() 
+			     - $('#footer').height()
+			   ));
+			 }
+
+			 // onDocumentReady function bind
+			 $(document).ready(function() {
+			   autoHeight();
+			 });
+
+			 // onResize bind of the function
+			 $(window).resize(function() {
+			   autoHeight();
+			 });
+		</script>
+		<script>
 		    $(function() {
 		    	var selected = false;
 				$(".no-touchevents nav li").hover(function() {
@@ -45,12 +66,15 @@ Also need to create code for nav to correctly show selected page!!!!
 		<link rel="icon" type="image/ico" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">		
 		<link rel="stylesheet" type="text/css" href="CSS/home.css">
+		<link rel="stylesheet" type="text/css" href="CSS/projects.css">
+		<link rel="stylesheet" type="text/css" href="CSS/resume.css">
+		<link rel="stylesheet" type="text/css" href="CSS/contact.css">
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
-		<div class="wrapper">
-			<header>
+<!-- 		<div class="wrapper"> -->
+			<header id="header">
 				<nav class="hamburger-menu">
 					<img class="hamburger" src="img/hamburger.png">
 				</nav>
@@ -58,18 +82,10 @@ Also need to create code for nav to correctly show selected page!!!!
 				<nav class="main-menu">
 	 				<ul>
 						<li><a class="selected" href="index.php">About</a></li>
-						<li class="project-menu-item"><a href="ux-projects.php">UX Research &amp; Design</a>
-	<!-- 						<ul class="sub-nav visually-hidden">
-								<li><a href="projects/mobile-app.html">Constant Contact Mobile App</a></li>
-								<li><a href="projects/galileo.html">Constant Contact Email Editor</a></li>
-								<li><a href="projects/np-site-visits.html">Non-profit Site Visits</a></li>
-								<li><a href="projects/seniors-outdoors.html">Seniors Outdoors</a></li>
-								<li><a href="projects/knitty.html">Knitty.com</a></li>
-							</ul>
-	 -->					</li>
-						<li><a href="dev-projects.html">Web Development</a></li>
-						<li><a href="resume.html">Resum&eacute;</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li class="project-menu-item"><a href="ux-projects.php">UX Research &amp; Design</a></li>
+						<li><a href="dev-projects.php">Web Development</a></li>
+						<li><a href="resume.php">Resum&eacute;</a></li>
+						<li><a href="contact.php">Contact</a></li>
 					</ul>
 				</nav>
 			</header>
