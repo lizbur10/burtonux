@@ -34,7 +34,7 @@ include("header.html");
 						<h2><a class="text-link" href="project-seniors-outdoors.php">Seniors Outdoors</a></h2>
 						<h4>Information architecture, prototyping (paper, Axure), user testing (card sort, reverse card sort) <a class="text-link" href="project-seniors-outdoors.php">...see more</a></h4>
 					</div>
-					<a class="text-link" href="project-seniors-outdoors.php"><img src="img/projects/SO_large_new.jpg" alt="Seniors Outdoors redesign"></a>
+					<a class="text-link" href="project-seniors-outdoors.php"><img class="add-border" src="img/projects/SOHomePage.jpg" alt="Seniors Outdoors redesign"></a>
 				</article>
 
 				<article class="project">

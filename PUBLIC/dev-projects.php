@@ -16,7 +16,7 @@ include("header.html");
 
 				<div class="left">
 					<h3>Project: Website for the Appledore Island Migration Station</h3>
-					<p><a class="text-link" href="projects/appledore-banding.html">Designed</a> and developed a new website for the Appledore Island Migration Station (AIMS); continue to maintain the site as webmaster.</p>
+					<p><a class="text-link" href="project-appledore-banding.php">Designed</a> and developed a new website for the Appledore Island Migration Station (AIMS); continue to maintain the site as webmaster.</p>
 					<p><a class="text-link" href="http://appledorebanding.org/" target="_blank">Live site</a></p>
 					<p><a class="text-link" href="https://github.com/lizbur10/appledorebanding" target="_blank">Github repo</a></p>
 				</div>
@@ -35,7 +35,7 @@ include("header.html");
 					<h3>Project: Design and develop a website for Seniors Outdoors!</h3>
 					<p>Development phase of freelance research, design, and development project. The new site was launched in March, 2017. </p>
 					<p>I customized a Wordpress Events plugin to enable dynamic display of the club's outings on the home page and calendar page, and wrote the code to create a printable list version of the schedule. I also designed a system to enable the club's webmaster to upload the events using an Excel spreadsheet.</p> 
-					<p><a class="text-link" href="projects/seniors-outdoors.html" target="_blank">Details of research phase</a></p>
+					<p><a class="text-link" href="project-seniors-outdoors.php" target="_blank">Details of research phase</a></p>
 					<p><a class="text-link" href="http://seniorsoutdoors.org" target="_blank">Live site</a></p>
 					<p><a class="text-link" href="https://github.com/lizbur10/SO_NextGen" target="_blank">Github repo</a></p>
 				</div>
