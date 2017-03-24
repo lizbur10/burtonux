@@ -55,4 +55,4 @@ include("header.html");
 			</div>
 		</section>
 
-<?php include("footer.php"); ?>
+<?php include("footer.html"); ?>

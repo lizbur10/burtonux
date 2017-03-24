@@ -1,6 +1,6 @@
 <?php include("header.html"); ?>
 
-			<section id="content" >
+			<section id="content" class="contact" >
 				<h1 class="visually-hidden">Liz Burton's Home Page</h1>
 	 			<h2>Contact Info:</h2>
 		 			<ul>

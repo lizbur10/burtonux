@@ -2,7 +2,7 @@
 include("header.html");
 ?>
 
-			<section id="content" class="main">
+			<section id="content" class="main home">
 				<h1 class="visually-hidden">Liz Burton's Home Page</h1>
 				<h2>The Design-Build Concept</h2>
 	 			<p>In the construction industry there is an approach known as Design-Build, in which the same contractor is responsible for both the design and construction of the project: </p>
@@ -13,21 +13,8 @@ include("header.html");
 					<li> know when and how to conduct and apply user research, and</li>
 					<li> develop solutions that follow UX principles, meet business and user needs, and reflect state of the art, solid coding practices.</li>
 				</ul>
-				<p>On this site, you can see <a class="text-link" href="#">examples of my research and design work</a> and <a class="text-link" href="#">some of my development projects</a>. You can also <a class="text-link" href="#">view my resume</a>.</p>
-	<!-- 			<p>My skillset includes:</p>
-				<ul>
-					<li>User research</li>
-					<li>Information Architecture</li>
-					<li>UX Design</li>
-					<li>Front-end Development:
-						<ul>
-							<li>HTML5/CSS3</li>
-							<li>Javascript/JQuery</li>
-							<li>Custom theming in Wordpress; PHP</li>
-							<li>Responsive design</li>
-						</ul>
-					</li>
-				</ul>
-	 -->		</section>
+				<p>On this site, you can see <a class="text-link" href="ux-projects.php">examples of my research and design work</a> and <a class="text-link" href="dev-projects.php">some of my development projects</a>. You can also <a class="text-link" href="resume.php">view my resume</a>.</p>
+
+			</section>
 
 <?php include("footer.html"); ?>

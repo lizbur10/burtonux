@@ -1,11 +1,11 @@
 <?php
 include("header.html");
 ?>
-		<section id="content" >
+		<section id="content" class="resume">
 			<div class="main-section two-thirds left">
 			<h1 class="visually-hidden">Liz Burton Resume</h1>
 				<h2>UX Work Experience</h2>
-				<h3>User Experience Researcher<span>Constant Contact<span class="bullet">&bull;</span>Oct 2013 - Feb 2016<span class="bullet">&bull;</span>Waltham, MA</span></h3>
+				<h3>User Experience Researcher <span>Constant Contact<span class="bullet">&bull;</span>Oct 2013 - Feb 2016<span class="bullet">&bull;</span>Waltham, MA</span></h3>
 					<p>Worked in collaboration with designers and product managers to plan, conduct, and analyze user research studies using a wide array of methods.</p> 
 					<p>Provided actionable, user-centered reports and recommendations to help improve users' experience with the product and advocate for the needs of customers. </p>
 					<p>Methods used included:</p> 
@@ -46,17 +46,56 @@ include("header.html");
 					<li>Survey research</li>
 				</ul>
 
-				<h2>UX Publications &amp; Presentations</h2>
-				<ul class="hanging-indent">
-					<li>Liz Burton, Michael Kennedy, and Victoria Morville (2016). <a class="text-link" target="_blank" href="http://www.slideshare.net/MichaelKennedy17/you-want-me-to-what-a-practical-guide-to-diary-studies-61532487?qid=b1744552-059a-44f4-b537-0778a8b210ec&v=&b=&from_search=1">You Want Me to What? A Practical Guide to Diary Studies.</a> Presented at the 2016 meeting of UXPA-Boston, April 29, 2016.</li>
-					<li>Liz Burton, Debra Reich, and Yina Li (2015). Does a Personal Belief Create Bias in User Behavior Online? In: Rosenzweig, Elizabeth (2015). <cite>Successful User Experience: Strategies and Roadmaps.</cite> Burlington, MA: Morgan Kauffman Publishers.</li>
-					<li>Liz Burton, William Albert, and Mark Flynn (2014). <a class="text-link" href="http://pro.sagepub.com/content/58/1/1437.full.pdf" target="_blank">A Comparison of the Performance of Webcam vs. Infrared Eye Tracking Technology.</a> Presented at the 2014 Annual Meeting of the Human Factors and Ergonomics Society, September 2014, Chicago, IL.</li>
-				</ul>
-				<h2>Prior Work Experience</h2>
-				<h3>Psychometrician<span>Measured Progress<span class="bullet">&bull;</span>2002 - 2011<span class="bullet">&bull;</span>Dover, NH</span></h3>
-				<h3>Director of Assessment<span>Aurora Public Schools<span class="bullet">&bull;</span>1996 - 2002<span class="bullet">&bull;</span>Aurora, CO</span></h3>
-				<h3>Adjunct Faculty<span>University of Colorado - Denver<span class="bullet">&bull;</span>1993 - 1996<span class="bullet">&bull;</span>Denver, CO</span></h3>
+				<div class="sub-section">
+					<h2>UX Publications &amp; Presentations</h2>
+					<ul class="hanging-indent">
+						<li>Liz Burton, Michael Kennedy, and Victoria Morville (2016). <a class="text-link" target="_blank" href="http://www.slideshare.net/MichaelKennedy17/you-want-me-to-what-a-practical-guide-to-diary-studies-61532487?qid=b1744552-059a-44f4-b537-0778a8b210ec&v=&b=&from_search=1">You Want Me to What? A Practical Guide to Diary Studies.</a> Presented at the 2016 meeting of UXPA-Boston, April 29, 2016.</li>
+						<li>Liz Burton, Debra Reich, and Yina Li (2015). Does a Personal Belief Create Bias in User Behavior Online? In: Rosenzweig, Elizabeth (2015). <cite>Successful User Experience: Strategies and Roadmaps.</cite> Burlington, MA: Morgan Kauffman Publishers.</li>
+						<li>Liz Burton, William Albert, and Mark Flynn (2014). <a class="text-link" href="http://pro.sagepub.com/content/58/1/1437.full.pdf" target="_blank">A Comparison of the Performance of Webcam vs. Infrared Eye Tracking Technology.</a> Presented at the 2014 Annual Meeting of the Human Factors and Ergonomics Society, September 2014, Chicago, IL.</li>
+					</ul>
+				</div>
+
+				<div class="sub-section">
+					<h2>Prior Work Experience</h2>
+					<h3>Psychometrician<span>Measured Progress<span class="bullet">&bull;</span>2002 - 2011<span class="bullet">&bull;</span>Dover, NH</span></h3>
+					<h3>Director of Assessment<span>Aurora Public Schools<span class="bullet">&bull;</span>1996 - 2002<span class="bullet">&bull;</span>Aurora, CO</span></h3>
+					<h3>Adjunct Faculty<span>University of Colorado - Denver<span class="bullet">&bull;</span>1993 - 1996<span class="bullet">&bull;</span>Denver, CO</span></h3>
+				</div>
+
+				<div class="sub-section classes">
+					<h2>Relevant Courses</h2>
+					<div>
+						<h3>Bentley University</h3>
+						<ul>
+							<li>Foundations in Human Factors</li>
+							<li>Information Architecture</li>
+							<li>Field Methods in HCI</li>
+							<li>Intelligent User Interfaces</li>
+							<li>Object-Oriented Application Development</li>
+							<li>Testing and Assessment Programs</li>
+							<li>Prototyping Interaction Design</li>
+							<li>Measuring the User Experience</li>
+							<li>Managing a User-centered Design Team</li>
+						</ul>
+					</div>
+					<div>
+						<h3>University of Colorado</h3>
+						<ul>
+							<li>Experimental Design</li>
+							<li>Ethnographic Methods</li>
+						</ul>
+						<h3>Minneapolis College of Art and Design (MCAD)</h3>
+						<ul>
+							<li>Web Development: HTML + CSS</li>
+							<li>Web Development: PHP + Wordpress</li>
+							<li>Web Development: JavaScript + jQuery</li>
+							<li>Responsive Design</li>
+						</ul>
+					</div>
+				</div>
 			</div>
+
+
 
 			<aside class="one-third right">
 				<div class="skillset">
@@ -75,6 +114,7 @@ include("header.html");
 						<li>HTML5</li>
 						<li>CSS3</li>
 						<li>SASS</li>
+						<li>PHP</li>
 						<li>Javascript/jQuery</li>
 						<li>Responsive Design</li>
 						<li>Wordpress custom themes</li>
@@ -114,7 +154,7 @@ include("header.html");
 						<li>SPSS</li>
 						<li>SAS</li>
 					</ul>
-					<h3>Front-end Development</h3>
+					<h3>Web Development</h3>
 					<ul>
 						<li>Sublime Text</li>
 						<li>Atom</li>
@@ -140,37 +180,6 @@ include("header.html");
 				</div>				
 			</aside>
 
-			<div class="classes">
-				<h2>Relevant Courses</h2>
-				<div class="one-third left">
-					<h3>Bentley University</h3>
-					<ul>
-						<li>Foundations in Human Factors</li>
-						<li>Information Architecture</li>
-						<li>Field Methods in HCI</li>
-						<li>Intelligent User Interfaces</li>
-						<li>Object-Oriented Application Development</li>
-						<li>Testing and Assessment Programs</li>
-						<li>Prototyping Interaction Design</li>
-						<li>Measuring the User Experience</li>
-						<li>Managing a User-centered Design Team</li>
-					</ul>
-				</div>
-				<div class="one-third right">
-					<h3>University of Colorado</h3>
-					<ul>
-						<li>Experimental Design</li>
-						<li>Ethnographic Methods</li>
-					</ul>
-					<h3>Minneapolis College of Art and Design (MCAD)</h3>
-						<ul>
-							<li>Web Development: HTML + CSS</li>
-							<li>Web Development: PHP + Wordpress</li>
-							<li>Web Development: JavaScript + jQuery</li>
-							<li>Responsive Design</li>
-						</ul>
-				</div>
-			</div>
 
 		</section>
 

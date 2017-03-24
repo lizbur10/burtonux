@@ -1,0 +1,125 @@
+@media screen and (min-width: 801px) {
+
+	header {
+		.logo {
+/* 			box-shadow: 3px 5px 5px $color-light-green;
+ */			background-color: $color-off-white;
+/* 			float: left;
+ */			padding: 0;
+			margin-top: 1em;
+		}
+
+		img.logo {
+			margin-left: 2em;
+			margin-bottom: 2em;
+		}
+
+		nav {
+			li {
+				font-size: 1.2em;
+				padding: 0;
+/* 				&:first-of-type {
+			    	margin-left: 4%;
+				}
+				li {
+					font-size: 1.2em;
+					&:first-of-type {
+						margin-left: 0;
+					}
+				}
+*/
+				a {
+					display: block;
+					padding: 0 1.5em;
+				}
+				&.project-menu-item .sub-nav {
+					top: 3em;
+				}
+			}
+		}
+	}
+
+	section:first-of-type {
+	    width: 90%;
+	    margin: 4em auto 0;
+	}
+
+	footer {
+		span {
+			padding-left: 0.2em;
+		}
+	}
+}
+
+@media screen and (min-width: 820px) {
+	nav {
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width: 1041px) { //http://stackoverflow.com/questions/11997032/how-to-get-box-shadow-on-left-right-sides-only
+	
+	html {
+		  background-color: $color-off-white;
+	}
+
+	body {
+		width: 960px;
+		&:before {
+			box-shadow: -15px 0 15px -15px inset;
+			content: " ";
+			height: 100%;
+			left: -15px;
+			position: absolute;
+			top: 0;
+			width: 15px;
+		}
+		&:after {
+			box-shadow: 15px 0 15px -15px inset;
+			content: " ";
+			height: 100%;
+			right: -15px;
+			position: absolute;
+			top: 0;
+			width: 15px;
+		}
+	}
+
+
+
+//PROJECTS PAGES
+	.project {
+		.left {
+ 			width: 40%;
+ 		}
+
+		figure.right {
+			max-width: 60%;
+			float: right;
+			padding-left: 1em;
+		}
+
+		h3 {
+			margin-top: 2em;
+		}
+	}
+
+
+//END PROJECTS PAGES
+
+
+//RESUME PAGES
+
+
+//END RESUME PAGE
+
+
+	section.contact {
+		margin-top: 7em;
+	}
+
+
+
+
+
+}
