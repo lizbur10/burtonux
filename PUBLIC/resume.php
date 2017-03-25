@@ -1,5 +1,5 @@
 <?php
-include("header.html");
+include("header.php");
 ?>
 		<section id="content" class="resume">
 			<div class="main-section two-thirds left">

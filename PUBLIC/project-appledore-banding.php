@@ -1,4 +1,4 @@
-<?php include("header.html"); ?>
+<?php include("header.php"); ?>
 
 		<section class="project">
 			<div class="navlinks">

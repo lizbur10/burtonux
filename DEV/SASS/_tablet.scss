@@ -60,11 +60,11 @@
 				line-height: 2;
 				font-weight: bold;
 				padding: 0 0.8em;
+				&.selected {
+					border-bottom: 2px solid $color-dark-blue;
+				}
 				a {
 					color: $color-dark-blue;
-					&.selected {
-						border-bottom: 2px solid $color-dark-blue;
-					}
 				}
 			}
 		}

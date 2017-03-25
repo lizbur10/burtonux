@@ -3,7 +3,34 @@ Working on making the header and nav dynamic
 DONE: PHP files created & hooked to header.html & footer.html
 Need to create code for nav to correctly show selected page
 -->
+<?php
 
+$pages = array(
+	"index.php" => array(
+		"menu_label" => "About",
+		"page_title" => "burtonux.com"
+		),
+	"ux-projects.php" => array(
+		"menu_label" => "UX Research &amp; Design",
+		"page_title" => "UX projects"
+		),
+	"dev-projects.php" => array(
+		"menu_label" => "Web Development",
+		"page_title" => "Web development projects"
+		),
+	"resume.php" => array(
+		"menu_label" => "Resum&eacute;", 
+		"page_title" => "Liz Burton resum&eacute;"
+		),
+	"contact.php" => array(
+		"menu_label" => "Contact", 
+		"page_title" => "Contact me"
+		)
+	);
+$current_page = basename($_SERVER['SCRIPT_NAME']);
+$keys = array_keys($pages);
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -37,32 +64,21 @@ Need to create code for nav to correctly show selected page
 		</script>
  -->		<script>
 		    $(function() {
-		    	var selected = false;
 				$(".no-touchevents nav li").hover(function() {
-					if ( $(this).attr("class") == "selected") {
-						selected = true;
-						$(this).toggleClass("selected").toggleClass("menu-hover-state");
-					} else {
-						$(this).toggleClass("menu-hover-state");
-					}
-				}, function() {
-					if (selected) {
-						$(this).toggleClass("selected").toggleClass("menu-hover-state");
-						selected = false;
-					} else {
-						$(this).toggleClass("menu-hover-state");
-					}
-				});
-				$(".no-touchevents .project-menu-item").hover(function() {
-					$("ul.sub-nav").toggleClass("visually-hidden");
-				});
-				$(".no-touchevents nav li li").hover(function() {
-					$(".project-menu-item>a").toggleClass("menu-hover-state");
+					$(this).toggleClass("menu-hover-state");
 				});
 			});
 
 		</script>
-		<title>burtonux.com</title>
+		<?php for($i = 0; $i < count($pages); $i++)
+			foreach($pages[$keys[$i]] as $key => $value) {
+				if ($current_page == $keys[$i]) {
+					if ($key == "page_title") {
+						echo "<title>" . $value . "</title>";
+					}
+				}
+			}
+		?>
 		<link rel="icon" type="image/ico" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
 		<link rel="stylesheet" type="text/css" href="CSS/css.css">
@@ -78,11 +94,18 @@ Need to create code for nav to correctly show selected page
 				<a href="index.php"><img class="logo" src="img/logos/logo_purple.png" onmouseover="this.src='img/logos/logo_blue.png';" onmouseout="this.src='img/logos/logo_purple.png';" alt="liz burton's logo"></a>
 				<nav class="main-menu">
 	 				<ul>
-						<li><a class="selected" href="index.php">About</a></li>
-						<li class="project-menu-item"><a href="ux-projects.php">UX Research &amp; Design</a></li>
-						<li><a href="dev-projects.php">Web Development</a></li>
-						<li><a href="resume.php">Resum&eacute;</a></li>
-						<li><a href="contact.php">Contact</a></li>
+	 				<?php for($i = 0; $i < count($pages); $i++) {
+						echo "<li";
+						if ($current_page == $keys[$i]) {
+							echo " class=\"selected\"";
+						}
+						foreach($pages[$keys[$i]] as $key => $value) {
+							if ($key == "menu_label") {
+								echo "><a href=" . $keys[$i] . ">" . $value . "</a></li>";
+							}
+						}
+					}
+					?>
 					</ul>
 				</nav>
 			</header>

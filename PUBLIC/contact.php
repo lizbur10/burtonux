@@ -1,4 +1,4 @@
-<?php include("header.html"); ?>
+<?php include("header.php"); ?>
 
 			<section id="content" class="contact" >
 				<h1 class="visually-hidden">Liz Burton's Home Page</h1>

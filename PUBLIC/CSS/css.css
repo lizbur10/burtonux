@@ -75,8 +75,7 @@ div.navlinks {
 .menu-hover-state {
   background-color: #E4E5CE; }
   .menu-hover-state a {
-    color: #820263;
-    font-weight: bold; }
+    color: #820263; }
 
 a {
   text-decoration: none; }
@@ -309,10 +308,10 @@ li#linkedin {
         line-height: 2;
         font-weight: bold;
         padding: 0 0.8em; }
+        nav ul li.selected {
+          border-bottom: 2px solid #2F4550; }
         nav ul li a {
           color: #2F4550; }
-          nav ul li a.selected {
-            border-bottom: 2px solid #2F4550; }
 
   article.project {
     content: "";
