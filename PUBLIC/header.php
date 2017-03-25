@@ -6,30 +6,81 @@ Need to create code for nav to correctly show selected page
 <?php
 
 $pages = array(
-	"index.php" => array(
+	array(
+		"page" => "index.php",
+		"add_to_menu" => true,
 		"menu_label" => "About",
 		"page_title" => "burtonux.com"
-		),
-	"ux-projects.php" => array(
+	),
+	array(
+		"page" => "ux-projects.php",
+		"add_to_menu" => true,
 		"menu_label" => "UX Research &amp; Design",
 		"page_title" => "UX projects"
-		),
-	"dev-projects.php" => array(
+	),
+	array(
+		"page" => "dev-projects.php",
+		"add_to_menu" => true,
 		"menu_label" => "Web Development",
 		"page_title" => "Web development projects"
-		),
-	"resume.php" => array(
+	),
+	array(
+		"page" => "resume.php",
+		"add_to_menu" => true,
 		"menu_label" => "Resum&eacute;", 
 		"page_title" => "Liz Burton resum&eacute;"
-		),
-	"contact.php" => array(
+	),
+	array(
+		"page" => "contact.php",
+		"add_to_menu" => true,
 		"menu_label" => "Contact", 
 		"page_title" => "Contact me"
-		)
-	);
-$current_page = basename($_SERVER['SCRIPT_NAME']);
-$keys = array_keys($pages);
+	),
+	array(
+		"page" => "project-mobile-app.php",
+		"add_to_menu" => false,
+		"menu_label" => null, 
+		"page_title" => "Mobile app",
+		"sub_of" => "ux-projects.php"
+	),
+	array(
+		"page" => "project-galileo.php",
+		"add_to_menu" => false,
+		"menu_label" => null, 
+		"page_title" => "Email editor",
+		"sub_of" => "ux-projects.php"
+	),
+	array(
+		"page" => "project-np-site-visits.php",
+		"add_to_menu" => false,
+		"menu_label" => null, 
+		"page_title" => "Non-profit site visits",
+		"sub_of" => "ux-projects.php"
+	),
+	array(
+		"page" => "project-seniors-outdoors.php",
+		"add_to_menu" => false,
+		"menu_label" => null, 
+		"page_title" => "Seniors Outdoors redesign",
+		"sub_of" => "ux-projects.php"
+	),
+	array(
+		"page" => "project-appledore-banding.php",
+		"add_to_menu" => false,
+		"menu_label" => null, 
+		"page_title" => "appledorebanding.com design",
+		"sub_of" => "ux-projects.php"
+	),
+	array(
+		"page" => "project-knitty.php",
+		"add_to_menu" => false,
+		"menu_label" => null, 
+		"page_title" => "knitty.com Redesign",
+		"sub_of" => "ux-projects.php"
+	)
+);
 
+$current_page = basename($_SERVER['SCRIPT_NAME']);
 ?>
 
 <!DOCTYPE html>
@@ -70,14 +121,11 @@ $keys = array_keys($pages);
 			});
 
 		</script>
-		<?php for($i = 0; $i < count($pages); $i++)
-			foreach($pages[$keys[$i]] as $key => $value) {
-				if ($current_page == $keys[$i]) {
-					if ($key == "page_title") {
-						echo "<title>" . $value . "</title>";
-					}
-				}
-			}
+		<?php for($i = 0; $i < count($pages); $i++) {
+			if ($current_page == $pages[$i]["page"]) {
+				echo "<title>" . $pages[$i]["page_title"] . "</title>";
+			} 
+		}
 		?>
 		<link rel="icon" type="image/ico" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
@@ -94,18 +142,23 @@ $keys = array_keys($pages);
 				<a href="index.php"><img class="logo" src="img/logos/logo_purple.png" onmouseover="this.src='img/logos/logo_blue.png';" onmouseout="this.src='img/logos/logo_purple.png';" alt="liz burton's logo"></a>
 				<nav class="main-menu">
 	 				<ul>
-	 				<?php for($i = 0; $i < count($pages); $i++) {
-						echo "<li";
-						if ($current_page == $keys[$i]) {
-							echo " class=\"selected\"";
-						}
-						foreach($pages[$keys[$i]] as $key => $value) {
-							if ($key == "menu_label") {
-								echo "><a href=" . $keys[$i] . ">" . $value . "</a></li>";
+ 	 				<?php 
+ 	 					$hook = null;
+						for($i = 0; $i < count($pages); $i++) {
+							if (($current_page == $pages[$i]["page"]) && ($pages[$i]["sub_of"]) ) {
+								$hook = $pages[$i]["sub_of"];
 							}
 						}
-					}
+						for($i = 0; $i < count($pages); $i++) {
+		 					if ($pages[$i]["add_to_menu"]) {
+								echo "<li";
+								if ( ($current_page == $pages[$i]["page"]) || ($pages[$i]["page"] == $hook) ) {
+									echo " class=\"selected\"";
+								}
+								echo "><a href=\"" . $pages[$i]["page"] . "\">" . $pages[$i]["menu_label"] . "</a></li>";
+							}
+						}
 					?>
-					</ul>
+ 					</ul>
 				</nav>
 			</header>

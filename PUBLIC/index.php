@@ -13,7 +13,7 @@ include("header.php");
 					<li> know when and how to conduct and apply user research, and</li>
 					<li> develop solutions that follow UX principles, meet business and user needs, and reflect state of the art, solid coding practices.</li>
 				</ul>
-				<p>On this site, you can see <a class="text-link" href="ux-projects.php">examples of my research and design work</a> and <a class="text-link" href="dev-projects.php">some of my development projects</a>. You can also <a class="text-link" href="resume.php">view my resume</a>.</p>
+				<p>On this site, you can see <a class="text-link" href="ux-projects.php">examples of my research and design work</a> and <a class="text-link" href="dev-projects.php">some of my development projects</a>. You can also <a class="text-link" href="resume.php">view my resum&eacute;</a>.</p>
 
 			</section>
 
