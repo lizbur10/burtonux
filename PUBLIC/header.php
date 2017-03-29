@@ -1,9 +1,6 @@
-<!--
-Working on making the header and nav dynamic
-DONE: PHP files created & hooked to header.html & footer.html
-Need to create code for nav to correctly show selected page
--->
 <?php
+
+//Information about each page for nav and page title
 
 $pages = array(
 	array(
@@ -37,46 +34,67 @@ $pages = array(
 		"page_title" => "Contact me"
 	),
 	array(
-		"page" => "project-mobile-app.php",
+		"page" => "ux-mobile-app.php",
 		"add_to_menu" => false,
 		"menu_label" => null, 
 		"page_title" => "Mobile app",
 		"sub_of" => "ux-projects.php"
 	),
 	array(
-		"page" => "project-galileo.php",
+		"page" => "ux-email-editor.php",
 		"add_to_menu" => false,
 		"menu_label" => null, 
 		"page_title" => "Email editor",
 		"sub_of" => "ux-projects.php"
 	),
 	array(
-		"page" => "project-np-site-visits.php",
+		"page" => "ux-np-site-visits.php",
 		"add_to_menu" => false,
 		"menu_label" => null, 
 		"page_title" => "Non-profit site visits",
 		"sub_of" => "ux-projects.php"
 	),
 	array(
-		"page" => "project-seniors-outdoors.php",
+		"page" => "ux-seniors-outdoors.php",
 		"add_to_menu" => false,
 		"menu_label" => null, 
 		"page_title" => "Seniors Outdoors redesign",
 		"sub_of" => "ux-projects.php"
 	),
 	array(
-		"page" => "project-appledore-banding.php",
+		"page" => "ux-appledore-banding.php",
 		"add_to_menu" => false,
 		"menu_label" => null, 
 		"page_title" => "appledorebanding.com design",
 		"sub_of" => "ux-projects.php"
 	),
 	array(
-		"page" => "project-knitty.php",
+		"page" => "ux-knitty.php",
 		"add_to_menu" => false,
 		"menu_label" => null, 
 		"page_title" => "knitty.com Redesign",
 		"sub_of" => "ux-projects.php"
+	),
+	array(
+		"page" => "dev-burtonux.php",
+		"add_to_menu" => false,
+		"menu_label" => null, 
+		"page_title" => "BurtonUX.com Development",
+		"sub_of" => "dev-projects.php"
+	),
+	array(
+		"page" => "dev-seniors-outdoors.php",
+		"add_to_menu" => false,
+		"menu_label" => null, 
+		"page_title" => "Seniors Outdoors Development",
+		"sub_of" => "dev-projects.php"
+	),
+	array(
+		"page" => "dev-appledore-banding.php",
+		"add_to_menu" => false,
+		"menu_label" => null, 
+		"page_title" => "AppledoreBanding.com Development",
+		"sub_of" => "dev-projects.php"
 	)
 );
 
@@ -92,28 +110,7 @@ $current_page = basename($_SERVER['SCRIPT_NAME']);
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="mobile-menu.js"></script>
 		<script async charset="utf-8" src="//cdn.thinglink.me/jse/embed.js"></script>
-<!-- 		<script>
-			 // function to set the height on fly
-			 function autoHeight() {
-			   $('#content').css('min-height', 0);
-			   $('#content').css('min-height', (
-			     $(document).height() 
-			     - $('#header').height() 
-			     - $('#footer').height()
-			   ));
-			 }
-
-			 // onDocumentReady function bind
-			 $(document).ready(function() {
-			   autoHeight();
-			 });
-
-			 // onResize bind of the function
-			 $(window).resize(function() {
-			   autoHeight();
-			 });
-		</script>
- -->		<script>
+		<script>
 		    $(function() {
 				$(".no-touchevents nav li").hover(function() {
 					$(this).toggleClass("menu-hover-state");

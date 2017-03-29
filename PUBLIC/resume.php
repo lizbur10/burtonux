@@ -183,4 +183,4 @@ include("header.php");
 
 		</section>
 
-<?php include("footer.html"); ?>
+<?php include("footer.php"); ?>

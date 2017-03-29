@@ -15,12 +15,12 @@
 
 	.left {
 		float: left;
-		padding-right: 5%;
+		padding-right: 2%;
 	}
 
 	.right {
 		float: right;
-		padding-left: 2em;
+		padding-left: 2%;
 	}
 
 	.center {
@@ -70,10 +70,6 @@
 		}
 	}
 
-	article.project {
-		@include clearfix();
-		margin-bottom: 0;
-	}
 
 	footer {
 		@include clearfix();
@@ -109,10 +105,13 @@
 //PROJECTS PAGES
 
 	section.projects {
+		@include clearfix();
 		margin-left: 2.5em;
+	}
 
-
-
+	.article-container {
+		height: 460px;
+		width: 50%;
 	}
 
 //END PROJECT PAGES

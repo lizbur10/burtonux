@@ -84,7 +84,7 @@ nav {
 
 div.navlinks {
   margin-top: 1em;
-  margin-bottom: 5em;
+  margin-bottom: 1em;
   .navlink-left {
     float: left;
   }
@@ -137,6 +137,8 @@ img {
   }
 }
 
+
+
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -181,7 +183,6 @@ figure {
 section:first-of-type {
   max-width: 90%;
   margin: 1.5em;
-  padding-bottom: 4em;
 }
 
 ul.triangle-list {
@@ -212,6 +213,8 @@ footer {      /* Footer height: 60px  */
   width: 100%;
   font-size: 0.9em;
   padding: 0.5em 5%;
+  margin-top: 1em;
+
   div {
     @include clearfix();
      margin: 1em auto 0 auto;
@@ -231,14 +234,19 @@ footer {      /* Footer height: 60px  */
 /* .projects .text-link {
   text-decoration: none;
 }
-.projects .right {
-  float: right;
-  padding-top: 0;
-  padding-right: 5%;
+*/
+section.projects {
+  margin-bottom: 2em;
 }
- */
+
+article.project {
+  border: 1px solid #bbb;
+  padding: 1em;
+}
+
 .project {
   margin-top: 3em;
+  margin-bottom: 0;
   h4 {
     display: inline;
     margin: 0 0 .5em 0;
@@ -289,6 +297,7 @@ footer {      /* Footer height: 60px  */
 //RESUME PAGE
 
 .resume {
+  @include clearfix();
   .sub-section {
     margin-top: 3em;
   }

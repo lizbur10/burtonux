@@ -1,9 +1,9 @@
 <?php include("header.php"); ?>
 
-		<section class="project">
+		<section id="content" class="project">
 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="ux-projects.php">&laquo; project list</a></p>
-				<p class="navlink-right"><a class="text-link" href="project-galileo.php">email editor &raquo;</a></p>
+				<p class="navlink-right"><a class="text-link" href="ux-email-editor.php">email editor &raquo;</a></p>
 			</div>
 			<div class="project-header">
 				<h2>Constant Contact Mobile App</h2>
@@ -54,8 +54,8 @@
 			</div>
 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="ux-projects.php">&laquo; project list</a></p>
-				<p class="navlink-right"><a class="text-link" href="project-galileo.php">email editor &raquo;</a></p>
+				<p class="navlink-right"><a class="text-link" href="ux-email-editor.php">email editor &raquo;</a></p>
 			</div>
 		</section>
 
-<?php include("footer.html"); ?>
+<?php include("footer.php"); ?>

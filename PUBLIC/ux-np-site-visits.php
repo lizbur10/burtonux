@@ -1,10 +1,10 @@
 <?php include("header.php"); ?>
 
 
-		<section class="project">
+		<section id="content" class="project">
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="project-galileo.php">&laquo; email editor</a></p>
-				<p class="navlink-right"><a class="text-link" href="project-seniors-outdoors.php">seniors outdoors &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="ux-email-editor.php">&laquo; email editor</a></p>
+				<p class="navlink-right"><a class="text-link" href="ux-seniors-outdoors.php">seniors outdoors &raquo;</a></p>
 			</div>
 			<div class="project-header">
 				<h2>Non-profit Site Visits</h2>
@@ -48,9 +48,9 @@
 				</ul>
 			</div>
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="project-galileo.php">&laquo; email editor</a></p>
-				<p class="navlink-right"><a class="text-link" href="project-seniors-outdoors.php">seniors outdoors &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="ux-email-editor.php">&laquo; email editor</a></p>
+				<p class="navlink-right"><a class="text-link" href="ux-seniors-outdoors.php">seniors outdoors &raquo;</a></p>
 			</div>
 		</section>
 
-<?php include("footer.html"); ?>
+<?php include("footer.php"); ?>

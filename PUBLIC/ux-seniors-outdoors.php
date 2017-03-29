@@ -1,9 +1,9 @@
 <?php include("header.php"); ?>
 
-		<section class="project">
+		<section id="content" class="project">
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="project-np-site-visits.php">&laquo; site visits</a></p>
-				<p class="navlink-right"><a class="text-link" href="project-appledore-banding.php">appledore &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="ux-np-site-visits.php">&laquo; site visits</a></p>
+				<p class="navlink-right"><a class="text-link" href="ux-appledore-banding.php">appledore &raquo;</a></p>
 			</div>
 			<div class="project-header">
 				<h2>Seniors Outdoors Redesign</h2>
@@ -32,7 +32,7 @@
 					<li>Content inventory and proposed restructuring of the site's information architecture</li>
 					<li>User testing consisting of a card sort and tree test to validate and refine the proposed IA</li>
 					<li>Development of both paper &amp; pencil and Axure prototypes </li>
-					<li><a class="text-link" href="dev-projects.php#seniors-outdoors">Development of the redesigned site</a> using WordPress</li>
+					<li><a class="text-link" href="dev-seniors-outdoors.php">Development of the redesigned site</a> using WordPress</li>
 				</ol>
 			</div>
 			<figure class="right">
@@ -42,7 +42,7 @@
 
 			<div>
 				<h3>The Result</h3>
-				<p>The redesigned site was <a class="text-link" href="dev-projects.php#seniors-outdoors">developed</a> using WordPress. Features of the redesigned site include:</p>
+				<p>The redesigned site was <a class="text-link" href="dev-seniors-outdoors.php">developed</a> using WordPress. Features of the redesigned site include:</p>
 				<ul class="triangle-list">
 					<li>A fresher, more modern look</li>
 					<li>Dynamic presentation of upcoming outings</li>
@@ -55,12 +55,12 @@
 
 			<div>
 				<h3>My Role</h3>
-				<p>Solo project: I did all research, design and <a class="text-link" href="dev-projects.php#seniors-outdoors">development</a> work. The <a class="text-link" href="http://seniorsoutdoors.org/" target="_blank">new site</a> was launched in March, 2017.</p>
+				<p>Solo project: I did all research, design and <a class="text-link" href="dev-seniors-outdoors.php">development</a> work. The <a class="text-link" href="http://seniorsoutdoors.org/" target="_blank">new site</a> was launched in March 2017.</p>
 			</div>
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="project-np-site-visits.php">&laquo; site visits</a></p>
-				<p class="navlink-right"><a class="text-link" href="project-appledore-banding.php">appledore &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="ux-np-site-visits.php">&laquo; site visits</a></p>
+				<p class="navlink-right"><a class="text-link" href="ux-appledore-banding.php">appledore &raquo;</a></p>
 			</div>
 		</section>
 
-<?php include("footer.html"); ?>
+<?php include("footer.php"); ?>

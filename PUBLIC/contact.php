@@ -10,4 +10,31 @@
 					</ul>
 			</section>
 
-<?php include("footer.html"); ?>
+<?php include("footer.php"); ?>
+	<script>
+			// function to set the height on fly
+			var body = document.body,
+		    html = document.documentElement;
+
+			var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+			 function autoHeight() {
+			   $('#content').css('min-height', 0);
+			   $('#content').css('min-height', (
+			     height 
+			     - $('#header').outerHeight( true ) 
+			     - $('#footer').outerHeight( true )
+			   ));
+			 }
+
+			 // onDocumentReady function bind
+			 $(document).ready(function() {
+			   autoHeight();
+			 });
+
+			 // onResize bind of the function
+			 $(window).resize(function() {
+			   autoHeight();
+			 });
+		</script>

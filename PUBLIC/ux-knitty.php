@@ -1,8 +1,8 @@
 <?php include("header.php"); ?>
 
-		<section class="project">
+		<section id="content" class="project">
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="project-appledore-banding.php">&laquo; appledore</a></p>
+				<p class="navlink-left"><a class="text-link" href="ux-appledore-banding.php">&laquo; appledore</a></p>
 				<p class="navlink-right"><a class="text-link" href="ux-projects.php">project list &raquo;</a></p>
 			</div>
 			<div class="project-header">
@@ -23,7 +23,7 @@
 
 			<div>
 				<h3>The Problem</h3>
-				<p>The current design of the site de-emphasizes the freshest content &mdash; the patterns in the current issue &mdash; by devoting a disproportionate amount of real estate to static information that is rarely needed by visitors. This lack of balance, in combination with navigation that is confusing and inconsistent, makes it harder than necessary for users to find the content of most interest to them. In addition, the current site offers very limited opportunities for site users to interact with site content or other users.</p>
+				<p>The design of the site de-emphasized the freshest content &mdash; the patterns in the current issue &mdash; by devoting a disproportionate amount of real estate to static information that is rarely needed by visitors. This lack of balance, in combination with confusing and inconsistent navigation, made it harder than necessary for users to find the content of most interest to them. In addition, the site offered very limited opportunities for site users to interact with site content or other users.</p>
 			</div>
 
 			<div>
@@ -46,9 +46,9 @@
 				<p>Solo project: I did all research, design, and development work.</p>
 			</div>
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="project-appledore-banding.php">&laquo; appledore</a></p>
+				<p class="navlink-left"><a class="text-link" href="ux-appledore-banding.php">&laquo; appledore</a></p>
 				<p class="navlink-right"><a class="text-link" href="ux-projects.php">project list &raquo;</a></p>
 			</div>
 		</section>
 
-<?php include("footer.html"); ?>
+<?php include("footer.php"); ?>

@@ -1,9 +1,9 @@
 <?php include("header.php"); ?>
 
-		<section class="project">
+		<section id="content" class="project">
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="project-mobile-app.php">&laquo; mobile app</a></p>
-				<p class="navlink-right"><a class="text-link" href="project-np-site-visits.php">site visits &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="ux-mobile-app.php">&laquo; mobile app</a></p>
+				<p class="navlink-right"><a class="text-link" href="ux-np-site-visits.php">site visits &raquo;</a></p>
 			</div>
 			<div class="project-header">
 				<h2>Constant Contact Email Editor</h2>
@@ -36,8 +36,8 @@
 				<p>In addition, a separate study was conducted to gain insight into how existing users can be successfully transitioned to a substantially modified product.</p> 
 			</div>
 			<figure class="right">
-				<img src="img/projects/galileo_large.jpg" alt="New Email Editor">
-				<figcaption>Redesigned E-mail Editor</figcaption>
+				<img src="img/projects/editor-new.jpg" alt="New Email Editor">
+
 			</figure>
 
 			<div>
@@ -56,9 +56,9 @@
 				</ul>
 			</div>
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="project-mobile-app.php">&laquo; mobile app</a></p>
-				<p class="navlink-right"><a class="text-link" href="project-np-site-visits.php">site visits &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="ux-mobile-app.php">&laquo; mobile app</a></p>
+				<p class="navlink-right"><a class="text-link" href="ux-np-site-visits.php">site visits &raquo;</a></p>
 			</div>
 		</section>
 
-<?php include("footer.html"); ?>
+<?php include("footer.php"); ?>
