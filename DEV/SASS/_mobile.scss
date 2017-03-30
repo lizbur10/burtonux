@@ -359,8 +359,14 @@ list-style: inside url('../img/icons/linkedin_small.png');
 //END CONTACT PAGE
 
 //Media Queries 
+//CONTACT page
+@media screen and (min-width: 400px) {
+  section:first-of-type.contact {
+    margin-left: 10%;
+  }
+}
 
-//Home page only
+//HOME page 
 @media screen and (min-width: 481px) {
   section.home {
     max-width: 500px;

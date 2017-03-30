@@ -38,7 +38,7 @@ include("header.php");
 				<article class="project">
 					<div class="project-header">
 						<h2><a class="text-link" href="ux-seniors-outdoors.php">Seniors Outdoors</a></h2>
-						<h4>Information architecture, prototyping (paper, Axure), user testing (card sort, reverse card sort) <a class="text-link" href="ux-seniors-outdoors.php">...see more</a></h4>
+						<h4>Content inventory, information architecture, prototyping, user testing <a class="text-link" href="ux-seniors-outdoors.php">...see more</a></h4>
 					</div>
 					<a href="ux-seniors-outdoors.php"><img src="img/project_page/so_tile.jpg" alt="Seniors Outdoors redesign"></a>
 				</article>

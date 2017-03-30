@@ -1,104 +1,10 @@
 <?php
 
-//Information about each page for nav and page title
+//Call the function to get page and menu info for the current page
 
-$pages = array(
-	array(
-		"page" => "index.php",
-		"add_to_menu" => true,
-		"menu_label" => "About",
-		"page_title" => "burtonux.com"
-	),
-	array(
-		"page" => "ux-projects.php",
-		"add_to_menu" => true,
-		"menu_label" => "UX Research &amp; Design",
-		"page_title" => "UX projects"
-	),
-	array(
-		"page" => "dev-projects.php",
-		"add_to_menu" => true,
-		"menu_label" => "Web Development",
-		"page_title" => "Web development projects"
-	),
-	array(
-		"page" => "resume.php",
-		"add_to_menu" => true,
-		"menu_label" => "Resum&eacute;", 
-		"page_title" => "Liz Burton resum&eacute;"
-	),
-	array(
-		"page" => "contact.php",
-		"add_to_menu" => true,
-		"menu_label" => "Contact", 
-		"page_title" => "Contact me"
-	),
-	array(
-		"page" => "ux-mobile-app.php",
-		"add_to_menu" => false,
-		"menu_label" => null, 
-		"page_title" => "Mobile app",
-		"sub_of" => "ux-projects.php"
-	),
-	array(
-		"page" => "ux-email-editor.php",
-		"add_to_menu" => false,
-		"menu_label" => null, 
-		"page_title" => "Email editor",
-		"sub_of" => "ux-projects.php"
-	),
-	array(
-		"page" => "ux-np-site-visits.php",
-		"add_to_menu" => false,
-		"menu_label" => null, 
-		"page_title" => "Non-profit site visits",
-		"sub_of" => "ux-projects.php"
-	),
-	array(
-		"page" => "ux-seniors-outdoors.php",
-		"add_to_menu" => false,
-		"menu_label" => null, 
-		"page_title" => "Seniors Outdoors redesign",
-		"sub_of" => "ux-projects.php"
-	),
-	array(
-		"page" => "ux-appledore-banding.php",
-		"add_to_menu" => false,
-		"menu_label" => null, 
-		"page_title" => "appledorebanding.com design",
-		"sub_of" => "ux-projects.php"
-	),
-	array(
-		"page" => "ux-knitty.php",
-		"add_to_menu" => false,
-		"menu_label" => null, 
-		"page_title" => "knitty.com Redesign",
-		"sub_of" => "ux-projects.php"
-	),
-	array(
-		"page" => "dev-burtonux.php",
-		"add_to_menu" => false,
-		"menu_label" => null, 
-		"page_title" => "BurtonUX.com Development",
-		"sub_of" => "dev-projects.php"
-	),
-	array(
-		"page" => "dev-seniors-outdoors.php",
-		"add_to_menu" => false,
-		"menu_label" => null, 
-		"page_title" => "Seniors Outdoors Development",
-		"sub_of" => "dev-projects.php"
-	),
-	array(
-		"page" => "dev-appledore-banding.php",
-		"add_to_menu" => false,
-		"menu_label" => null, 
-		"page_title" => "AppledoreBanding.com Development",
-		"sub_of" => "dev-projects.php"
-	)
-);
-
+require_once("functions.php");
 $current_page = basename($_SERVER['SCRIPT_NAME']);
+$page_info = get_page_info($current_page);
 ?>
 
 <!DOCTYPE html>
@@ -118,12 +24,7 @@ $current_page = basename($_SERVER['SCRIPT_NAME']);
 			});
 
 		</script>
-		<?php for($i = 0; $i < count($pages); $i++) {
-			if ($current_page == $pages[$i]["page"]) {
-				echo "<title>" . $pages[$i]["page_title"] . "</title>";
-			} 
-		}
-		?>
+		<title><?php echo $page_info['page_title']; ?></title>
 		<link rel="icon" type="image/ico" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
 		<link rel="stylesheet" type="text/css" href="CSS/css.css">
@@ -140,21 +41,15 @@ $current_page = basename($_SERVER['SCRIPT_NAME']);
 				<nav class="main-menu">
 	 				<ul>
  	 				<?php 
- 	 					$hook = null;
-						for($i = 0; $i < count($pages); $i++) {
-							if (($current_page == $pages[$i]["page"]) && ($pages[$i]["sub_of"]) ) {
-								$hook = $pages[$i]["sub_of"];
-							}
-						}
-						for($i = 0; $i < count($pages); $i++) {
-		 					if ($pages[$i]["add_to_menu"]) {
-								echo "<li";
-								if ( ($current_page == $pages[$i]["page"]) || ($pages[$i]["page"] == $hook) ) {
-									echo " class=\"selected\"";
-								}
-								echo "><a href=\"" . $pages[$i]["page"] . "\">" . $pages[$i]["menu_label"] . "</a></li>";
-							}
-						}
+ 	 					for ($i = 0; $i < $page_info['count']; $i++) {
+ 	 						echo "<li" . 
+ 	 						$page_info['class'][$i] .
+ 	 						"><a href=\"" .
+ 	 						$page_info['menu_links'][$i] .
+ 	 						"\">" .
+ 	 						$page_info['menu_labels'][$i] .
+ 	 						"</a></li>";
+ 	 					}
 					?>
  					</ul>
 				</nav>

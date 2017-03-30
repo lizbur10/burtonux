@@ -2,8 +2,8 @@
 
 		<section id="content" class="project">
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="ux-projects.php">&laquo; project list</a></p>
-				<p class="navlink-right"><a class="text-link" href="ux-email-editor.php">email editor &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
+				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
 			<div class="project-header">
 				<h2>Constant Contact Mobile App</h2>
@@ -53,8 +53,8 @@
 				</ul>
 			</div>
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="ux-projects.php">&laquo; project list</a></p>
-				<p class="navlink-right"><a class="text-link" href="ux-email-editor.php">email editor &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
+				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
 		</section>
 

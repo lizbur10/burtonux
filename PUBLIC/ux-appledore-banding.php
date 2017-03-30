@@ -2,8 +2,8 @@
 
 		<section id="content" class="project">
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="ux-seniors-outdoors.php">&laquo; seniors outdoors</a></p>
-				<p class="navlink-right"><a class="text-link" href="ux-knitty.php">knitty &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
+				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
 			<div class="project-header">
 				<h2>AppledoreBanding.org</h2>
@@ -44,8 +44,8 @@
 				<p>Solo project: I did all design and <a class="text-link" href="dev-appledore-banding.php">development</a> work.</p>
 			</div>
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="ux-seniors-outdoors.php">&laquo; seniors outdoors</a></p>
-				<p class="navlink-right"><a class="text-link" href="ux-knitty.php">knitty &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
+				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
 		</section>
 

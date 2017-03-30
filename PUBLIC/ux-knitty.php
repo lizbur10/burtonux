@@ -2,8 +2,8 @@
 
 		<section id="content" class="project">
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="ux-appledore-banding.php">&laquo; appledore</a></p>
-				<p class="navlink-right"><a class="text-link" href="ux-projects.php">project list &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
+				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
 			<div class="project-header">
 				<h2>Knitty.com</h2>
@@ -46,8 +46,8 @@
 				<p>Solo project: I did all research, design, and development work.</p>
 			</div>
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="ux-appledore-banding.php">&laquo; appledore</a></p>
-				<p class="navlink-right"><a class="text-link" href="ux-projects.php">project list &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
+				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
 		</section>
 

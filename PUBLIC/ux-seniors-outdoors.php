@@ -2,12 +2,12 @@
 
 		<section id="content" class="project">
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="ux-np-site-visits.php">&laquo; site visits</a></p>
-				<p class="navlink-right"><a class="text-link" href="ux-appledore-banding.php">appledore &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
+				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
 			<div class="project-header">
 				<h2>Seniors Outdoors Redesign</h2>
-				<h4>Information architecture, prototyping (paper, Axure), user testing (card sort, reverse card sort)</h4>
+				<h4>Content inventory, information architecture, prototyping (paper, Axure), user testing (card sort, reverse card sort)</h4>
 			</div>
 			<figure class="right">
 				<a href="http://old.seniorsoutdoors.org/" target="_blank"><img src="img/projects/SO_old.jpg" alt="Current Seniors Outdoors site"></a>
@@ -58,8 +58,8 @@
 				<p>Solo project: I did all research, design and <a class="text-link" href="dev-seniors-outdoors.php">development</a> work. The <a class="text-link" href="http://seniorsoutdoors.org/" target="_blank">new site</a> was launched in March 2017.</p>
 			</div>
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="ux-np-site-visits.php">&laquo; site visits</a></p>
-				<p class="navlink-right"><a class="text-link" href="ux-appledore-banding.php">appledore &raquo;</a></p>
+				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
+				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
 		</section>
 
