@@ -1,17 +1,17 @@
 <?php include("header.php"); ?>
 
 		<section id="content" class="project">
-			<div class="navlinks">
+<!-- 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
-			<div class="project-header">
-				<h2>Constant Contact Mobile App</h2>
+ -->			<div class="project-header">
+				<h2>Constant Contact Mobile App | UX Research, UX Design</h2>
 				<h4>Discovery research, brainstorming methods, focus groups, wants and needs analysis, user testing, mobile design</h4>
 			</div>
-			<figure class="right">
-				<img src="img/projects/mobileApp_contacts.jpg" alt="Constant Contact mobile app">
-				<figcaption>New Mobile Contacts Functionality</figcaption>
+			<figure>
+				<img src="img/projects/mobileEditor.jpg" alt="mobile editor">
+				<figcaption>New Mobile Email Editor</figcaption>
 			</figure>
 
 			<div>
@@ -33,15 +33,15 @@
 					<li>Multiple iterations of design enhancements and usability testing.</li>
 				</ol>
 			</div>
-			<figure class="right">
-				<img src="img/projects/mobileEditor.jpg" alt="mobile editor">
-				<figcaption>New Mobile Email Editor</figcaption>
-			</figure>
 
 			<div>
 				<h3>The Result</h3>
 				<p>The discovery research helped determine priorities for additions and improvements to the mobile app. Enhancements included adding functionality to enable users to easily add and edit contacts and easily create and send simple emails from a mobile device.</p>
 			</div>
+			<figure>
+				<img src="img/projects/mobileApp_contacts.jpg" alt="Constant Contact mobile app">
+				<figcaption>New Mobile Contacts Functionality</figcaption>
+			</figure>
 
 			<div>
 				<h3>My Role</h3>
@@ -54,8 +54,8 @@
 			</div>
 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
-				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
-			</div>
+<!-- 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
+ -->			</div>
 		</section>
 
 <?php include("footer.php"); ?>

@@ -1,11 +1,11 @@
 <?php include("header.php"); ?>
 
 		<section id="content" class="project">
-			<div class="navlinks">
+<!-- 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
-			<div class="project-header">
+ -->			<div class="project-header">
 				<h2>Seniors Outdoors Redesign</h2>
 				<h4>Content inventory, information architecture, prototyping (paper, Axure), user testing (card sort, reverse card sort)</h4>
 			</div>
@@ -59,8 +59,8 @@
 			</div>
 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
-				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
-			</div>
+<!-- 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
+ -->			</div>
 		</section>
 
 <?php include("footer.php"); ?>

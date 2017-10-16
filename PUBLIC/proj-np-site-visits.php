@@ -2,17 +2,14 @@
 
 
 		<section id="content" class="project">
-			<div class="navlinks">
+<!-- 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
-			<div class="project-header">
-				<h2>Non-profit Site Visits</h2>
+ -->			<div class="project-header">
+				<h2>Non-profit Site Visits | UX Research</h2>
 				<h4>Contextual inquiry, wants and needs analysis, user segmentation</h4>
 			</div>
-			<figure class="right">
-				<img src="img/projects/NPSiteVisits.jpg" alt="Non-profit site visits">
-			</figure>
 			<div>
 				<h3>The Project</h3>
 				<p>Site visits to a number of non-profit customer organizations to obtain a better understanding of this segment of Constant Contact's user base.</p>
@@ -27,6 +24,10 @@
 				<h3>The Approach</h3>
 				<p>A major challenge was to obtain authentic, in-context information from the participating organizations. Because the cadence of most customers' work with the product is intermittent, purely observational techniques were not feasible. Therefore, a hybrid approach was used that included both an interview and a predetermined observational opportunity. The interviews provided consistent information across all participating organizations. For the observational portion, we asked participants to be sure to have a real email campaign that they could work on while we were there so we could observe their process.</p>
 			</div>
+			<figure>
+				<img src="img/projects/NPSiteVisits.jpg" alt="Non-profit site visits">
+				<figcaption class="small">Note: All categories and data are fabricated for confidentiality reasons.</figcaption>
+			</figure>
 
 			<div>
 				<h3>The Result</h3>
@@ -49,8 +50,8 @@
 			</div>
 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
-				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
-			</div>
+<!-- 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
+ -->			</div>
 		</section>
 
 <?php include("footer.php"); ?>

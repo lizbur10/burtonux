@@ -3,11 +3,11 @@ include("header.php");
 ?>
 
 		<section id="content" class="project">
-			<div class="navlinks">
+<!-- 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
-
+ -->
 			<div class="project-header">
 				<h2>Freelance Project: Seniors Outdoors!</h2>
 				<h4>Wordpress theming, PHP, HTML/CSS, responsive design, Javascript/jQuery</h4>
@@ -39,14 +39,14 @@ include("header.php");
 					<li>Using a commercial import plugin (<a target="_blank" class="text-link" href="http://www.wpallimport.com/">WP All Import</a>), I created a template that enables the club's webmaster to upload the events using an Excel spreadsheet.</li>
 				</ul>
 				<p>Because the site is newly-launched, I am currently actively involved in troubleshooting and addressing requests from the membership. I will also be working on a system to create an archive of the club's outings at the end of each season.</p>
-				<p><a class="text-link" href="ux-seniors-outdoors.php">Details of research phase</a></p>
+				<p><a class="text-link" href="ux-seniors-outdoors.php">Details of research &amp; design phase</a></p>
 				<p><a class="text-link" href="http://seniorsoutdoors.org" target="_blank">Live site</a></p>
 				<p><a class="text-link" href="https://github.com/lizbur10/SO_NextGen" target="_blank">Github repo</a></p>
 			</div>
 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
-				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
-			</div>
+<!-- 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
+ -->			</div>
 		</section>
 
 <?php include("footer.php"); ?>

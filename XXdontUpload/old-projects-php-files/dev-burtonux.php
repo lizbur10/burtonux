@@ -3,11 +3,11 @@ include("header.php");
 ?>
 
 		<section id="content" class="project">
-			<div class="navlinks">
+<!-- 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
-
+ -->
 			<div class="project-header">
 				<h2>Class/Personal Project: BurtonUX.com</h2>
 				<h4>HTML/CSS, SASS, responsive design, mobile first, PHP, Javascript/jQuery</h4>
@@ -38,8 +38,8 @@ include("header.php");
 
 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
-				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
-			</div>
+<!-- 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
+ -->			</div>
 		</section>
 
 <?php include("footer.php"); ?>

@@ -1,15 +1,18 @@
 // variables.scss
 
 //Typeface
-$fontstack-text: 'PT Sans', sans-serif;
+/* $fontstack-text: 'PT Sans', sans-serif;
 $fontstack-headers: 'PT Serif', serif;
+ */
 
+$fontstack-text: 'Slabo 27px', serif;
+$fontstack-headers: 'Oswald', sans-serif;
 
 //Colors
-$color-black: #333;
+$color-black: #666;
 $color-dark-blue: #2F4550;
 $color-medium-blue: #586F7C;
 $color-light-green: #9DA59D;
-$color-beige: #E4E5CE;
+$color-beige: #e9edef;  //this is no longer beige -- change to gray throughout
 $color-off-white: #F4F4F9;
 $color-purple: #820263;

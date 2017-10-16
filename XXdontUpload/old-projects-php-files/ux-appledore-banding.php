@@ -1,11 +1,11 @@
 <?php include("header.php"); ?>
 
 		<section id="content" class="project">
-			<div class="navlinks">
+<!-- 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
-			<div class="project-header">
+ -->			<div class="project-header">
 				<h2>AppledoreBanding.org</h2>
 				<h4>Requirements gathering, information architecture, style tiles</h4>
 			</div>
@@ -32,7 +32,7 @@
 				<h3>The Result</h3>
 				<p>The features of the new website include:</p>
 				<ul class="triangle-list">
-					<li>engaging content to attract and retain site visitors, including images and daily updates of banding activity during banding seasons</li>
+					<li>engaging content to attract and retain site visitors, including images and updates of banding activity during banding seasons</li>
 					<li>general information about the station and the research being conducted</li>
 					<li>scheduling and logistical information for station volunteers</li>
 					<li>the use of Wordpress as a CMS to make it easy to add and update content</li>

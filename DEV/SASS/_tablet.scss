@@ -1,3 +1,12 @@
+@media screen and (min-width: 600px) {
+  section.home {
+    font-size: 1em;
+  }
+  .tag-line {
+  	font-size: 0.75em;
+  }
+}
+
 @media screen and (min-width: 641px) {
 
 
@@ -15,12 +24,13 @@
 
 	.left {
 		float: left;
-		padding-right: 2%;
+		padding-right: 5%;
 	}
 
 	.right {
 		float: right;
 		padding-left: 2%;
+		margin-top: 1.5em;
 	}
 
 	.center {
@@ -34,6 +44,7 @@
 		margin-top: 0;
 	}
 
+
 	nav  {
 		text-align: center;
 		&.hamburger-menu {
@@ -42,7 +53,7 @@
 		&.main-menu {
 			display: initial;
 		}
-		font-size: .9em;
+		font-size: .8em;
 		li.project-menu-item .sub-nav {
 			top: 1.95em;
 		}
@@ -57,12 +68,10 @@
 			background-color: white;
 			li {
 				display: inline-block;
-				line-height: 2;
+				line-height: 1.5;
 				font-weight: bold;
-				padding: 0 0.8em;
-				&.selected {
-					border-bottom: 2px solid $color-dark-blue;
-				}
+				margin: 0 0.6em;
+				padding: 0;
 				a {
 					color: $color-dark-blue;
 				}
@@ -70,6 +79,33 @@
 		}
 	}
 
+	body {
+		font-size: 16pt;
+	}
+
+	.project-container {
+		display: flex;
+		align-items: center;
+		padding-bottom: 0;
+		img {
+			margin: 1em;
+			float: left;
+		}
+		.project-description {
+			text-align: initial;
+			margin-right: 1em;
+			h2 {
+				font-size: 1.3em;
+			}
+		}
+	}
+
+	.project {
+		font-size: 0.9em;
+		h4 {
+			font-size: 1em;
+		}
+	}
 
 	footer {
 		@include clearfix();

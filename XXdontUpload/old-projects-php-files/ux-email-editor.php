@@ -1,11 +1,11 @@
 <?php include("header.php"); ?>
 
 		<section id="content" class="project">
-			<div class="navlinks">
+<!-- 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
-			<div class="project-header">
+ -->			<div class="project-header">
 				<h2>Constant Contact Email Editor</h2>
 				<h4>Competitive analysis, meta-analysis, moderated and unmoderated user testing, interaction design</h4>
 			</div>

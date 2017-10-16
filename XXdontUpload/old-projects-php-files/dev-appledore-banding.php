@@ -3,11 +3,11 @@ include("header.php");
 ?>
 
 		<section id="content" class="project">
-			<div class="navlinks">
+<!-- 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
-
+ -->
 			<div class="project-header">
 				<h2>Freelance Project: AppledoreBanding.org</h2>
 				<h4>Wordpress theming, PHP, HTML/CSS, SASS, responsive design, mobile first, Javascript/jQuery</h4>
@@ -39,16 +39,21 @@ include("header.php");
 					<li>The image slider was programmed using PHP to access the photo gallery custom field and populate the images, and using JQuery to run the animation.</li>
 					<li>The Season Banding Summary page, which is created dynamically, was programmed using PHP.</li>
 				</ul>
-				<p>I am currently (Spring 2017) working on an overhaul of the site in preparation for the upcoming banding season. I am also working on a web application to centralize and streamline data entry for the station.</p>
-				<p><a class="text-link" href="ux-appledore-banding.php">Details of research phase</a>
+				<p>Planned improvements and additions:</p>
+				<ul class="triangle-list">
+					<li>Address performance issues (slow loading)</li>
+					<li>Create archives of daily reports and banding summaries from previous seasons</li>
+					<li>Develop a web application to centralize and streamline data entry for the station</li>
+				</ul>
+				<p><a class="text-link" href="ux-appledore-banding.php">Details of research &amp; design phase</a>
 				<p><a class="text-link" href="http://appledorebanding.org/" target="_blank">Live site</a></p>
 				<p><a class="text-link" href="https://github.com/lizbur10/appledorebanding" target="_blank">Github repo</a></p>
 			</div>
 
 			<div class="navlinks">
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
-				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
-			</div>
+<!-- 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
+ -->			</div>
 		</section>
 
 <?php include("footer.php"); ?>
