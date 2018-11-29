@@ -1,0 +1,64 @@
+.projects .text-link {
+	text-decoration: none;
+}
+
+.right {
+	float: right;
+	padding-top: 0;
+	padding-right: 5%;
+}
+
+.project {
+	margin-top: 3em;
+/* 	img {
+		padding: 1em;
+	}
+ */
+	h4 {
+		display: inline;
+		margin: 0 0 .5em 0;
+		font-family: $fontstack-text;
+		font-size: 1.1em;
+		font-weight: normal;
+
+	}
+
+	h4:after {
+		content: ": ";
+	}
+
+	figcaption {
+		text-align: center;
+		font-style: italic;
+	}
+
+	.project-header {
+		max-width: 400px;
+		position: relative;
+		h2 {
+			border-bottom: 1px solid $color-dark-blue;
+			padding-bottom: 0.4em;
+			margin: 0;
+		}
+
+		h3 {
+			margin: 0;
+		}
+
+		h4 {
+			display: block;
+			margin-top: 0.5em;
+			&:after {
+				content: " ";
+			}
+		}
+		img {
+			margin-top: 2em;
+		}
+	}
+
+}
+
+footer {
+	@include clearfix();
+}
