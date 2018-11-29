@@ -87,7 +87,7 @@ div.navlinks {
 }
 
 .menu-hover-state {
-  background-color: $color-beige;
+  background-color: $color-gray;
 
    a {
     color: $color-purple;
@@ -136,7 +136,7 @@ ul {
 }
 
 .button {
-  background-color: $color-beige;
+  background-color: $color-gray;
   border: 1px solid $color-light-green;
   border-radius: 4px;
   margin-bottom: 2em;
@@ -176,10 +176,16 @@ section:first-of-type {
 
 }
 
+section.home {
+  display: block;
+  margin: 2em auto;
+}
+
 .project-container {
+  display: block;
   text-align: center;
   margin: 2em auto;
-  background-color: $color-beige;
+  background-color: $color-gray;
   max-width: 95%;
   overflow: auto;
   border: 1px solid #e5e9ea;
@@ -196,7 +202,7 @@ section:first-of-type {
     height: 200px;
   }
   .project-description {
-    display: inline-block;
+    display: block;
     text-align: center;
     h2 {
       margin: 0;
@@ -237,7 +243,7 @@ ul.triangle-list {
   }
 
 footer {      /* Footer height: 60px  */
-//  background-color: $color-beige;
+//  background-color: $color-gray;
   width: 100%;
   font-size: 0.9em;
   padding: 0.5em 5%;
@@ -420,11 +426,6 @@ list-style: inside url('../img/icons/linkedin_small.png');
 
 //Media Queries 
 //CONTACT page
-@media screen and (min-width: 400px) {
-  section:first-of-type.contact {
-    margin-left: 10%;
-  }
-}
 
 //HOME page 
 @media screen and (min-width: 481px) {

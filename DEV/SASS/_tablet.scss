@@ -1,13 +1,6 @@
-@media screen and (min-width: 600px) {
-  section.home {
-    font-size: 1em;
-  }
-  .tag-line {
-  	font-size: 0.75em;
-  }
-}
 
-@media screen and (min-width: 641px) {
+
+@media screen and (min-width: 600px) {
 
 
 	.one-half {
@@ -166,7 +159,7 @@
 	aside {
 		margin-top: 50px;
 		font-size: 0.9em;
-		background-color: $color-beige;
+		background-color: $color-gray;
 	}
 
 	.right {
@@ -177,7 +170,4 @@
 //END RESUME PAGE
 
 
-@media screen and (min-width: 800px) {
-	
-}
 }

@@ -134,7 +134,12 @@ section:first-of-type {
   display: table;
   clear: both; }
 
+section.home {
+  display: block;
+  margin: 2em auto; }
+
 .project-container {
+  display: block;
   text-align: center;
   margin: 2em auto;
   background-color: #e9edef;
@@ -151,7 +156,7 @@ section:first-of-type {
     width: 200px;
     height: 200px; }
   .project-container .project-description {
-    display: inline-block;
+    display: block;
     text-align: center; }
     .project-container .project-description h2 {
       margin: 0;
@@ -308,20 +313,11 @@ li#linkedin {
     position: relative;
     top: -2px; }
 
-@media screen and (min-width: 400px) {
-  section:first-of-type.contact {
-    margin-left: 10%; } }
 @media screen and (min-width: 481px) {
   section.home {
     font-size: 1.1em;
     margin: 1.5em auto; } }
 @media screen and (min-width: 600px) {
-  section.home {
-    font-size: 1em; }
-
-  .tag-line {
-    font-size: 0.75em; } }
-@media screen and (min-width: 641px) {
   .one-half {
     width: 50%; }
 
@@ -452,6 +448,9 @@ li#linkedin {
     padding-left: 3%;
     padding-right: 3%; } }
 @media screen and (min-width: 801px) {
+  body {
+    max-width: 1200px; }
+
   header {
     padding-top: 3em; }
     header .logo-wrapper, header .tag-line {
@@ -495,6 +494,9 @@ li#linkedin {
         padding: 0; }
       header nav li.project-menu-item .sub-nav {
         top: 3em; }
+
+  #content {
+    max-width: 960px; }
 
   .project-container img {
     height: 250px;
