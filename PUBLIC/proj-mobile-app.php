@@ -46,10 +46,10 @@
 			<div>
 				<h3>My Role</h3>
 				<ul class="triangle-list">
-					<li>Work in collaboration with staff to conduct research and iterate on the design of the app.</li>
-					<li>Plan, conduct, and report out on research.</li>
-					<li>Provide design recommendations to product owners and design team members.</li>
-					<li>Provide recommendations for additional research.</li>
+					<li>Worked in collaboration with staff to conduct research and iterate on the design of the app.</li>
+					<li>Planned, conducted, and reported out on research.</li>
+					<li>Provided design recommendations to product owners and design team members.</li>
+					<li>Provided recommendations for additional research.</li>
 				</ul>
 			</div>
 			<div class="navlinks">

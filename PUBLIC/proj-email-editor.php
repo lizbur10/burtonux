@@ -49,11 +49,11 @@
 			<div>
 				<h3>My Role</h3>
 				<ul class="triangle-list">
-					<li>Work in collaboration with design team members and other researchers to conduct studies and iterate on the design of the editor.</li>
-					<li>Plan, conduct, and report out on research.</li>
-					<li>Provide design recommendations to product owners and design team members.</li>
-					<li>Promote institutional memory of research results and advocate for design decisions that reflect ongoing findings.</li>
-					<li>Provide recommendations for additional research.</li>
+					<li>Worked in collaboration with design team members and other researchers to conduct studies and iterate on the design of the editor.</li>
+					<li>Planned, conducted, and reported out on research.</li>
+					<li>Provided design recommendations to product owners and design team members.</li>
+					<li>Promoted institutional memory of research results and advocate for design decisions that reflect ongoing findings.</li>
+					<li>Provided recommendations for additional research.</li>
 				</ul>
 			</div>
 			<div class="navlinks">
