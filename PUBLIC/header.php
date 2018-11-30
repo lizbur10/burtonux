@@ -21,7 +21,7 @@ $page_info = get_page_info($current_page);
 		<link rel="icon" type="image/ico" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
 		<link rel="stylesheet" type="text/css" href="CSS/css.css">
-		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+		<!-- <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'> -->
 		<link href="https://fonts.googleapis.com/css?family=Oswald|Slabo+27px" rel="stylesheet">
 	</head>
 
@@ -35,7 +35,7 @@ $page_info = get_page_info($current_page);
 					<a href="index.php"><img class="logo" src="img/logos/logo_purple.png" onmouseover="this.src='img/logos/logo_blue.png';" onmouseout="this.src='img/logos/logo_purple.png';" alt="liz burton's logo"></a>
 				</div>
 
-				<p class="tag-line">Liz Burton is a UX professional and Web developer based in Boston.</p>
+				<p class="tag-line">Liz Burton is an aspiring full stack Web developer based in Boston.</p>
 				<nav class="main-menu">
 	 				<ul>
  	 				<?php 

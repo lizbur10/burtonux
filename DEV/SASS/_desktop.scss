@@ -67,9 +67,16 @@
 		max-width: 960px;
 	}
 
-	.project-container img {
-		height: 250px;
-		width: 250px;
+	#content.project {
+		max-width: 800px;
+	}
+
+	.project-container {
+		max-width: 80%;
+		img {
+			height: 225px;
+			width: 225px;
+		}
 	}
 
 	section:first-of-type {

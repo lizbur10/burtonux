@@ -31,7 +31,7 @@ body {
   margin: 0 auto;
   background-color: white;
   font-family: "Slabo 27px", serif;
-  color: #666;
+  color: #444;
   font-size: 12pt; }
 
 header {
@@ -79,19 +79,19 @@ h1, h2, h3, h4 {
   font-family: "Oswald", sans-serif; }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: #586F7C; }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: #586F7C; }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: #2F4550; }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.1em;
   color: #2F4550; }
 
 img.add-border {
@@ -100,6 +100,13 @@ img.add-border {
 ul {
   list-style-type: none;
   padding-left: 0; }
+
+.skillset ul li, .tools ul li {
+  display: inline; }
+  .skillset ul li:after, .tools ul li:after {
+    content: " \00b7"; }
+  .skillset ul li:last-child:after, .tools ul li:last-child:after {
+    content: none; }
 
 .button {
   background-color: #e9edef;
@@ -183,7 +190,7 @@ ul.triangle-list {
      */ }
 
 a {
-  color: #666; }
+  color: #444; }
 
 .fa-external-link {
   font-size: .8em;
@@ -372,7 +379,7 @@ li#linkedin {
           color: #2F4550; }
 
   body {
-    font-size: 16pt; }
+    font-size: 14pt; }
 
   .project-container {
     display: flex;
@@ -383,7 +390,8 @@ li#linkedin {
       float: left; }
     .project-container .project-description {
       text-align: initial;
-      margin-right: 1em; }
+      margin-right: 1em;
+      padding-left: .5em; }
       .project-container .project-description h2 {
         font-size: 1.3em; }
 
@@ -460,7 +468,7 @@ li#linkedin {
       font-size: 0.9em;
       margin-top: 66px;
       margin-left: 20px;
-      color: #666; }
+      color: #444; }
     header .logo {
       /* 			box-shadow: 3px 5px 5px $color-light-green;
       			background-color: $color-off-white;
@@ -498,9 +506,14 @@ li#linkedin {
   #content {
     max-width: 960px; }
 
-  .project-container img {
-    height: 250px;
-    width: 250px; }
+  #content.project {
+    max-width: 800px; }
+
+  .project-container {
+    max-width: 80%; }
+    .project-container img {
+      height: 225px;
+      width: 225px; }
 
   section:first-of-type {
     width: 90%;

@@ -103,22 +103,22 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: $color-medium-blue;
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: $color-medium-blue;
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: $color-dark-blue;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.1em;
   color: $color-dark-blue;
 }
 
@@ -133,6 +133,16 @@ img {
 ul {
   list-style-type: none;
   padding-left: 0;
+}
+
+.skillset ul li, .tools ul li {
+  display: inline;
+  &:after {
+    content: " \00b7"; 
+  }
+  &:last-child:after {
+    content: none; 
+  }
 }
 
 .button {
