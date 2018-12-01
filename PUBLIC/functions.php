@@ -3,6 +3,12 @@
 function get_page_info($current_page) {
 	$pages = array(
 		array(
+			"page" => "about.php",
+			"add_to_menu" => true,
+			"menu_label" => "About", 
+			"page_title" => "About Me"
+		),
+		array(
 			"page" => "index.php",
 			"add_to_menu" => true,
 			"menu_label" => "Portfolio",
@@ -13,12 +19,6 @@ function get_page_info($current_page) {
 			"add_to_menu" => true,
 			"menu_label" => "Resum&eacute;", 
 			"page_title" => "Resum&eacute; of Liz Burton"
-		),
-		array(
-			"page" => "contact.php",
-			"add_to_menu" => true,
-			"menu_label" => "Contact", 
-			"page_title" => "Contact info"
 		),
 		array(
 			"page" => "proj-seniors-outdoors.php",
