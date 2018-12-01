@@ -5,7 +5,7 @@
 	}
 
 	header {
-		padding-top: 3em;
+		padding-top: 1em;
 
 		.logo-wrapper, .tag-line {
 			display: block;
@@ -14,7 +14,7 @@
 
 		.tag-line {
 			font-size: 0.9em;
-			margin-top: 66px;
+			margin-top: 58px;
 		    margin-left: 20px;
 		    color: $color-black;
 		}
@@ -69,6 +69,11 @@
 
 	#content.project {
 		max-width: 800px;
+	}
+
+	.contact {
+		max-width: 960px;
+		margin: 2em auto;
 	}
 
 	.project-container {

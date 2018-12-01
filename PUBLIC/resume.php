@@ -110,7 +110,7 @@ include("header.php");
 						<li>Text editors (Sublime Text, Visual Studio Code)</li>
 						<li>Github</li>
 						<li>Rake</li>
-						<li>SQLite
+						<li>SQLite</li>
 						<li>MAMP</li>
 						<li>GULP</li>
 						<li>FTP client</li>

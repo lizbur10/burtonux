@@ -128,8 +128,6 @@ img {
   }
 }
 
-
-
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -350,6 +348,19 @@ article.project {
 }
 
 //END PROJECTS PAGE
+
+
+//ABOUT PAGE
+
+.about-me {
+  img {
+    height: 300px;
+    width: 225px;
+  }
+}
+
+
+//END ABOUT PAGE
 
 //RESUME PAGE
 

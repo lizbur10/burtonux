@@ -268,6 +268,10 @@ article.project {
       .project .project-header h4:after {
         content: " "; }
 
+.about-me img {
+  height: 300px;
+  width: 225px; }
+
 .resume {
   content: "";
   display: table;
@@ -460,13 +464,13 @@ li#linkedin {
     max-width: 1200px; }
 
   header {
-    padding-top: 3em; }
+    padding-top: 1em; }
     header .logo-wrapper, header .tag-line {
       display: block;
       float: left; }
     header .tag-line {
       font-size: 0.9em;
-      margin-top: 66px;
+      margin-top: 58px;
       margin-left: 20px;
       color: #444; }
     header .logo {
@@ -508,6 +512,10 @@ li#linkedin {
 
   #content.project {
     max-width: 800px; }
+
+  .contact {
+    max-width: 960px;
+    margin: 2em auto; }
 
   .project-container {
     max-width: 80%; }
