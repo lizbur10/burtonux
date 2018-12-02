@@ -6,8 +6,7 @@ include("header.php");
 		<div id="9me" class="project-container">
 			<img src="img/projects/9MELogo_transp_small.png" alt="9 Miles East Logo">
 			<div class="project-description">
-				<h2>9 Miles East Scheduling App</h2>
-				<h4 style="margin-top: 0px; font-style: italic;">- Project under development -</h4>
+				<h2>9 Miles East Scheduling App<br /><span>- Project under development -</span></h2>
 				<p>Full Stack Web Development</p>
 				<a class="text-link" href="proj-9me.php">Read More</a>
 			</div>
@@ -15,8 +14,7 @@ include("header.php");
 		<div id="appledore-data-entry" class="project-container">
 			<img src="img/projects/aimslogo.png" alt="Appledore Logo">
 			<div class="project-description">
-				<h2>Appledore Banding Data Entry App</h2>
-				<h4 style="margin-top: 0px; font-style: italic;">- Project under development -</h4>
+				<h2>Appledore Banding Data Entry App<br /><span>- Project under development -</span></h2>
 				<p>Full Stack Web Development</p>
 				<a class="text-link" href="proj-appledore-data-entry.php">Read More</a>
 			</div>

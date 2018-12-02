@@ -21,6 +21,17 @@ function get_page_info($current_page) {
 			"page_title" => "Resum&eacute; of Liz Burton"
 		),
 		array(
+			"page" => "proj-9me.php",
+			"add_to_menu" => false,
+			"menu_label" => null, 
+			"page_title" => "9 Miles East Scheduling App",
+			"sub_of" => "index.php",
+			"prev_link" => "index.php",
+			"prev_link_label" => "back to portfolio",
+			"next_link" => "ux-appledore-banding.php",
+			"next_link_label" => "appledore"
+		),
+		array(
 			"page" => "proj-seniors-outdoors.php",
 			"add_to_menu" => false,
 			"menu_label" => null, 

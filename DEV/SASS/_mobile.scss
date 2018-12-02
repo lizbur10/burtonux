@@ -117,11 +117,6 @@ h3 {
   color: $color-dark-blue;
 }
 
-h4 {
-  font-size: 1.1em;
-  color: $color-dark-blue;
-}
-
 img {
   &.add-border {  //this is for images where I neglected to add the border in Photoshop - will eventually transition all to this
     border: 1px solid #bbb;
@@ -216,7 +211,12 @@ section.home {
       margin: 0;
       font-size: 1.8em;
       text-transform: uppercase;
-
+      span {
+        font-size: .8em;
+        color: $color-dark-blue;
+        font-style: italic;
+        text-transform: none;
+      }
     }
   }
 }
@@ -329,6 +329,12 @@ article.project {
       padding-bottom: 0.4em;
       margin: 0;
       text-align: center;
+      span {
+        font-size: .9em;
+        color: $color-dark-blue;
+        font-style: italic;
+        text-transform: none;
+      }
     }
 
     h3 {

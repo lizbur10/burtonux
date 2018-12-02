@@ -90,10 +90,6 @@ h3 {
   font-size: 1.3em;
   color: #2F4550; }
 
-h4 {
-  font-size: 1.1em;
-  color: #2F4550; }
-
 img.add-border {
   border: 1px solid #bbb; }
 
@@ -169,6 +165,11 @@ section.home {
       margin: 0;
       font-size: 1.8em;
       text-transform: uppercase; }
+      .project-container .project-description h2 span {
+        font-size: .8em;
+        color: #2F4550;
+        font-style: italic;
+        text-transform: none; }
 
 ul.triangle-list {
   margin-left: 1em;
@@ -259,6 +260,11 @@ article.project {
       padding-bottom: 0.4em;
       margin: 0;
       text-align: center; }
+      .project .project-header h2 span {
+        font-size: .9em;
+        color: #2F4550;
+        font-style: italic;
+        text-transform: none; }
     .project .project-header h3 {
       margin: 0; }
     .project .project-header h4 {
