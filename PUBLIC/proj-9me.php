@@ -10,7 +10,7 @@
 				<h4>React/Redux, Ruby on Rails API, Single-page Application, RESTful Routing</h4>
 				<div class="project-links">
 					<p>
-						<a class="text-link" href="https://vimeo.com/300593311" target="_blank">Video Demo</a>
+						<a class="text-link" href="https://vimeo.com/300593311" target="_blank">Demo Video</a>
 						<a class="text-link" href="https://github.com/lizbur10/nme-account-manager" target="_blank">Github repo</a>
 					</p>
 				</div>
@@ -21,7 +21,7 @@
 
 			<div>
 				<h3>The Project</h3>
-				<p>As the final project for the Flatiron School Full Stack Web Developer program, I started working on a scheduling application for 9 Miles East, a local family-owned farm that provides prepared meals to companies and individuals.</p>
+				<p>As the final project for the Flatiron School Full Stack Web Developer program, I started working on a scheduling application for <a href="https://www.9mileseast.com/" target="_blank">9 Miles East</a>, a local family-owned farm that provides prepared meals to companies and individuals.</p>
 			</div>
 <!-- 			<img class="right" src="../img/projects/SO-prototype.jpg" alt="Seniors Outdoors prototypes">
  -->

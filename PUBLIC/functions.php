@@ -28,8 +28,19 @@ function get_page_info($current_page) {
 			"sub_of" => "index.php",
 			"prev_link" => "index.php",
 			"prev_link_label" => "back to portfolio",
-			"next_link" => "ux-appledore-banding.php",
-			"next_link_label" => "appledore"
+			"next_link" => "",
+			"next_link_label" => ""
+		),
+		array(
+			"page" => "proj-appledore-data-entry.php",
+			"add_to_menu" => false,
+			"menu_label" => null, 
+			"page_title" => "Appledore Data Entry App",
+			"sub_of" => "index.php",
+			"prev_link" => "index.php",
+			"prev_link_label" => "back to portfolio",
+			"next_link" => "",
+			"next_link_label" => ""
 		),
 		array(
 			"page" => "proj-seniors-outdoors.php",
