@@ -1,9 +1,15 @@
 <?php include("header.php"); ?>
 
 		<section id="content" class="project">
-			<div class="project-header">
+			<div class="project-header with-links">
 				<h2>AppledoreBanding.org | Research, Design, Development</h2>
 				<h4>Requirements gathering, information architecture, Wordpress theming, PHP, HTML/CSS, SASS, responsive design, mobile first, Javascript/jQuery</h4>
+				<div class="project-links">
+					<p>
+						<a class="text-link" href="http://appledorebanding.org" target="_blank">Live site</a>
+						<a class="text-link" href="https://github.com/lizbur10/appledorebanding" target="_blank">Github repo</a>
+					</p>
+				</div>
 			</div>
 			<figure>
 				<a target="_blank" href="http://appledorebanding.org/"><img src="img/projects/appledore_frontPage.jpg" alt="AppledoreBanding.org Design"></a>

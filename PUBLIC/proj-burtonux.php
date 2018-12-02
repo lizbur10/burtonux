@@ -8,9 +8,14 @@ include("header.php");
 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
  -->
-			<div class="project-header">
+			<div class="project-header with-links">
 				<h2>BurtonUX.com | Design, Development </h2>
 				<h4>HTML/CSS, SASS, responsive design, mobile first, PHP, Javascript/jQuery</h4>
+				<div class="project-links">
+					<p>
+						<a class="text-link" href="https://github.com/lizbur10/burtonux" target="_blank">Github repo</a>
+					</p>
+				</div>
 			</div>
 			<figure>
 				<img class="add-border" src="img/projects/burtonux.jpg" alt="BurtonUX Portfolio Site">

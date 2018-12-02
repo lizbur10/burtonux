@@ -5,9 +5,15 @@
 				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
- -->			<div class="project-header">
+ -->		<div class="project-header with-links">
 				<h2>SeniorsOutdoors.com | Research, Design, Development</h2>
 				<h4>Content inventory, information architecture, prototyping (paper, Axure), user testing (card sort, reverse card sort), Wordpress theming, PHP, HTML/CSS, responsive design, Javascript/jQuery</h4>
+				<div class="project-links">
+					<p>
+						<a class="text-link" href="http://seniorsoutdoors.org" target="_blank">Live site</a>
+						<a class="text-link" href="https://github.com/lizbur10/SO_NextGen" target="_blank">Github repo</a>
+					</p>
+				</div>
 			</div>
 			<figure>
 				<a href="http://seniorsoutdoors.org/" target="_blank"><img class="add-border" src="img/projects/SOHomePage.jpg" alt="New site"></a>

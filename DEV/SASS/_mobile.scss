@@ -317,7 +317,7 @@ article.project {
   }
 
   .project-header {
-    max-width: 600px;
+    max-width: 550px;
     display: block;
     margin: 3em auto 0;
     @include clearfix();
@@ -341,10 +341,39 @@ article.project {
       text-align: center;
       &:after {
         content: " ";
+      }      
+    }
+  }
+  .project-header.with-links {
+    h4 {
+      border-bottom: 1px solid $color-dark-blue;
+      padding-bottom: 10px;
+      margin-bottom: -8px;
+    }
+    .project-links p {
+      text-align: center;
+      a {
+        position: relative;
+        margin-bottom: 1em;
+        font-size: 1em;
+        &:nth-of-type(2):before { //https://codepen.io/mtclmn/pen/OPQmbx
+          content: '';
+          height: .3em;
+          width: .3em;
+          background: $color-dark-blue;
+          display: inline-block;
+          position: absolute;
+          transform: rotate(45deg);
+          top: .5em;
+          left: .5em;
+          padding: 2px;
+        }
+        &:last-of-type {
+          padding-left: 1.5em;
+        }
       }
     }
   }
-
 }
 
 //END PROJECTS PAGE
