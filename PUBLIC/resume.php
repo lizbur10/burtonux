@@ -4,7 +4,23 @@ include("header.php");
 		<section id="content" class="resume">
 			<div class="main-section two-thirds left">
 			<h1 class="visually-hidden">Liz Burton Resume</h1>
-				<h2>UX Work Experience</h2>
+			<h2>Freelance Web Development/Consulting Projects</h2>
+				<h3>9 Miles East Farm, Saratoga Springs, NY</h3>
+				<ul class="triangle-list">
+					<li>Currently developing a scheduling app using React/Redux</li>
+					<li>Helped implement online ordering using Shopify</li>
+					<li>Plans to overhaul the company's Squarespace website</li>
+				</ul>
+				<h3>Seniors Outdoors, Durango, CO</h3>
+				<ul class="triangle-list">
+					<li>Designed and developed their new website using WordPress custom theming</li>
+				</ul>
+				<h3>Appledore Island Migration Station, Appledore Island, ME</h3>
+				<ul class="triangle-list">
+					<li>Designed and developed their new website using WordPress custom theming</li>
+					<li>Currently developing a data entry app using React/Redux</li>
+				</ul>
+			<h2>UX Work Experience</h2>
 				<h3>User Experience Researcher <span>Constant Contact<span class="bullet"> &bull; </span>Oct 2013 - Feb 2016<span class="bullet"> &bull; </span>Waltham, MA</span></h3>
 					<p>As a researcher embedded in the UX department, I collaborated with product teams to plan and conduct a wide range of research studies. </p>
 					<h4>Major projects:</h4>
