@@ -10,13 +10,12 @@
 				<h4>React/Redux, Ruby on Rails API, Single-page Application, RESTful Routing</h4>
 				<div class="project-links">
 					<p>
-						<a class="text-link" href="https://vimeo.com/300593311" target="_blank">Demo Video</a>
 						<a class="text-link" href="https://github.com/lizbur10/nme-account-manager" target="_blank">Github repo</a>
 					</p>
 				</div>
 			</div>
 			<figure>
-				<img class="add-border" src="./img/comingsoon.jpg" alt="9 Miles East scheduling app">
+				<iframe class="add-border" src="https://player.vimeo.com/video/300593311" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</figure>
 
 			<div>

@@ -90,8 +90,13 @@ h3 {
   font-size: 1.3em;
   color: #2F4550; }
 
-img.add-border {
+img.add-border, iframe.add-border {
   border: 1px solid #bbb; }
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
 
 ul {
   list-style-type: none;

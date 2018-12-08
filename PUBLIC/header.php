@@ -49,7 +49,7 @@ $page_info = get_page_info($current_page);
  	 						"</a></li>";
  	 					}
 					?>
-					<li><a target="_blank" href="http://burtondev.com/">Blog</li>
+					<li><a target="_blank" href="http://burtondev.com/">Blog</a></li>
  					</ul>
 				</nav>
 			</header>

@@ -10,13 +10,12 @@
 				<h4>Ruby on Rails, JavaScript</h4>
 				<div class="project-links">
 					<p>
-						<a class="text-link" href="https://vimeo.com/278508330" target="_blank">Demo Video</a>
 						<a class="text-link" href="https://github.com/lizbur10/rails-portfolio-project" target="_blank">Github repo</a>
 					</p>
 				</div>
 			</div>
 			<figure>
-				<img class="add-border" src="./img/comingsoon.jpg" alt="9 Miles East scheduling app">
+				<iframe class="add-border" src="https://player.vimeo.com/video/278508330" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</figure>
 
 			<div>
