@@ -3,13 +3,13 @@
 function get_page_info($current_page) {
 	$pages = array(
 		array(
-			"page" => "about.php",
+			"page" => "index.php",
 			"add_to_menu" => true,
 			"menu_label" => "About", 
 			"page_title" => "About Me"
 		),
 		array(
-			"page" => "index.php",
+			"page" => "portfolio.php",
 			"add_to_menu" => true,
 			"menu_label" => "Portfolio",
 			"page_title" => "Portfolio of Liz Burton"
@@ -25,97 +25,97 @@ function get_page_info($current_page) {
 			"add_to_menu" => false,
 			"menu_label" => null, 
 			"page_title" => "9 Miles East Scheduling App",
-			"sub_of" => "index.php",
-			"prev_link" => "index.php",
+			"sub_of" => "portfolio.php",
+			// "prev_link" => "index.php",
 			"prev_link_label" => "back to portfolio",
-			"next_link" => "",
-			"next_link_label" => ""
+			"next_link" => "proj-appledore-data-entry.php",
+			"next_link_label" => "appledore data entry"
 		),
 		array(
 			"page" => "proj-appledore-data-entry.php",
 			"add_to_menu" => false,
 			"menu_label" => null, 
 			"page_title" => "Appledore Data Entry App",
-			"sub_of" => "index.php",
-			"prev_link" => "index.php",
+			"sub_of" => "portfolio.php",
+			// "prev_link" => "index.php",
 			"prev_link_label" => "back to portfolio",
-			"next_link" => "",
-			"next_link_label" => ""
+			"next_link" => "proj-seniors-outdoors.php",
+			"next_link_label" => "seniors outdoors"
 		),
 		array(
 			"page" => "proj-seniors-outdoors.php",
 			"add_to_menu" => false,
 			"menu_label" => null, 
 			"page_title" => "Seniors Outdoors redesign",
-			"sub_of" => "index.php",
-			"prev_link" => "index.php",
+			"sub_of" => "portfolio.php",
+			// "prev_link" => "index.php",
 			"prev_link_label" => "back to portfolio",
-			"next_link" => "ux-appledore-banding.php",
-			"next_link_label" => "appledore"
-		),
-		array(
-			"page" => "proj-appledore-banding.php",
-			"add_to_menu" => false,
-			"menu_label" => null, 
-			"page_title" => "appledorebanding.org",
-			"sub_of" => "index.php",
-			"prev_link" => "index.php#appledore-banding",
-			"prev_link_label" => "back to portfolio",
-			"next_link" => "ux-knitty.php",
-			"next_link_label" => "knitty"
-		),
-		array(
-			"page" => "proj-email-editor.php",
-			"add_to_menu" => false,
-			"menu_label" => null, 
-			"page_title" => "Email editor",
-			"sub_of" => "index.php",
-			"prev_link" => "index.php#next-gen-editor",
-			"prev_link_label" => "back to portfolio",
-			"next_link" => "ux-np-site-visits.php",
-			"next_link_label" => "site visits"
-		),
-		array(
-			"page" => "proj-mobile-app.php",
-			"add_to_menu" => false,
-			"menu_label" => null, 
-			"page_title" => "Mobile app",
-			"sub_of" => "index.php",
-			"prev_link" => "index.php#mobile-app",
-			"prev_link_label" => "back to portfolio",
-			"next_link" => "ux-email-editor.php",
-			"next_link_label" => "email editor"
+			"next_link" => "proj-burtonux.php",
+			"next_link_label" => "burtonux"
 		),
 		array(
 			"page" => "proj-burtonux.php",
 			"add_to_menu" => false,
 			"menu_label" => null, 
 			"page_title" => "BurtonUX.com Development",
-			"sub_of" => "index.php",
-			"prev_link" => "index.php#burtonux",
+			"sub_of" => "portfolio.php",
+			// "prev_link" => "index.php#burtonux",
 			"prev_link_label" => "back to portfolio",
-			"next_link" => "dev-clumpies.php",
-			"next_link_label" => "clumpies"
+			"next_link" => "proj-appledore-banding.php",
+			"next_link_label" => "appledore website"
+		),
+		array(
+			"page" => "proj-appledore-banding.php",
+			"add_to_menu" => false,
+			"menu_label" => null, 
+			"page_title" => "appledorebanding.org",
+			"sub_of" => "portfolio.php",
+			// "prev_link" => "index.php#appledore-banding",
+			"prev_link_label" => "back to portfolio",
+			"next_link" => "proj-email-editor.php",
+			"next_link_label" => "email editor"
+		),
+		array(
+			"page" => "proj-email-editor.php",
+			"add_to_menu" => false,
+			"menu_label" => null, 
+			"page_title" => "Email editor",
+			"sub_of" => "portfolio.php",
+			// "prev_link" => "index.php#next-gen-editor",
+			"prev_link_label" => "back to portfolio",
+			"next_link" => "proj-mobile-app.php",
+			"next_link_label" => "mobile app"
+		),
+		array(
+			"page" => "proj-mobile-app.php",
+			"add_to_menu" => false,
+			"menu_label" => null, 
+			"page_title" => "Mobile app",
+			"sub_of" => "portfolio.php",
+			// "prev_link" => "index.php#mobile-app",
+			"prev_link_label" => "back to portfolio",
+			"next_link" => "proj-other.php",
+			"next_link_label" => "other projects"
 		),
 		array(
 			"page" => "proj-other.php",
 			"add_to_menu" => false,
 			"menu_label" => null, 
 			"page_title" => "Other projects",
-			"sub_of" => "index.php",
-			"prev_link" => "index.php#other-projects",
+			"sub_of" => "portfolio.php",
+			// "prev_link" => "index.php#other-projects",
 			"prev_link_label" => "back to portfolio",
 			"next_link" => "dev-landon-hotel.php",
 			"next_link_label" => "landon hotel"
-		),
-		array(
-			"page" => "proj-np-site-visits.php",
-			"add_to_menu" => false,
-			"menu_label" => null, 
-			"page_title" => "Non-profit site visits",
-			"sub_of" => "resume.php",
-			"prev_link" => "resume.php",
-			"prev_link_label" => "back to resum&eacute;"
+		// ),
+		// array(
+		// 	"page" => "proj-np-site-visits.php",
+		// 	"add_to_menu" => false,
+		// 	"menu_label" => null, 
+		// 	"page_title" => "Non-profit site visits",
+		// 	"sub_of" => "resume.php",
+		// 	"prev_link" => "resume.php",
+		// 	"prev_link_label" => "back to resum&eacute;"
 		)
 	);
 

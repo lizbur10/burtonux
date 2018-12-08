@@ -49,9 +49,10 @@
 				<p>Solo project</p>
 			</div>
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p>
-<!-- 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
- -->			</div>
+				<!-- <p class="navlink-left"><a class="text-link" href="<?php echo $page_info['sub_of']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p> -->
+				<p class="navlink-left"><a class="text-link" href="portfolio.php">&laquo; back to portfolio</a></p>
+ 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
+			</div>
 		</section>
 
 <?php include("footer.php"); ?>

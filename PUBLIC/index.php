@@ -2,72 +2,24 @@
 include("header.php");
 ?>
 
-	<section id="content" class="main home">
-		<div id="9me" class="project-container">
-			<img src="img/projects/9MELogo_transp_small.png" alt="9 Miles East Logo">
-			<div class="project-description">
-				<h2>9 Miles East Scheduling App<br /><span>- Project under development -</span></h2>
-				<p>Full Stack Web Development</p>
-				<a class="text-link" href="proj-9me.php">Read More</a>
-			</div>
-		</div>
-		<div id="appledore-data-entry" class="project-container">
-			<img src="img/projects/aimslogo.png" alt="Appledore Logo">
-			<div class="project-description">
-				<h2>Appledore Data Entry App<br /><span>- Project under development -</span></h2>
-				<p>Full Stack Web Development</p>
-				<a class="text-link" href="proj-appledore-data-entry.php">Read More</a>
-			</div>
-		</div>
-		<div id="seniors-outdoors" class="project-container">
-			<img src="img/projects/so_logo.jpg" alt="Seniors Outdoors Logo">
-			<div class="project-description">
-				<h2>Seniors Outdoors! Website</h2>
-				<p>UX Research &amp; Design; Web Development</p>
-				<a class="text-link" href="proj-seniors-outdoors.php">Read More</a>
-			</div>
-		</div>
-		<div id="burtonux" class="project-container">
-			<img src="img/projects/lblogo.png" alt="Liz Burton Logo">
-			<div class="project-description">
-				<h2>Professional Portfolio</h2>
-				<p>UX Design; Web Development</p>
-				<a class="text-link" href="proj-burtonux.php">Read More</a>
-			</div>
-		</div>
-		<div id="appledore-banding" class="project-container">
-			<img src="img/projects/aimslogo.png" alt="Appledore Logo">
-			<div class="project-description">
-				<h2>Appledore Bird Banding Website</h2>
-				<p>UX Research &amp; Design; Web Development</p>
-				<a class="text-link" href="proj-appledore-banding.php">Read More</a>
-			</div>
-		</div>
-		<div id="next-gen-editor" class="project-container">
-			<img src="img/projects/ctctlogo_trans_small.png" alt="Constant Contact Logo">
-			<div class="project-description">
-				<h2>Next-generation Editor</h2>
-				<p>UX Research &amp; Design</p>
-				<a class="text-link" href="proj-email-editor.php">Read More</a>
-			</div>
-		</div>
-		<div id="mobile-app" class="project-container">
-			<img src="img/projects/ctctlogo_mobile.png" alt="Constant Contact Logo">
-			<div class="project-description">
-				<h2>Constant Contact Mobile app</h2>
-				<p>UX Research &amp; Design</p>
-				<a class="text-link" href="proj-mobile-app.php">Read More</a>
-			</div>
-		</div>
-		<div id="other-projects" class="project-container">
-			<img src="img/projects/other.png" alt="Writing Tools">
-			<div class="project-description">
-				<h2>Other Projects</h2>
-				<p>Web Development; UX Design</p>
-				<a class="text-link" href="proj-other.php">Read More</a>
-			</div>
-		</div>
+    <section id="content" class="about-me">
+        <h1 class="visually-hidden">About Me</h1>
+        <div class="main-section one-third left">
+            <img src="img/headshot.jpg" alt="Liz Burton headshot">
+        </div>
+        <div class="two-thirds left">
+            <p>I am an aspiring Web developer/software engineer and a recent graduate of the Flatiron School Online Full Stack Web Development program. My skillset includes React/Redux, Javascript, Ruby/Ruby on Rails, HTML/CSS, and Wordpress custom theming. I get great satisfaction from being able to design and develop websites and apps that are usable and fill a need.</p>
+            <p>In 2012, after years of creeping professional doldrums, I made a career change. I completed the Human Factors in Information Design Master's degree program at Bentley University, and then worked as a UX Researcher for a couple of years. During that time, it became clear to me that while I firmly believed in the importance of UX, my heart was really in the design and development side. I took some of the development classes at the Minneapolis College of Art and Design but it wasn't until I discovered the Flatiron program that I truly felt I'd found my way forward.</p>
+            <p>I'm excited about the possibility of finding a job that will allow me to solidify and expand on my skills and, ideally, to make contributions that can have an impact on people's lives.</p>
+        </div>
+    </section>
 
-	</section>
-
-<?php include("footer.php"); ?>
+    <div class="contact" >
+        <h1 class="visually-hidden">Liz Burton's Home Page</h1>
+        <h2>Contact Info:</h2>
+            <ul>
+                <li id="email"><a href="mailto:liz.burton147@gmail.com"><span>liz.burton147@gmail.com</span></a></li>
+                <li id="linkedin"><a href="https://www.linkedin.com/in/burtonux" target="_blank"><span>www.linkedin.com/in/burtonux</span></a></li>
+                <li id="phone"><span>(773) 710-8686</span></li>
+            </ul>
+    </div>
