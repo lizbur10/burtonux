@@ -63,7 +63,7 @@ include("header.php");
 			<img src="img/projects/other.png" alt="Writing Tools">
 			<div class="project-description">
 				<h2>Other Projects</h2>
-				<p>Web Development; UX Design</p>
+				<p>Front-end Web Development; WordPress Custom Theming; UX Design</p>
 				<a class="text-link" href="proj-other.php">Read More</a>
 			</div>
 		</div>
