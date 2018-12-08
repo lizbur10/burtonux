@@ -14,7 +14,7 @@ include("header.php");
 		<div id="appledore-data-entry" class="project-container">
 			<img src="img/projects/aimslogo.png" alt="Appledore Logo">
 			<div class="project-description">
-				<h2>Appledore Banding Data Entry App<br /><span>- Project under development -</span></h2>
+				<h2>Appledore Data Entry App<br /><span>- Project under development -</span></h2>
 				<p>Full Stack Web Development</p>
 				<a class="text-link" href="proj-appledore-data-entry.php">Read More</a>
 			</div>
@@ -38,7 +38,7 @@ include("header.php");
 		<div id="appledore-banding" class="project-container">
 			<img src="img/projects/aimslogo.png" alt="Appledore Logo">
 			<div class="project-description">
-				<h2>Bird Banding Website</h2>
+				<h2>Appledore Bird Banding Website</h2>
 				<p>UX Research &amp; Design; Web Development</p>
 				<a class="text-link" href="proj-appledore-banding.php">Read More</a>
 			</div>
