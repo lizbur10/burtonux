@@ -12,7 +12,7 @@
 				</div>
 			</div>
 			<figure>
-				<a target="_blank" href="http://appledorebanding.org/"><img src="img/projects/appledore_frontPage.jpg" alt="AppledoreBanding.org Design"></a>
+				<a target="_blank" href="http://appledorebanding.org/"><img class="add-border" src="img/projects/appledore_frontPage.jpg" alt="AppledoreBanding.org Design"></a>
 			</figure>
 
 			<div>

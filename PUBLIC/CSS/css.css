@@ -95,8 +95,7 @@ img.add-border, iframe.add-border {
 
 iframe {
   display: block;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 ul {
   list-style-type: none;

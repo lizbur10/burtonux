@@ -117,11 +117,15 @@ h3 {
   color: $color-dark-blue;
 }
 
-img {
-  &.add-border {  //this is for images where I neglected to add the border in Photoshop - will eventually transition all to this
-    border: 1px solid #bbb;
-  }
+img.add-border, iframe.add-border {
+  border: 1px solid #bbb;
 }
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 
 ul {
   list-style-type: none;
