@@ -11,11 +11,12 @@
 				<div class="project-links">
 					<p>
 						<a class="text-link" href="https://github.com/lizbur10/nme-account-manager" target="_blank">Github repo</a>
+						<a class="text-link" href="https://vimeo.com/305343788" target="blank">Demo video</a>
 					</p>
 				</div>
 			</div>
 			<figure>
-				<iframe class="add-border" src="https://player.vimeo.com/video/300593311" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<img class="add-border" src="img/projects/9me_demo.gif" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</figure>
 
 			<div>
