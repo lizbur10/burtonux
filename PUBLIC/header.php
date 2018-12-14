@@ -32,7 +32,7 @@ $page_info = get_page_info($current_page);
 					<img class="hamburger" src="img/hamburger.png">
 				</nav>
  -->				<div class="logo-wrapper">
-					<a href="index.php"><img class="logo" src="img/logos/logo_purple.png" onmouseover="this.src='img/logos/logo_blue.png';" onmouseout="this.src='img/logos/logo_purple.png';" alt="liz burton's logo"></a>
+					<a href="index.php"><img class="logo" src="img/logos/logo_purple_new.png" onmouseover="this.src='img/logos/logo_blue_new.png';" onmouseout="this.src='img/logos/logo_purple_new.png';" alt="liz burton's logo"></a>
 				</div>
 
 				<p class="tag-line">Liz Burton is an aspiring full stack Web developer based in Boston.</p>
