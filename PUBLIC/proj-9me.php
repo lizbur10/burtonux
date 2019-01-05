@@ -7,7 +7,7 @@
 			</div>
  -->		<div class="project-header with-links">
 				<h2>9 Miles East Scheduling App | Full Stack Web Development<br /><span>- Project under development -<span></h2>
-				<h4>React/Redux, Ruby on Rails API, Single-page Application, RESTful Routing</h4>
+				<h4>React/Redux, Ruby on Rails API, RESTful Routing, CSS</h4>
 				<div class="project-links">
 					<p>
 						<a class="text-link" href="https://github.com/lizbur10/nme-account-manager" target="_blank">Github repo</a>

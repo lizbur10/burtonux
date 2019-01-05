@@ -107,15 +107,15 @@ function get_page_info($current_page) {
 			"prev_link_label" => "back to portfolio",
 			"next_link" => "dev-landon-hotel.php",
 			"next_link_label" => "landon hotel"
-		// ),
-		// array(
-		// 	"page" => "proj-np-site-visits.php",
-		// 	"add_to_menu" => false,
-		// 	"menu_label" => null, 
-		// 	"page_title" => "Non-profit site visits",
-		// 	"sub_of" => "resume.php",
-		// 	"prev_link" => "resume.php",
-		// 	"prev_link_label" => "back to resum&eacute;"
+		),
+		array(
+			"page" => "proj-np-site-visits.php",
+			"add_to_menu" => false,
+			"menu_label" => null, 
+			"page_title" => "Non-profit site visits",
+			"sub_of" => "resume.php",
+			"prev_link" => "resume.php",
+			"prev_link_label" => "back to resum&eacute;"
 		)
 	);
 

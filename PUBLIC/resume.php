@@ -6,28 +6,30 @@ include("header.php");
 			<h1 class="visually-hidden">Liz Burton Resume</h1>
 			<h2>Freelance Web Development/Consulting Projects</h2>
 				<h3>9 Miles East Farm, Saratoga Springs, NY</h3>
+				<p>Providing technical assistance with the company’s website, catering site, and email marketing:</p>
 				<ul class="triangle-list">
 					<li>Currently developing a <a class="text-link" href="proj-9me.php">scheduling app</a> using React/Redux</li>
-					<li>Helped implement online ordering using Shopify</li>
-					<li>Plans to overhaul the company's Squarespace website</li>
+					<li>Helped implement online catering ordering using Shopify</li>
+					<li>Currently working on a plan to overhaul the company's Squarespace website</li>
 				</ul>
 				<h3>Seniors Outdoors, Durango, CO</h3>
 				<ul class="triangle-list">
 					<li>Designed and developed their <a class="text-link" href="proj-seniors-outdoors.php">new website</a> using WordPress custom theming</li>
+					<li>Continue to provide support as needed</li>
 				</ul>
 				<h3>Appledore Island Migration Station, Appledore Island, ME</h3>
 				<ul class="triangle-list">
-					<li>Designed and developed their <a class="text-link" href="proj-appledore-banding.php">new website</a> using WordPress custom theming</li>
-					<li>Currently developing a <a class="text-link" href="proj-appledore-data-entry.php">data entry app</a> using React/Redux</li>
+					<li>Designed, developed and maintain <a class="text-link" href="proj-appledore-banding.php">the station's new website</a> using WordPress custom theming</li>
+					<li>Currently working on a <a class="text-link" href="proj-appledore-data-entry.php">data entry app</a> using React/Redux</li>
 				</ul>
 			<h2>UX Work Experience</h2>
 				<h3>User Experience Researcher <span>Constant Contact<span class="bullet"> &bull; </span>Oct 2013 - Feb 2016<span class="bullet"> &bull; </span>Waltham, MA</span></h3>
 					<p>As a researcher embedded in the UX department, I collaborated with product teams to plan and conduct a wide range of research studies. </p>
 					<h4>Major projects:</h4>
 					<ul class="triangle-list">
-						<li>multiple iterations of usability studies of the company's <a class="text-link" href="proj-email-editor.php">next-generation email editor</a>; </li>
-						<li>ongoing evaluations of the new <a class="text-link" href="proj-mobile-app.php">mobile app</a>, including wants and needs analysis of functionalities being considered as well as usability tests of prototype and coded versions of the app; </li>
-						<li>a <a class="text-link" href="proj-np-site-visits.php">contextual inquiry study</a> that took an in-depth look at the unique needs of the company's non-profit customers; and </li>
+						<li>ongoing evaluations of the new <a class="text-link" href="proj-mobile-app.php" target="_blank">mobile app</a>, including wants and needs analysis of functionalities being considered as well as usability tests of prototype and coded versions of the app; </li>
+						<li>multiple iterations of usability studies of the company's <a class="text-link" href="proj-email-editor.php" target="_blank">next-generation email editor</a>; </li>
+						<li>a <a class="text-link" href="proj-np-site-visits.php" target="_blank">contextual inquiry study</a> that took an in-depth look at the unique needs of the company's non-profit customers; and </li>
 						<li>a large <a class="text-link" target="_blank" href="https://www.slideshare.net/MichaelKennedy17/you-want-me-to-what-a-practical-guide-to-diary-studies-61532487?qid=b1744552-059a-44f4-b537-0778a8b210ec&v=&b=&from_search=1">diary study</a> examining how best to support customers as they transitioned to the new version of the email editor.</li>
 					</ul>
 
@@ -176,6 +178,7 @@ include("header.php");
 				<div class="classes">
 					<h2>Relevant Courses</h2>
 					<div>
+					<h3>Flatiron School Full Stack Web Development Program</h3>
 					<h3>Minneapolis College of Art and Design</h3>
 						<ul>
 							<li>Web Development: HTML + CSS</li>
