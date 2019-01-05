@@ -6,7 +6,7 @@
 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
  -->		<div class="project-header with-links">
-				<h2>Appledore Data Entry App | Full Stack Web Development<br /><span>- Project under development -<span></h2>
+				<h2>Appledore Data Entry App | Full-stack Web Development<br /><span>- Project under development -<span></h2>
 				<h4>Ruby on Rails, JavaScript</h4>
 				<div class="project-links">
 					<p>
@@ -21,7 +21,7 @@
 
 			<div>
 				<h3>The Project</h3>
-				<p>As one of the portfolio projects for the Flatiron School Full Stack Web Developer program, I started working on a data entry application for the Appledore Island Migration Banding Station.</p>
+				<p>As one of the portfolio projects for the Flatiron School Full Stack Web Development program, I started working on a data entry application for the Appledore Island Migration Banding Station.</p>
 			</div>
 <!-- 			<img class="right" src="../img/projects/SO-prototype.jpg" alt="Seniors Outdoors prototypes">
  -->

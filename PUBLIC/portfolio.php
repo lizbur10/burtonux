@@ -7,7 +7,7 @@ include("header.php");
 			<img src="img/projects/9MELogo_transp_small.png" alt="9 Miles East Logo">
 			<div class="project-description">
 				<h2>9 Miles East Scheduling App<br /><span>- Under development -</span></h2>
-				<p>Full Stack Web Development</p>
+				<p>Full-stack Web Development</p>
 				<a class="text-link" href="proj-9me.php">Read More</a>
 			</div>
 		</div>
@@ -15,7 +15,7 @@ include("header.php");
 			<img src="img/projects/aimslogo.png" alt="Appledore Logo">
 			<div class="project-description">
 				<h2>Appledore Data Entry App<br /><span>- Under development -</span></h2>
-				<p>Full Stack Web Development</p>
+				<p>Full-stack Web Development</p>
 				<a class="text-link" href="proj-appledore-data-entry.php">Read More</a>
 			</div>
 		</div>
@@ -43,20 +43,20 @@ include("header.php");
 				<a class="text-link" href="proj-appledore-banding.php">Read More</a>
 			</div>
 		</div>
-		<div id="next-gen-editor" class="project-container">
-			<img src="img/projects/ctctlogo_trans_small.png" alt="Constant Contact Logo">
-			<div class="project-description">
-				<h2>Next-generation Editor</h2>
-				<p>UX Research &amp; Design</p>
-				<a class="text-link" href="proj-email-editor.php">Read More</a>
-			</div>
-		</div>
 		<div id="mobile-app" class="project-container">
 			<img src="img/projects/ctctlogo_mobile.png" alt="Constant Contact Logo">
 			<div class="project-description">
 				<h2>Constant Contact Mobile app</h2>
 				<p>UX Research &amp; Design</p>
 				<a class="text-link" href="proj-mobile-app.php">Read More</a>
+			</div>
+		</div>
+		<div id="next-gen-editor" class="project-container">
+			<img src="img/projects/ctctlogo_trans_small.png" alt="Constant Contact Logo">
+			<div class="project-description">
+				<h2>Next-generation Editor</h2>
+				<p>UX Research &amp; Design</p>
+				<a class="text-link" href="proj-email-editor.php">Read More</a>
 			</div>
 		</div>
 		<div id="other-projects" class="project-container">

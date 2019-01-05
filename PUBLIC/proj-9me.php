@@ -6,7 +6,7 @@
 				<p class="navlink-right"><a class="text-link" href="<?php echo $page_info['next_link']; ?>"><?php echo $page_info['next_link_label']; ?> &raquo;</a></p>
 			</div>
  -->		<div class="project-header with-links">
-				<h2>9 Miles East Scheduling App | Full Stack Web Development<br /><span>- Project under development -<span></h2>
+				<h2>9 Miles East Scheduling App | Full-stack Web Development<br /><span>- Project under development -<span></h2>
 				<h4>React/Redux, Ruby on Rails API, RESTful Routing, CSS</h4>
 				<div class="project-links">
 					<p>
@@ -21,7 +21,7 @@
 
 			<div>
 				<h3>The Project</h3>
-				<p>As the final project for the Flatiron School Full Stack Web Developer program, I started working on a scheduling app for <a href="https://www.9mileseast.com/" target="_blank">9 Miles East</a>, a local family-owned farm that provides prepared meals to companies and individuals.</p>
+				<p>As the final project for the Flatiron School Full Stack Web Development program, I started working on a scheduling app for <a href="https://www.9mileseast.com/" target="_blank">9 Miles East</a>, a local family-owned farm that provides prepared meals to companies and individuals.</p>
 			</div>
 <!-- 			<img class="right" src="../img/projects/SO-prototype.jpg" alt="Seniors Outdoors prototypes">
  -->

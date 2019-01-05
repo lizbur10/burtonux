@@ -72,17 +72,6 @@ function get_page_info($current_page) {
 			"sub_of" => "portfolio.php",
 			// "prev_link" => "index.php#appledore-banding",
 			"prev_link_label" => "back to portfolio",
-			"next_link" => "proj-email-editor.php",
-			"next_link_label" => "email editor"
-		),
-		array(
-			"page" => "proj-email-editor.php",
-			"add_to_menu" => false,
-			"menu_label" => null, 
-			"page_title" => "Email editor",
-			"sub_of" => "portfolio.php",
-			// "prev_link" => "index.php#next-gen-editor",
-			"prev_link_label" => "back to portfolio",
 			"next_link" => "proj-mobile-app.php",
 			"next_link_label" => "mobile app"
 		),
@@ -93,6 +82,17 @@ function get_page_info($current_page) {
 			"page_title" => "Mobile app",
 			"sub_of" => "portfolio.php",
 			// "prev_link" => "index.php#mobile-app",
+			"prev_link_label" => "back to portfolio",
+			"next_link" => "proj-email-editor.php",
+			"next_link_label" => "email editor"
+		),
+		array(
+			"page" => "proj-email-editor.php",
+			"add_to_menu" => false,
+			"menu_label" => null, 
+			"page_title" => "Email editor",
+			"sub_of" => "portfolio.php",
+			// "prev_link" => "index.php#next-gen-editor",
 			"prev_link_label" => "back to portfolio",
 			"next_link" => "proj-other.php",
 			"next_link_label" => "other projects"

@@ -161,10 +161,10 @@ include("header.php");
 				</div>
 				<div class="education">
 					<h2>Education</h2>
-					<h3>Online Full Stack Web Development Program</h3>
+					<h3>Flatiron School Full Stack Web Development Program</h3>
 					<p>Flatiron School<br />
 						New York, NY<br />
-						Expected graduation: Dec 2018</p>
+						Graduated Dec 2018</p>
 					<h3>M.S. Human Factors in Information Design (HFID)</h3>
 					<p>Bentley University<br />
 						Waltham, MA<br />
@@ -178,7 +178,6 @@ include("header.php");
 				<div class="classes">
 					<h2>Relevant Courses</h2>
 					<div>
-					<h3>Flatiron School Full Stack Web Development Program</h3>
 					<h3>Minneapolis College of Art and Design</h3>
 						<ul>
 							<li>Web Development: HTML + CSS</li>
