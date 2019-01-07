@@ -23,6 +23,10 @@ $page_info = get_page_info($current_page);
 		<link rel="stylesheet" type="text/css" href="CSS/css.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 		<!-- <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'> -->
+		<!-- <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> -->
+		<!-- <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> -->
 		<link href="https://fonts.googleapis.com/css?family=Oswald|Slabo+27px" rel="stylesheet">
 	</head>
 

@@ -28,7 +28,7 @@ include("header.php");
 			</div>
 		</div>
 		<div id="burtonux" class="project-container">
-			<img src="img/projects/lblogo.png" alt="Liz Burton Logo">
+			<img src="img/projects/burtonux_logo.png" alt="Liz Burton Logo">
 			<div class="project-description">
 				<h2>Professional Portfolio</h2>
 				<p>UX Design; Web Development</p>

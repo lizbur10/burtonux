@@ -35,7 +35,7 @@ body {
   position: relative;
   margin: 0 auto;
   background-color: white;
-  font-family: "Slabo 27px", serif;
+  font-family: "Crimson Text", serif;
   color: #444;
   font-size: 12pt;
 }
@@ -296,7 +296,7 @@ article.project {
   max-width: 100%;
 }
 .project h4 {
-  font-family: "Slabo 27px", serif;
+  font-family: "Crimson Text", serif;
   font-size: 1.1em;
   font-weight: normal;
 }
