@@ -165,7 +165,7 @@
 			<h3>Flatiron School Full Stack Web Development Program</h3>
 			<p>Flatiron School<br />
 				New York, NY<br />
-				Graduated Dec 2018</p>
+				Graduated Dec. 2018</p>
 			<h3>M.S. Human Factors in Information Design (HFID)</h3>
 			<p>Bentley University<br />
 				Waltham, MA<br />
@@ -179,14 +179,14 @@
 		<div class="classes">
 			<h2>Relevant Courses</h2>
 			<h3>Minneapolis College of Art and Design</h3>
-			<ul>
+			<ul class="hanging">
 				<li>Web Development: HTML + CSS</li>
 				<li>Web Development: JavaScript + jQuery</li>
 				<li>Responsive Design</li>
 				<li>Web Development: PHP + Wordpress</li>
 			</ul>
 			<h3>Bentley University</h3>
-			<ul>
+			<ul class="hanging">
 				<li>Foundations in Human Factors</li>
 				<li>Object-Oriented Application Development</li>
 				<li>Information Architecture</li>
@@ -198,7 +198,7 @@
 				<li>Field Methods in HCI</li>
 			</ul>
 			<h3>University of Colorado</h3>
-			<ul>
+			<ul class="hanging">
 				<li>Experimental Design</li>
 				<li>Ethnographic Methods</li>
 			</ul>

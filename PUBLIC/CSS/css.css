@@ -113,6 +113,10 @@ h3 {
   color: #2F4550;
 }
 
+body {
+  line-height: 1.2;
+}
+
 img.add-border, iframe.add-border {
   border: 1px solid #bbb;
 }
@@ -378,6 +382,9 @@ article.project {
   height: 300px;
   width: 225px;
 }
+.about-me p:first-of-type {
+  margin-top: -12px;
+}
 
 .resume {
   content: "";
@@ -523,9 +530,6 @@ article.project {
     font-size: 1.3em;
   }
 
-  .project {
-    font-size: 0.9em;
-  }
   .project h4 {
     font-size: 1em;
   }
@@ -590,8 +594,11 @@ article.project {
 
   aside {
     margin-top: 50px;
-    font-size: 0.9em;
     background-color: #e9edef;
+  }
+  aside .hanging li {
+    text-indent: -0.5em;
+    padding-left: 0.5em;
   }
 
   .right {

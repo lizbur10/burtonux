@@ -95,7 +95,6 @@
 	}
 
 	.project {
-		font-size: 0.9em;
 		h4 {
 			font-size: 1em;
 		}
@@ -159,8 +158,12 @@
 
 	aside {
 		margin-top: 50px;
-		font-size: 0.9em;
+		// font-size: 0.9em;
 		background-color: $color-gray;
+		.hanging li {
+			text-indent: -.5em;
+			padding-left: .5em;
+		}
 	}
 
 	.right {
