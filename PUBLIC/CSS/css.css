@@ -426,6 +426,39 @@ article.project {
   margin-top: 0.25em;
 }
 
+.blog-post {
+  color: #555;
+  max-width: 700px;
+}
+.blog-post p {
+  line-height: 1.5;
+}
+.blog-post h4 {
+  margin-bottom: -10px;
+}
+
+.posted-date {
+  font-style: italic;
+  color: #666;
+  font-size: 1em;
+  margin-top: -10px;
+}
+
+.inline-snippet {
+  padding: 0px 4px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.floated-image {
+  float: left;
+  padding: 8px 20px 5px 0px;
+}
+
+#source-control-button {
+  width: 100px;
+}
+
 .contact {
   margin-left: 1em;
   line-height: 1.3;

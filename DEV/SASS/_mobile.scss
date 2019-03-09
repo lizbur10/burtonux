@@ -458,6 +458,45 @@ article.project {
 //END RESUME PAGE
 
 
+//BLOG PAGE
+
+.blog-post {
+  color: #555;
+  max-width: 700px;
+  p {
+    line-height: 1.5;
+  }
+  h4 {
+    margin-bottom: -10px;
+  }
+}
+
+.posted-date {
+  font-style: italic;
+  color: #666;
+  font-size: 1em;
+  margin-top: -10px;
+}
+
+.inline-snippet {
+  padding: 0px 4px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.floated-image {
+  float: left;
+  padding: 8px 20px 5px 0px;
+}
+
+#source-control-button {
+  width: 100px;
+}
+
+
+
+//END BLOG PAGE
+
 //CONTACT INFO
 
 .contact {
