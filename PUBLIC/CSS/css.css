@@ -31,7 +31,6 @@ html {
 }
 
 body {
-  max-width: 95%;
   position: relative;
   margin: 0 auto;
   background-color: white;
@@ -41,6 +40,7 @@ body {
 }
 
 header {
+  z-index: 999;
   padding-top: 1em;
   margin-bottom: 2em;
 }
@@ -427,14 +427,17 @@ article.project {
 }
 
 .blog-post {
-  max-width: 700px;
-  margin-left: 130px;
+  max-width: 95%;
+  margin: 0 auto;
 }
 .blog-post p {
   line-height: 1.5;
 }
 .blog-post h4 {
   margin-bottom: -10px;
+}
+.blog-post img {
+  max-width: 95%;
 }
 
 .posted-date {
@@ -641,11 +644,17 @@ article.project {
 }
 @media screen and (min-width: 801px) {
   body {
-    max-width: 1200px;
+    margin: 0;
   }
 
   header {
-    padding-top: 1em;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #e9edef;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    padding-top: 0;
+    margin-bottom: 0;
   }
   header .logo-wrapper, header .tag-line {
     display: block;
@@ -653,7 +662,7 @@ article.project {
   }
   header .tag-line {
     font-size: 0.9em;
-    margin-top: 58px;
+    margin-top: 50px;
     margin-left: 20px;
     color: #555;
   }
@@ -666,16 +675,15 @@ article.project {
     margin-top: 1em;
   }
   header img.logo {
-    margin-left: 2em;
-    margin-bottom: 2em;
+    margin: 0.5em 0 0.4em 3em;
   }
   header nav.main-menu {
     float: right;
-    margin-right: 3em;
+    padding-right: 3em;
   }
   header nav li {
     font-size: 0.9em;
-    margin: 2.1em 0.6em;
+    margin: 1.6em 0.6em;
     padding: 0;
     text-transform: uppercase;
     /* 				&:first-of-type {
@@ -699,10 +707,20 @@ article.project {
 
   #content {
     max-width: 960px;
+    margin: 0 auto;
+    padding-top: 150px;
   }
 
   #content.project {
     max-width: 800px;
+  }
+
+  #content.about-me {
+    padding-top: 180px;
+  }
+
+  #content.portfolio {
+    padding-top: 170px;
   }
 
   .contact {
@@ -716,6 +734,10 @@ article.project {
   .project-container img {
     height: 225px;
     width: 225px;
+  }
+
+  .blog-post {
+    max-width: 700px;
   }
 
   section:first-of-type {

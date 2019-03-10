@@ -2,7 +2,7 @@
 include("header.php");
 ?>
 
-	<section id="content" class="main home">
+	<section id="content" class="main home portfolio">
 		<div id="9me" class="project-container">
 			<img src="img/projects/9MELogo_transp_small.png" alt="9 Miles East Logo">
 			<div class="project-description">
