@@ -116,7 +116,13 @@ function get_page_info($current_page) {
 			"sub_of" => "resume.php",
 			"prev_link" => "resume.php",
 			"prev_link_label" => "back to resum&eacute;"
-		)
+		),
+		array(
+			"page" => "blog.php",
+			"add_to_menu" => true,
+			"menu_label" => "Blog",
+			"page_title" => "Liz Burton's Blog"
+		),
 	);
 
 	for($i = 0; $i < count($pages); $i++) {
