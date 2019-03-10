@@ -36,7 +36,7 @@ body {
   margin: 0 auto;
   background-color: white;
   font-family: "Crimson Text", serif;
-  color: #444;
+  color: #555;
   font-size: 12pt;
 }
 
@@ -100,12 +100,12 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 1.7em;
-  color: #586F7C;
+  color: #465963;
 }
 
 h2 {
   font-size: 1.5em;
-  color: #586F7C;
+  color: #465963;
 }
 
 h3 {
@@ -164,7 +164,7 @@ a.button:visited {
 }
 
 .text-link {
-  color: #586F7C;
+  color: #465963;
   font-weight: bold;
 }
 
@@ -246,7 +246,7 @@ ul.triangle-list li {
 }
 
 a {
-  color: #444;
+  color: #555;
 }
 
 .fa-external-link {
@@ -427,8 +427,8 @@ article.project {
 }
 
 .blog-post {
-  color: #555;
   max-width: 700px;
+  margin-left: 130px;
 }
 .blog-post p {
   line-height: 1.5;
@@ -655,7 +655,7 @@ article.project {
     font-size: 0.9em;
     margin-top: 58px;
     margin-left: 20px;
-    color: #444;
+    color: #555;
   }
   header .logo {
     /* 			box-shadow: 3px 5px 5px $color-light-green;
