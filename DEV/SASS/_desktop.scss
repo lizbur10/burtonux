@@ -5,14 +5,8 @@
 	}
 
 	header {
-		position: fixed;
 		width: 100%;
 		background-color: #fff;
-		border-bottom: 1px solid $color-gray;
-		box-shadow:  0 3px 5px rgba(0,0,0,.1);
-		padding-top: 0;
-		margin-bottom: 0;
-
 
 		.logo-wrapper, .tag-line {
 			display: block;
@@ -72,7 +66,6 @@
 	#content {
 		max-width: 960px;
 		margin: 0 auto;
-		padding-top: 150px;
 	}
 
 	#content.project {
@@ -136,7 +129,21 @@
 
 }
 
- @media screen and (min-width: 1041px) { //http://stackoverflow.com/questions/11997032/how-to-get-box-shadow-on-left-right-sides-only
+@media screen and (min-width: 1018px) { //http://stackoverflow.com/questions/11997032/how-to-get-box-shadow-on-left-right-sides-only
+
+	header {
+		position: fixed;
+		border-bottom: 1px solid $color-gray;
+		box-shadow:  0 3px 5px rgba(0,0,0,.1);
+		padding-top: 0;
+		margin-bottom: 0;
+	}
+
+	#content {
+		padding-top: 150px;
+	}
+
+
 /*	
 	html {
 		  background-color: $color-off-white;

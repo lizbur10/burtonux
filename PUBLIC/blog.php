@@ -100,7 +100,10 @@ include("header.php");
                 While the steps I've described above are no substitute for following good commit practices as you go, they
                 can be very helpful at those times when you forget.
             </p>
+            <hr>
+            <p style="{padding-top: 3em;">Also see my <a class="text-link" href="http://burtondev.com/" target="_blank">Flatiron School blog entries</a></p>
         </article>
+
     </section>
 
 <?php include("footer.php"); ?>
