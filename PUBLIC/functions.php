@@ -26,10 +26,10 @@ function get_page_info($current_page) {
 			"menu_label" => null, 
 			"page_title" => "Liz Burton Portfolio - 9 Miles East Scheduling App",
 			"sub_of" => "portfolio.php",
-			// "prev_link" => "index.php",
+			"prev_link" => "portfolio.php",
 			"prev_link_label" => "back to portfolio",
 			"next_link" => "proj-appledore-data-entry.php",
-			"next_link_label" => "appledore data entry"
+			"next_link_label" => "next project"
 		),
 		array(
 			"page" => "proj-appledore-data-entry.php",
@@ -37,10 +37,10 @@ function get_page_info($current_page) {
 			"menu_label" => null, 
 			"page_title" => "Liz Burton Portfolio - Appledore Data Entry App",
 			"sub_of" => "portfolio.php",
-			// "prev_link" => "index.php",
-			"prev_link_label" => "back to portfolio",
+			"prev_link" => "proj-9me.php",
+			"prev_link_label" => "previous project",
 			"next_link" => "proj-seniors-outdoors.php",
-			"next_link_label" => "seniors outdoors"
+			"next_link_label" => "next project"
 		),
 		array(
 			"page" => "proj-seniors-outdoors.php",
@@ -48,10 +48,10 @@ function get_page_info($current_page) {
 			"menu_label" => null, 
 			"page_title" => "Liz Burton Portfolio - Seniors Outdoors redesign",
 			"sub_of" => "portfolio.php",
-			// "prev_link" => "index.php",
-			"prev_link_label" => "back to portfolio",
+			"prev_link" => "proj-appledore-data-entry.php",
+			"prev_link_label" => "previous project",
 			"next_link" => "proj-burtonux.php",
-			"next_link_label" => "burtonux"
+			"next_link_label" => "next project"
 		),
 		array(
 			"page" => "proj-burtonux.php",
@@ -59,10 +59,10 @@ function get_page_info($current_page) {
 			"menu_label" => null, 
 			"page_title" => "Liz Burton Portfolio - BurtonUX.com Development",
 			"sub_of" => "portfolio.php",
-			// "prev_link" => "index.php#burtonux",
-			"prev_link_label" => "back to portfolio",
+			"prev_link" => "proj-seniors-outdoors.php",
+			"prev_link_label" => "previous project",
 			"next_link" => "proj-appledore-banding.php",
-			"next_link_label" => "appledore website"
+			"next_link_label" => "next project"
 		),
 		array(
 			"page" => "proj-appledore-banding.php",
@@ -70,10 +70,10 @@ function get_page_info($current_page) {
 			"menu_label" => null, 
 			"page_title" => "Liz Burton Portfolio - appledorebanding.org",
 			"sub_of" => "portfolio.php",
-			// "prev_link" => "index.php#appledore-banding",
-			"prev_link_label" => "back to portfolio",
+			"prev_link" => "proj-burtonux.php",
+			"prev_link_label" => "previous project",
 			"next_link" => "proj-mobile-app.php",
-			"next_link_label" => "mobile app"
+			"next_link_label" => "next project"
 		),
 		array(
 			"page" => "proj-mobile-app.php",
@@ -81,10 +81,10 @@ function get_page_info($current_page) {
 			"menu_label" => null, 
 			"page_title" => "Liz Burton Portfolio - Constant Contact mobile app",
 			"sub_of" => "portfolio.php",
-			// "prev_link" => "index.php#mobile-app",
-			"prev_link_label" => "back to portfolio",
+			"prev_link" => "proj-appledore-banding.php",
+			"prev_link_label" => "previous project",
 			"next_link" => "proj-email-editor.php",
-			"next_link_label" => "email editor"
+			"next_link_label" => "next project"
 		),
 		array(
 			"page" => "proj-email-editor.php",
@@ -92,10 +92,10 @@ function get_page_info($current_page) {
 			"menu_label" => null, 
 			"page_title" => "Liz Burton Portfolio - Constant Contact Email editor",
 			"sub_of" => "portfolio.php",
-			// "prev_link" => "index.php#next-gen-editor",
-			"prev_link_label" => "back to portfolio",
+			"prev_link" => "proj-mobile-app.php",
+			"prev_link_label" => "previous project",
 			"next_link" => "proj-other.php",
-			"next_link_label" => "other projects"
+			"next_link_label" => "next project"
 		),
 		array(
 			"page" => "proj-other.php",
@@ -103,25 +103,35 @@ function get_page_info($current_page) {
 			"menu_label" => null, 
 			"page_title" => "Liz Burton Portfolio - Other projects",
 			"sub_of" => "portfolio.php",
-			// "prev_link" => "index.php#other-projects",
-			"prev_link_label" => "back to portfolio",
-			"next_link" => "dev-landon-hotel.php",
-			"next_link_label" => "landon hotel"
+			"prev_link" => "proj-email-editor.php",
+			"prev_link_label" => "previous project"
 		),
-		array(
-			"page" => "proj-np-site-visits.php",
-			"add_to_menu" => false,
-			"menu_label" => null, 
-			"page_title" => "Liz Burton Portfolio - Constant Contact non-profit site visits",
-			"sub_of" => "resume.php",
-			"prev_link" => "resume.php",
-			"prev_link_label" => "back to resum&eacute;"
-		),
+		// array(
+		// 	"page" => "proj-np-site-visits.php",
+		// 	"add_to_menu" => false,
+		// 	"menu_label" => null, 
+		// 	"page_title" => "Liz Burton Portfolio - Constant Contact non-profit site visits",
+		// 	"sub_of" => "resume.php"
+		// ),
 		array(
 			"page" => "blog.php",
 			"add_to_menu" => true,
-			"menu_label" => "Blog",
-			"page_title" => "Liz Burton's Blog"
+			"menu_label" => "Blog", 
+			"page_title" => "Liz Burton Blog",
+			"sub_of" => "blog.php",
+			"prev_link" => "blog-03XX19.php",
+			"prev_link_label" => "previous post"
+		),
+		array(
+			"page" => "blog-03XX19.php",
+			"add_to_menu" => false,
+			"menu_label" => null, 
+			"page_title" => "Liz Burton Blog",
+			"sub_of" => "blog.php",
+			"prev_link" => "blog-03XX19.php",
+			"prev_link_label" => "previous post",
+			"next_link" => "blog.php",
+			"next_link_label" => "next post"
 		),
 	);
 
@@ -146,9 +156,11 @@ function get_page_info($current_page) {
 		}
 		if ($current_page == $pages[$i]["page"]) {
 			$page_info['page_title'] = $pages[$i]["page_title"];
-			if ($pages[$i]["sub_of"]) {
+			if ($pages[$i]["prev_link"]) {
 				$page_info['prev_link'] = $pages[$i]["prev_link"];
 				$page_info['prev_link_label'] = $pages[$i]["prev_link_label"];
+			}
+			if ($pages[$i]["next_link"]) {
 				$page_info['next_link'] = $pages[$i]["next_link"];
 				$page_info['next_link_label'] = $pages[$i]["next_link_label"];
 			}

@@ -108,9 +108,9 @@ include("header.php");
 			</div>
  -->
 			<div class="navlinks">
-				<p class="navlink-left"><a class="text-link" href="portfolio.php">&laquo; back to portfolio</a></p>
-				<!-- <p class="navlink-left"><a class="text-link" href="<?php echo $page_info['prev_link']; ?>">&laquo; <?php echo $page_info['prev_link_label']; ?></a></p> -->
-			</div>
+                <?php if ($page_info["prev_link"]) { include("nav-links/prev-link.php"); } ?>
+                <?php if ($page_info["next_link"]) { include("nav-links/next-link.php"); } ?>
+            </div>
 		</section>
 
 <?php include("footer.php"); ?>

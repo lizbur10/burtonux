@@ -25,7 +25,7 @@
 			<h2>Work Experience</h2>
 
 			<h3>Technical Coaching Fellow <span>Flatiron School<span class="bullet"> &bull; </span>Jan 2019 - present<span class="bullet"> &bull; </span>New York, NY</span></h3>
-			<p>Assist online Software Engineering students by helping with debugging, answering technical questions, explaining programming concepts, and troubleshooting environment issues.</p>
+			<p>Assist online Software Engineering students by helping with debugging, answering technical questions, explaining programming concepts and troubleshooting environment issues.</p>
 
 			<h3>User Experience Researcher <span>Constant Contact<span class="bullet"> &bull; </span>Oct 2013 - Feb 2016<span class="bullet"> &bull; </span>Waltham, MA</span></h3>
 			<p>As a researcher embedded in the UX department, I collaborated with product teams to plan and conduct a wide range of research studies. </p>
