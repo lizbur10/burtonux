@@ -6,103 +6,182 @@ include("header.php");
         <h1 class="visually-hidden">Liz Burton's Blog</h1>
 
         <article class="blog-post">
-            <h2>Upping my git game</h2>
-            <p class="posted-date">Posted March 9, 2019</p>
+            <h2>Yields in Ruby: A Primer</h2>
+            <p class="posted-date">Posted March 16, 2019</p>
             <p>
-                As hard as I try to remember to make regular Git commits, there are times when I get sucked in by what 
-                I'm working on and forget, sometimes for hours. It happens all too frequently: I come up for air from an 
-                absorbing challenge or difficult debugging situation and realize that I've changed dozens of lines of code 
-                since my last commit. According to best practice guidelines, commits should be 
-                made every 3 to 7 minutes of coding time and should include no more than about 15 lines of code. 
-                Furthermore, they should include meaningful commit messages, which is difficult to do when you're trying
-                to describe dozens of lines of changes. Unfortunately, there are many commits in my Git history that fall 
-                pretty far short of best practice. Recently, however, I've discovered two tools, readily available in my 
-                work environment, that have proven to help a lot when that happens &mdash; most of the time, anyway.
+                One of the biggest benefits of working as a technical coach for the Flatiron School 
+                is it forces me to address holes in my knowledge. Students can (and do) ask 
+                questions about anything. Often it’s only when I’m trying to answer a question for 
+                a student that I realize there’s something I don’t understand as well as I thought 
+                I did. Recently I was trying to explain the concept of yield to
+                someone and quickly realized I needed to study up on it myself. 
             </p>
-            <h4>Discovery 1: VS Code's versioning tools</h4>
             <p>
-                The first is the versioning tools built in to VS Code. To my own detriment, I've never been the type of 
-                person who, when she buys a new gadget or downloads a new piece of software, spends hours (or even 
-                minutes) poring through
-                the manual or technical documentation to learn its features. My approach instead is to jump in 
-                without reading any documentation whatsoever and grope around until I figure out the minimum functionality
-                for which I got the thing. As a result, I rarely do more than scrape the 
-                surface of what's available to me. While I was aware at some level that VS Code included  
-                versioning tools, my brain mostly filtered it out as noise for quite a long time: occasionally I would notice
-                to my dismay that I had changed 10 or more files since my last commit, but that was about the extent of my
-                use of the tools.
+                <span class="inline-snippet">yield</span> can be very tricky to wrap your head around at 
+                first. But at its most basic level, it really comes down to two things:
             </p>
+            <ol>
+                <li>You define a method that includes a <span class="inline-snippet">yield</span> 
+                statement in it somewhere</li>
+                <li>You call the method with a block containing some code to be executed at the 
+                point where the <span class="inline-snippet">yield</span> is</li>
+            </ol>
 
             <p>
-                <img id="source-control-button" class="floated-image" alt="VS Code source control button" src="img/blog/source-control-button.png"> 
-                One day, I had broken something in my code and wasn't sure how recently it had happened. I couldn't 
-                remember what I'd 
-                changed or in which files. But, happily, I clicked on the Source Control button in VS Code  
-                and Eureka! &mdash; there was a list of the files that had been changed since my last commit. Even more
-                happily, when I clicked on one of the files, it showed me a side by side comparison of the last-committed 
-                and current versions. This helped me figure out what I had broken and how to fix it, but I also recognized 
-                another, very important use for this functionality: now, if I had a lot of changes to commit, I 
-                could look through the changes in each file, craft a meaningful 
-                (if occasionally long) commit message, and stage and commit the files individually. It took a lot longer
-                than if I'd done it as I went, and I still had some larger-than-desirable commits (when I made a lot of 
-                changes within a single file), but overall it was a big improvement.
+                Of course it's usually more complicated in practice but it can be just this 
+                simple.
             </p>
-            <h4>Discovery 2: Git's interactive staging interface</h4>
+            <h4>Step 1: defining your method</h4>
             <p>
-                The second thing I discovered that helps me when I'm in this situation is 
-                <a target="_blank" class="text-link" href="https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging">
-                Git's interactive staging interface</a>. When using the usual command-line interface, typing 
-                <span class="inline-snippet">git status</span> in the terminal
-                gives this familiar output:
+                First, let’s define our method without a yield:
             </p>
-                <img src="img/blog/git-status-display.jpg" alt="git status output">
+                <img src="img/blog/my_method_no_yield.jpg" alt="my method without a yield">
             <p>
-                From here, you can type <span class="inline-snippet">git add .</span> to stage all the files, or 
-                <span class="inline-snippet">git add &lt;filename&gt;</span> to stage individual files. While staging
-                files individually isn't difficult, it can be monotonous to type or copy/paste file names one by one. 
-                Furthermore, if you stage a file mistakenly, the process for unstaging from the command line is not, in my 
-                opinion, especially clear.
+                I call this method by running <span class="inline-snippet">my_method</span> and I get:
             </p>
+                <img src="img/blog/my_method_no_yield_output.jpg" alt="output of my method without yield">
             <p>
-                The interactive staging interface provides a nice alternative to this workflow. You access it by 
-                typing <span class="inline-snippet">git add -i</span>: 
+                But say I want to execute some other code in the middle, maybe code that can vary 
+                under different conditions. In that case I might not want to have to code a 
+                separate method for each possible variant, especially if the common parts comprise
+                a lot of code. One 
+                way to handle this situation is by using <span class="inline-snippet">yield</span>:
             </p>
-            <img src="img/blog/git-interactive-staging-interface.jpg" alt="git interactive staging interface">
+                <img src="img/blog/my_method_with_yield.jpg" alt="my method with a yield">
             <p>
-                While the interface takes a little getting used to, once you get the hang of it it's pretty easy to use. 
-                To interact with the files, you use the commands at the bottom. To stage a file, you type in 
-                <span class="inline-snippet">2</span> or <span class="inline-snippet">u</span>, which gives you a list
-                of the changed files:
+                Because of the <span class="inline-snippet">yield</span>, if I call the method in 
+                the usual way I get an error: 
             </p>
-            <img src="img/blog/git-staging-command.jpg" alt="git stage files interface">
+                <img src="img/blog/my_method_with_yield_error.jpg" alt="error running my method with yield">
             <p>
-                then type in the number of the file you want to stage. Any files you've selected for staging are 
-                marked with asterisks:
+                To fix this, I need to pass in a block when I call 
+                the method. (Note: you can control for the case where a block isn’t passed by using 
+                the <span class="inline-snippet">block_given?</span> method.) So what does that mean 
+                exactly?
             </p>
-            <img src="img/blog/select-file-for-staging.jpg" alt="git files selected for staging">
+            <h4>What is a block?</h4>
             <p>
-                Once you've finished selecting all your files, you hit enter on the blank command line to go back to the 
-                main menu, then type in <span class="inline-snippet">1</span> or <span class="inline-snippet">s</span>
-                to see your updated status. Files 3 and 4 below now show information in the 
-                <span style="font-weight: bold; color: black;">staged</span> column and 'nothing' in the 
-                <span style="font-weight: bold; color: black;">unstaged</span> column, indicating that they have been staged:
-            </p>
-            <img src="img/blog/staged-files.jpg" alt="staged files">
-            <p>
-                To add new files that aren't currently being tracked, you would type <span class="inline-snippet">4</span> 
-                or <span class="inline-snippet">a</span>, and if you change your mind and want to unstage a file, you can
-                type <span class="inline-snippet">3</span> or <span class="inline-snippet">r</span>. 
-                When finished, you quit the interactive interface (<span class="inline-snippet">7</span> or 
-                <span class="inline-snippet">q</span>) and commit your staged files. Then repeat the process until all 
-                your files have been committed.  
+                In Ruby a block is basically just a chunk of code contained between a 
+                <span class="inline-snippet">do</span> and an <span class="inline-snippet">end</span> 
+                (or it can be contained within curly-brackets if it can be expressed in a single 
+                line). The code inside the block is what will be executed when the 
+                <span class="inline-snippet">yield</span> in the method is reached.
             </p>
             <p>
-                While the steps I've described above are no substitute for following good commit practices as you go, they
-                can be very helpful at those times when you forget.
+                To pass in a block to a method, you just append the block to the method call:
+            </p>
+                <img src="img/blog/method_call_with_block.jpg" alt="method call with a block">
+            <p>
+                The syntax looks a little foreign but it does the trick. Using either of these method   
+                calls (minus the line returns added for screenshot convenience) gives:
+            </p>
+                <img src="img/blog/my_method_with_yield_output.jpg" alt="output from method call with a block">
+            <h4>Passing Parameters</h4>
+            <p>
+                You can also pass one or more parameters which can then be used within the block:
+            </p>
+                <img src="img/blog/my_method_with_yield_and_parameter.jpg" alt="method with yield and a parameter">
+            <p>
+                The variable name within the pipes (<span class="inline-snippet">step</span>) is, of 
+                course, how the value that's passed in (in this case, 2) is referenced within the block. 
+                Running this method call gives:
+            </p>
+                <img src="img/blog/my_method_with_yield_and_parameter_output.jpg" alt="method with yield and a parameter output">
+            <p>
+                Changing Step 2 to something else is now a simple matter of changing the block that's 
+                passed with the method call; the method itself stays the same:
+            </p>
+                <img src="img/blog/new_method_call.jpg" alt="method with yield and a parameter">
+            <p>
+                Which yields:
+            </p>
+                <img src="img/blog/new_method_call_output.jpg" alt="method with yield and a parameter">
+            <p>
+                So what's the big deal about that? you might ask. An example should help clarify.
             </p>
 
+            <h4>A Practical Application</h4>
+            <p>
+                Although it isn’t necessarily apparent, <span class="inline-snippet">yield</span> is 
+                actually all over Ruby, in particular 
+                in the source code for enumerable methods. Here, for example, is the source code for 
+                Ruby's <span class="inline-snippet">each</span> method:
+
+            </p>
+                <img src="img/blog/each_source_code.jpg" alt="source code for ruby each method">
+            <p>
+                Ruby source code is written in <span class="inline-snippet">C</span>, which is quite 
+                difficult for this Ruby programmer to read, but note the 
+                <span class="inline-snippet">rb_yield</span> near the end of the method. A Ruby 
+                version of this code might look something like this:
+            </p>
+                <img src="img/blog/ruby_version_of_each_method_code.jpg" alt="ruby version of ruby each method code">
+            <p>
+                Like Ruby's actual <span class="inline-snipped">each</span> method, for a given 
+                collection (for example, an array), the <span class="inline-snippet">ruby_each</span> 
+                method iterates through the collection, yielding each element to the block passed 
+                in when the method is called, then returns the original array at the end. 
+            </p>
+            <h4>An Example</h4>
+            <br>
+                <img src="img/blog/example_using_each.jpg" alt="example method using each">
+            <p>
+                What's happening here is:
+            </p>
+                <ol>
+                    <li>An array is passed in to 
+                    <span class="inline-snippet">my_other_method</span> as an argument</li>
+                    <li>Ruby’s <span class="inline-snippet">each</span> method is called on that array</li> 
+                    <li>The <span class="inline-snippet">each</span> method iterates through the array
+                    (saving me, the programmer, from having to 
+                    create the loop and initialize and increment the counter variable)</li>
+                <li>Within each iteration of the 
+                    loop, the <span class="inline-snippet">each</span> method yields the current value 
+                    from the array to the code block (the part between between 
+                    <span class="inline-snippet">do</span> and <span class="inline-snippet">end</span>)</li> 
+                <li>The code block reverses the value and then <span class="inline-snippet">puts</span> it.</li>
+                </ol>
+            <p>
+                Calling <span class="inline-snippet">my_other_method(['I love pizza', 'I love ice cream', 
+                'I love Brussels sprouts'])</span> yields:
+            </p>
+                <img src="img/blog/ruby_each_example_output.jpg" alt="example method using each">
+
+            <p>
+                If you compare the last two methods above, you'll see how using 
+                <span class="inline-snippet">each</span> instead of <span class="inline-snippet">ruby_each</span>
+                really only saves a modest amount of code in this example. However, not surprisingly, 
+                when things get more complicated the difference increases quickly. 
+            </p>
+            <p>        
+                For example, say instead of <span class="inline-snippet">puts</span>ing each string 
+                in reverse order, we want our method to return each individual word reversed but still in the
+                original order. Doing this without using enumerators might look something like:
+            </p>
+                <img src="img/blog/no_each_no_map.jpg" alt="method without each or map">
+            <p>
+                On the other hand, doing it with enumerators (both <span class="inline-snippet">each</span>  
+                and <span class="inline-snippet">map</span>, another enumerator that uses 
+                <span class="inline-snippet">yield</span>) looks like:
+            </p>
+                <img src="img/blog/with_each_and_map.jpg" alt="method without each or map">
+            <p>
+                Calling either version with our array passed in as an argument yields:
+            </p>
+                <img src="img/blog/last_output.jpg" alt="output of either version">
+            <p>
+                The <span class="inline-snippet">yield</span> in the middle of Ruby's 
+                <span class="inline-snippet">each</span> and 
+                <span class="inline-snippet">map</span> methods gives them almost infinite utility. 
+                While the functionality of the methods themselves is fairly simple and doesn't change, 
+                they can be called with pretty nearly any block you can imagine. This not only makes 
+                them tremendously flexible, but also enables developers to write code that is more elegant, 
+                more readable, and more efficient. 
+            </p>
+            <br>
             <hr>
-            <p style="{padding-top: 3em;">Also see my <a class="text-link" href="http://burtondev.com/" target="_blank">Flatiron School blog entries</a></p>
+            <br>
+            <p style="{padding-top: 3em;">Also see my <a class="text-link" href="http://burtondev.com/" target="_blank">Flatiron student blog entries</a></p>
         </article>
 			<div class="navlinks">
                 <?php if ($page_info["prev_link"]) { include("nav-links/prev-link.php"); } ?>
@@ -112,14 +191,3 @@ include("header.php");
     </section>
 
 <?php include("footer.php"); ?>
-
-<!--     <div class="contact" >
-        <h2>Contact Info:</h2>
-            <ul>
-                <li><i class="fas fa-envelope-square"></i></i><a href="mailto:liz.burton147@gmail.com"><span>liz.burton147@gmail.com</span></a></li>
-                <li><i class="fab fa-linkedin-in"></i></i><a href="https://www.linkedin.com/in/burtonux" target="_blank"><span>www.linkedin.com/in/burtonux</span></a></li>
-                <li><i class="fab fa-github"></i><a href="https://github.com/lizbur10" target="_blank"><span>github.com/lizbur10</span></a>
-                <li><i class="fas fa-phone"></i><span>773-710-8686</span></li>
-            </ul>
-    </div>
- -->
