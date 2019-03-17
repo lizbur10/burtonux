@@ -106,13 +106,7 @@ function get_page_info($current_page) {
 			"prev_link" => "proj-email-editor.php",
 			"prev_link_label" => "previous project"
 		),
-		// array(
-		// 	"page" => "proj-np-site-visits.php",
-		// 	"add_to_menu" => false,
-		// 	"menu_label" => null, 
-		// 	"page_title" => "Liz Burton Portfolio - Constant Contact non-profit site visits",
-		// 	"sub_of" => "resume.php"
-		// ),
+		// BLOG POSTS //
 		array(
 			"page" => "blog.php",
 			"add_to_menu" => true,
@@ -133,6 +127,7 @@ function get_page_info($current_page) {
 			"next_link" => "blog.php",
 			"next_link_label" => "next post"
 		),
+		// END OF BLOG POSTS //
 	);
 
 	for($i = 0; $i < count($pages); $i++) {

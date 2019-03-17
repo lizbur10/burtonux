@@ -7,7 +7,7 @@ include("header.php");
 
         <article class="blog-post">
             <h2>Yields in Ruby: A Primer</h2>
-            <p class="posted-date">Posted March 16, 2019</p>
+            <p class="posted-date">Posted March 17, 2019</p>
             <p>
                 One of the biggest benefits of working as a technical coach for the Flatiron School 
                 is it forces me to address holes in my knowledge. Students can (and do) ask 
@@ -43,8 +43,8 @@ include("header.php");
             <p>
                 But say I want to execute some other code in the middle, maybe code that can vary 
                 under different conditions. In that case I might not want to have to code a 
-                separate method for each possible variant, especially if the common parts comprise
-                a lot of code. One 
+                separate method for each possible variant, especially if the common part comprises
+                a lot of code or is something that is used frequently (more on that later). One 
                 way to handle this situation is by using <span class="inline-snippet">yield</span>:
             </p>
                 <img src="img/blog/my_method_with_yield.jpg" alt="my method with a yield">
@@ -103,8 +103,8 @@ include("header.php");
             <h4>A Practical Application</h4>
             <p>
                 Although it isn’t necessarily apparent, <span class="inline-snippet">yield</span> is 
-                actually all over Ruby, in particular 
-                in the source code for enumerable methods. Here, for example, is the source code for 
+                actually all over Ruby, in particular in the source code for enumerable methods. 
+                Here, for example, is the source code for 
                 Ruby's <span class="inline-snippet">each</span> method:
 
             </p>
