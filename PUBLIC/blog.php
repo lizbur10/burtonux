@@ -9,8 +9,8 @@ include("header.php");
         <h2>Passing Arguments in Ruby</h2>
         <p class="posted-date">Posted March 24, 2019</p>
 
-        <p>While passing arguments is a fairly simple concept in Ruby, there are 
-            some variations that can be confusing at first. I'll start by covering 
+        <p>While passing arguments is a fairly simple concept, there are 
+            some variations that can be confusing at first. I&#8217;ll start by covering 
             the basics.</p>
 
         <h3>Passing a Single Argument</h3>
@@ -54,9 +54,7 @@ end
 greeting(arg)
 </code>
 </pre>
-
         <p>or </p>
-
 <pre>
 <code>
 greeting(&quot;Alex&quot;)
@@ -64,7 +62,9 @@ greeting(&quot;Alex&quot;)
 </pre>
 
         <p>In the first example, the variable <code>arg</code> is the argument, 
-        while in the second the string literal &#8220;Alex&#8221; is the argument. If the value of the variable <code>arg</code> in the first example is set equal to "Alex", the two method calls will yield the same result.</p>
+        while in the second the string literal &#8220;Alex&#8221; is the argument. 
+        If the value of the variable <code>arg</code> in the first example is set 
+        equal to &#8220;Alex&#8221;, the two method calls will yield the same result.</p>
 
         <h3>Passing Multiple Arguments</h3>
 
@@ -114,13 +114,13 @@ greeting(fname, lname, fav_activity)
         <h3>Order matters</h3>
 
         <p>If the variables being passed in as arguments have different names 
-            than the parameters defined in the method definition (or if 
-            we&#8217;re passing in literals rather than variables), how does 
+            than the parameters defined in the method definition, or if 
+            we&#8217;re passing in literals rather than variables, how does 
             the code know which argument goes with which parameter? It&#8217;s 
             based solely on the order in which the arguments are passed. When 
             we call the method, we must pass the arguments in the order in which 
             the parameters are listed in the method definition. If we were to call 
-            our intro method like this:</p>
+            our greeting method like this:</p>
 
 <pre>
 <code>
@@ -182,7 +182,8 @@ greeting(first_name: first_name, last_name: last_name, hobby: hobby)
             the example above, we <em>could</em> use</p>
 
 <pre>
-<code>greeting(first_name: fname, last_name: lname, hobby: fav_activity)
+<code>
+greeting(first_name: fname, last_name: lname, hobby: fav_activity)
 </code>
 </pre>
 

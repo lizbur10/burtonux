@@ -472,6 +472,9 @@ article.project {
   img {
     max-width: 95%;
   }
+  h3 {
+    margin-top: 1.5em;
+  }
 }
 
 .posted-date {
@@ -500,6 +503,13 @@ pre > code {
   font-size: .8em;
   color: #555;
   overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+pre {
+  margin-bottom: -1em;
 }
 
 .floated-image {

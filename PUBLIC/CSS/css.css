@@ -439,6 +439,9 @@ article.project {
 .blog-post img {
   max-width: 95%;
 }
+.blog-post h3 {
+  margin-top: 1.5em;
+}
 
 .posted-date {
   font-style: italic;
@@ -466,6 +469,13 @@ pre > code {
   font-size: 0.8em;
   color: #555;
   overflow: auto;
+}
+pre > code::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+  margin-bottom: -1em;
 }
 
 .floated-image {
