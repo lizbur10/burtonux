@@ -113,8 +113,19 @@ function get_page_info($current_page) {
 			"menu_label" => "Blog", 
 			"page_title" => "Liz Burton Blog",
 			"sub_of" => "blog.php",
-			"prev_link" => "blog-030919.php",
+			"prev_link" => "blog-031719.php",
 			"prev_link_label" => "previous post"
+		),
+		array(
+			"page" => "blog-031719.php",
+			"add_to_menu" => false,
+			"menu_label" => null, 
+			"page_title" => "Liz Burton Blog",
+			"sub_of" => "blog.php",
+			"prev_link" => "blog-030919.php",
+			"prev_link_label" => "previous post",
+			"next_link" => "blog.php",
+			"next_link_label" => "next post"
 		),
 		array(
 			"page" => "blog-030919.php",
@@ -122,9 +133,7 @@ function get_page_info($current_page) {
 			"menu_label" => null, 
 			"page_title" => "Liz Burton Blog",
 			"sub_of" => "blog.php",
-			// "prev_link" => "blog-03XX19.php",
-			// "prev_link_label" => "previous post",
-			"next_link" => "blog.php",
+			"next_link" => "blog-031719.php",
 			"next_link_label" => "next post"
 		),
 		// END OF BLOG POSTS //

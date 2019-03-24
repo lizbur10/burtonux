@@ -6,178 +6,287 @@ include("header.php");
         <h1 class="visually-hidden">Liz Burton's Blog</h1>
 
         <article class="blog-post">
-            <h2>Yields in Ruby: A Primer</h2>
-            <p class="posted-date">Posted March 17, 2019</p>
-            <p>
-                One of the biggest benefits of working as a technical coach for the Flatiron School 
-                is it forces me to address holes in my knowledge. Students can (and do) ask 
-                questions about anything. Often it’s only when I’m trying to answer a question for 
-                a student that I realize there’s something I don’t understand as well as I thought 
-                I did. Recently I was trying to explain the concept of yield to
-                someone and quickly realized I needed to study up on it myself. 
-            </p>
-            <p>
-                <span class="inline-snippet">yield</span> can be very tricky to wrap your head around at 
-                first. But at its most basic level, it really comes down to two things:
-            </p>
-            <ol>
-                <li>You define a method that includes a <span class="inline-snippet">yield</span> 
-                statement in it somewhere</li>
-                <li>You call the method with a block containing some code to be executed at the 
-                point where the <span class="inline-snippet">yield</span> is</li>
-            </ol>
+        <h2>Passing Arguments in Ruby</h2>
+        <p class="posted-date">Posted March 24, 2019</p>
 
-            <p>
-                Of course it's usually more complicated in practice but it can be just this 
-                simple.
-            </p>
-            <h4>Step 1: defining your method</h4>
-            <p>
-                First, let’s define our method without a yield:
-            </p>
-                <img src="img/blog/my_method_no_yield.jpg" alt="my method without a yield">
-            <p>
-                I call this method by running <span class="inline-snippet">my_method</span> and I get:
-            </p>
-                <img src="img/blog/my_method_no_yield_output.jpg" alt="output of my method without yield">
-            <p>
-                But say I want to execute some other code in the middle, maybe code that can vary 
-                under different conditions. In that case I might not want to have to code a 
-                separate method for each possible variant, especially if the common part comprises
-                a lot of code or is something that is used frequently (more on that later). One 
-                way to handle this situation is by using <span class="inline-snippet">yield</span>:
-            </p>
-                <img src="img/blog/my_method_with_yield.jpg" alt="my method with a yield">
-            <p>
-                Because of the <span class="inline-snippet">yield</span>, if I call the method in 
-                the usual way I get an error: 
-            </p>
-                <img src="img/blog/my_method_with_yield_error.jpg" alt="error running my method with yield">
-            <p>
-                To fix this, I need to pass in a block when I call 
-                the method. (Note: you can control for the case where a block isn’t passed by using 
-                the <span class="inline-snippet">block_given?</span> method.) So what does that mean 
-                exactly?
-            </p>
-            <h4>What is a block?</h4>
-            <p>
-                In Ruby a block is basically just a chunk of code contained between a 
-                <span class="inline-snippet">do</span> and an <span class="inline-snippet">end</span> 
-                (or it can be contained within curly-brackets if it can be expressed in a single 
-                line). The code inside the block is what will be executed when the 
-                <span class="inline-snippet">yield</span> in the method is reached.
-            </p>
-            <p>
-                To pass in a block to a method, you just append the block to the method call:
-            </p>
-                <img src="img/blog/method_call_with_block.jpg" alt="method call with a block">
-            <p>
-                The syntax looks a little foreign but it does the trick. Using either of these method   
-                calls (minus the line returns added for screenshot convenience) gives:
-            </p>
-                <img src="img/blog/my_method_with_yield_output.jpg" alt="output from method call with a block">
-            <h4>Passing Parameters</h4>
-            <p>
-                You can also pass one or more parameters which can then be used within the block:
-            </p>
-                <img src="img/blog/my_method_with_yield_and_parameter.jpg" alt="method with yield and a parameter">
-            <p>
-                The variable name within the pipes (<span class="inline-snippet">step</span>) is, of 
-                course, how the value that's passed in (in this case, 2) is referenced within the block. 
-                Running this method call gives:
-            </p>
-                <img src="img/blog/my_method_with_yield_and_parameter_output.jpg" alt="method with yield and a parameter output">
-            <p>
-                Changing Step 2 to something else is now a simple matter of changing the block that's 
-                passed with the method call; the method itself stays the same:
-            </p>
-                <img src="img/blog/new_method_call.jpg" alt="method with yield and a parameter">
-            <p>
-                Which yields:
-            </p>
-                <img src="img/blog/new_method_call_output.jpg" alt="method with yield and a parameter">
-            <p>
-                So what's the big deal about that? you might ask. An example should help clarify.
-            </p>
+        <p>While passing arguments is a fairly simple concept in Ruby, there are 
+            some variations that can be confusing at first. I'll start by covering 
+            the basics.</p>
 
-            <h4>A Practical Application</h4>
-            <p>
-                Although it isn’t necessarily apparent, <span class="inline-snippet">yield</span> is 
-                actually all over Ruby, in particular in the source code for enumerable methods. 
-                Here, for example, is the source code for 
-                Ruby's <span class="inline-snippet">each</span> method:
+        <h3>Passing a Single Argument</h3>
 
-            </p>
-                <img src="img/blog/each_source_code.jpg" alt="source code for ruby each method">
-            <p>
-                Ruby source code is written in <span class="inline-snippet">C</span>, which is quite 
-                difficult for this Ruby programmer to read, but note the 
-                <span class="inline-snippet">rb_yield</span> near the end of the method. A Ruby 
-                version of this code might look something like this:
-            </p>
-                <img src="img/blog/ruby_version_of_each_method_code.jpg" alt="ruby version of ruby each method code">
-            <p>
-                Like Ruby's actual <span class="inline-snipped">each</span> method, for a given 
-                collection (for example, an array), the <span class="inline-snippet">ruby_each</span> 
-                method iterates through the collection, yielding each element to the block passed 
-                in when the method is called, then returns the original array at the end. 
-            </p>
-            <h4>An Example</h4>
-            <br>
-                <img src="img/blog/example_using_each.jpg" alt="example method using each">
-            <p>
-                What's happening here is:
-            </p>
-                <ol>
-                    <li>An array is passed in to 
-                    <span class="inline-snippet">my_other_method</span> as an argument</li>
-                    <li>Ruby’s <span class="inline-snippet">each</span> method is called on that array</li> 
-                    <li>The <span class="inline-snippet">each</span> method iterates through the array
-                    (saving me, the programmer, from having to 
-                    create the loop and initialize and increment the counter variable)</li>
-                <li>Within each iteration of the 
-                    loop, the <span class="inline-snippet">each</span> method yields the current value 
-                    from the array to the code block (the part between between 
-                    <span class="inline-snippet">do</span> and <span class="inline-snippet">end</span>)</li> 
-                <li>The code block reverses the value and then <span class="inline-snippet">puts</span> it.</li>
-                </ol>
-            <p>
-                Calling <span class="inline-snippet">my_other_method(['I love pizza', 'I love ice cream', 
-                'I love Brussels sprouts'])</span> yields:
-            </p>
-                <img src="img/blog/ruby_each_example_output.jpg" alt="example method using each">
+        <p>A method doesn&#8217;t need to accept any arguments, of course, as in 
+            this classic example: </p>
 
-            <p>
-                If you compare the last two methods above, you'll see how using 
-                <span class="inline-snippet">each</span> instead of <span class="inline-snippet">ruby_each</span>
-                really only saves a modest amount of code in this example. However, not surprisingly, 
-                when things get more complicated the difference increases quickly. 
-            </p>
-            <p>        
-                For example, say instead of <span class="inline-snippet">puts</span>ing each string 
-                in reverse order, we want our method to return each individual word reversed but still in the
-                original order. Doing this without using enumerators might look something like:
-            </p>
-                <img src="img/blog/no_each_no_map.jpg" alt="method without each or map">
-            <p>
-                On the other hand, doing it with enumerators (both <span class="inline-snippet">each</span>  
-                and <span class="inline-snippet">map</span>, another enumerator that uses 
-                <span class="inline-snippet">yield</span>) looks like:
-            </p>
-                <img src="img/blog/with_each_and_map.jpg" alt="method without each or map">
-            <p>
-                Calling either version with our array passed in as an argument yields:
-            </p>
-                <img src="img/blog/last_output.jpg" alt="output of either version">
-            <p>
-                The <span class="inline-snippet">yield</span> in the middle of Ruby's 
-                <span class="inline-snippet">each</span> and 
-                <span class="inline-snippet">map</span> methods gives them almost infinite utility. 
-                While the functionality of the methods themselves is fairly simple and doesn't change, 
-                they can be called with pretty nearly any block you can imagine. This not only makes 
-                them tremendously flexible, but also enables developers to write code that is more elegant, 
-                more readable, and more efficient. 
-            </p>
+<pre>
+<code>
+def greeting
+    puts &quot;Hello, World!&quot;
+end
+</code>
+</pre>
+
+        <p>But things get more flexible and more interesting when we can pass 
+            an argument into our method:</p>
+
+<pre>
+<code>
+def greeting(name)
+    puts &quot;Hello, #{name}&quot;
+end
+</code>
+</pre>
+
+        <p>Note that <code>name</code> in the example above is <em>not</em> an 
+        argument, it is a parameter. The difference between parameters and 
+        arguments is pretty simple: the <em>parameter</em> is the placeholder 
+        that&#8217;s used in the method definition, while the <em>argument</em> 
+        is the value that&#8217;s passed in when the method is called. While 
+        this distinction may seem nitpicky, and in practice the two terms are 
+        often used interchangeably, for purposes of this discussion it&#8217;s 
+        important to keep the distinction in mind.</p>
+
+        <p>When we call the method above, we pass an <em>argument</em>, which 
+        can either be a variable or a literal:</p>
+
+<pre>
+<code>
+greeting(arg)
+</code>
+</pre>
+
+        <p>or </p>
+
+<pre>
+<code>
+greeting(&quot;Alex&quot;)
+</code>
+</pre>
+
+        <p>In the first example, the variable <code>arg</code> is the argument, 
+        while in the second the string literal &#8220;Alex&#8221; is the argument. If the value of the variable <code>arg</code> in the first example is set equal to "Alex", the two method calls will yield the same result.</p>
+
+        <h3>Passing Multiple Arguments</h3>
+
+        <p>It&#8217;s also possible to define a method that accepts multiple 
+            arguments:</p>
+
+<pre>
+<code>
+def greeting(first_name, last_name, hobby)
+    puts &quot;Hello #{first_name} #{last_name}, we hear you love #{hobby}&quot;
+end
+</code>
+</pre>
+
+        <p>Here the <em>parameters</em> are <code>first_name</code>, 
+        <code>last_name</code> and <code>hobby</code> and we can call the method 
+        by executing:</p>
+
+<pre>
+<code>
+greeting(&quot;Alex&quot;, &quot;Cho&quot;, &quot;fantasy birding&quot;)
+</code>
+</pre>
+
+        <p>or </p>
+
+<pre>
+<code>
+greeting(first_name, last_name, hobby)
+</code>
+</pre>
+
+        <p>or</p>
+
+<pre>
+<code>
+greeting(fname, lname, fav_activity)
+</code>
+</pre>
+
+        <p>As you can see in the second and third examples, the variables being 
+            passed in as arguments <em>can</em> have the same names as the parameters 
+            but they don&#8217;t need to. All three examples work exactly the 
+            same (assuming, of course, that the values are the same). But that 
+            brings us to one of the complicating factors.</p>
+
+        <h3>Order matters</h3>
+
+        <p>If the variables being passed in as arguments have different names 
+            than the parameters defined in the method definition (or if 
+            we&#8217;re passing in literals rather than variables), how does 
+            the code know which argument goes with which parameter? It&#8217;s 
+            based solely on the order in which the arguments are passed. When 
+            we call the method, we must pass the arguments in the order in which 
+            the parameters are listed in the method definition. If we were to call 
+            our intro method like this:</p>
+
+<pre>
+<code>
+greeting(last_name, first_name, hobby)
+</code>
+</pre>
+
+        <p>the first and last names will be reversed in the <code>puts</code>ed 
+        greeting. Furthermore, if we are passing arguments of different types 
+        (if one of them is an integer, for example), then passing the arguments 
+        in the wrong order will result in a TypeError. </p>
+
+        <p>While this may not seem like a big deal if there are only two or 
+            three arguments, as our methods get more complex this way of 
+            defining parameters and passing arguments will get more and more 
+            unwieldy. Enter keyword arguments.</p>
+
+        <h3>Keyword Arguments</h3>
+
+        <p>In order to pass arguments as keywords, we need to make one simple 
+            modification to how the parameters are defined in our method 
+            definition &#8211; we need to add a colon to the end:</p>
+
+<pre>
+<code>
+def greeting(first_name:, last_name:, hobby:)
+    puts &quot;Hello #{first_name} #{last_name}, we hear you love #{hobby}&quot;
+end
+</code>
+</pre>
+
+        <p>Note, however, that we still reference the parameters in the same 
+            way within the body of the method. </p>
+
+        <p>When we call the method, we then explicitly specify the values for 
+            each parameter, using the keywords as defined in the method 
+            definition:</p>
+
+<pre>
+<code>
+greeting(first_name: &quot;Alex&quot;, last_name: &quot;Cho&quot;, hobby: &quot;fantasy birding&quot;)
+</code>
+</pre>
+
+        <p>or</p>
+
+<pre>
+<code>
+greeting(first_name: first_name, last_name: last_name, hobby: hobby)
+</code>
+</pre>
+
+        <p>This syntax here should look familiar: we&#8217;re using hash syntax, 
+            with a key/value pair, to pass in each argument. What this means is 
+            that the <code>key</code> portion of each argument must match the 
+            associated keyword parameter defined in the method. The <code>value</code> portion, 
+            on the other hand (assuming we&#8217;re using a variable name and not a 
+            literal), <em>can</em> be the same but it doesn&#8217;t need to be. So in 
+            the example above, we <em>could</em> use</p>
+
+<pre>
+<code>greeting(first_name: fname, last_name: lname, hobby: fav_activity)
+</code>
+</pre>
+
+        <p>but this would <em>not</em> work:</p>
+
+<pre>
+<code>
+greeting(fname: first_name, lname: last_name, fav_activity: hobby)
+</code>
+</pre>
+
+        <p>The keys must be <code>first_name</code>, <code>last_name</code>, 
+        and <code>hobby</code> because those are the keywords we used when we 
+        defined our method.</p>
+
+        <p>Now we can pass the arguments in any order and our method 
+            will still correctly <code>puts</code> our message. </p>
+
+<pre>
+<code>
+greeting(hobby: hobby, first_name: first_name, last_name: last_name)
+</code>
+</pre>
+
+        <p>At first glance, going from this:</p>
+
+<pre>
+<code>
+greeting(first_name, last_name, hobby)
+</code>
+</pre>
+
+        <p>to this: </p>
+
+<pre>
+<code>
+greeting(first_name: first_name, last_name: last_name, hobby: hobby)
+</code>
+</pre>
+
+        <p>might not seem like an especially good trade. However, the use of 
+            keyword arguments allows us to use mass assignment, which will 
+            substantially simplify matters when our applications get more 
+            complex.</p>
+
+        <h3>Mass Assignment</h3>
+
+        <p>Let&#8217;s say that we want to create a <code>Person</code> class 
+        with the attributes used in our <code>greeting</code> method. 
+        Let&#8217;s use keyword arguments for our <code>initialize</code> 
+        method:</p>
+
+<pre>
+<code>    
+class Person
+    attr_accessor :first_name, :last_name, :hobby
+
+    def initialize(first_name:, last_name:, hobby:)
+        @first_name = first_name
+        @last_name = last_name
+        @hobby = hobby
+    end
+end
+</code>
+</pre>
+
+        <p>When we create a new instance of <code>Person</code>, it might look 
+        like this:</p>
+
+<pre>
+<code>
+@person = Person.new(first_name: &quot;Alex&quot;, last_name: &quot;Cho&quot;, hobby: &quot;fantasy birding&quot;)
+</code>
+</pre>
+
+        <p>But note that the information inside the parentheses is nothing more 
+            or less than a hash! As a result, we can accomplish the same thing 
+            by doing this:</p>
+
+<pre>
+<code>
+person_attributes = {first_name: &quot;Alex&quot;, last_name: &quot;Cho&quot;, hobby: &quot;fantasy birding&quot;}
+@person = Person.new(person_attributes)
+</code>
+</pre>
+        <p>We do not need to explicitly list out the individual arguments 
+            &mdash; we can simply pass in the hash. Furthermore, the 
+            order of the key/value pairs inside the hash doesn&#8217;t matter. The 
+            <code>initialize</code> method will find the value associated with 
+            each key and correctly assign the attribute values. </p>
+
+        <p>While this may not seem like a big deal at first glance, it does have
+            a couple of pretty big advantages. One is that if we want to add 
+            another attribute to the Person 
+            class, we only need to change code in two places: in our 
+            <code>attr_accessor</code>s and in the <code>initialize</code> 
+            method. A second advantage is it can greatly simplify handling of 
+            data submitted through a form. For example, if we have a signup 
+            form in our application, when the form is submitted the values 
+            the user entered are automatically stored in a <code>params</code> 
+            hash. To create a new user (i.e., a new instance of a User class), 
+            the values in the <code>params</code> hash can be accessed as above 
+            to assign the attribute values.</p>
+
             <br>
             <hr>
             <br>
