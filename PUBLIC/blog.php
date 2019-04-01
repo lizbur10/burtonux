@@ -6,70 +6,16 @@ include("header.php");
         <h1 class="visually-hidden">Liz Burton's Blog</h1>
 
         <article class="blog-post">
-        <h2>Passing Arguments in Ruby</h2>
-        <p class="posted-date">Posted March 24, 2019</p>
+        <h2>Required vs. Optional Arguments in Ruby</h2>
 
-        <p>While passing arguments is a fairly simple concept, there are 
-            some variations that can be confusing at first. I&#8217;ll start by covering 
-            the basics.</p>
+        <p class="posted-date">Posted March 31, 2019</p>
 
-        <h3>Passing a Single Argument</h3>
 
-        <p>A method doesn&#8217;t need to accept any arguments, of course, as in 
-            this classic example: </p>
+        <p>In <a class="text-link" href="/blog-032419.php">my last post</a> I talked about passing arguments in Ruby. In this post, I&#8217;ll cover a related topic: required vs. optional arguments. </p>
 
-<pre>
-<code>
-def greeting
-    puts &quot;Hello, World!&quot;
-end
-</code>
-</pre>
+        <h3>Using default arguments</h3>
 
-        <p>But things get more flexible and more interesting when we can pass 
-            an argument into our method:</p>
-
-<pre>
-<code>
-def greeting(name)
-    puts &quot;Hello, #{name}&quot;
-end
-</code>
-</pre>
-
-        <p>Note that <code>name</code> in the example above is <em>not</em> an 
-        argument, it is a parameter. The difference between parameters and 
-        arguments is pretty simple: the <em>parameter</em> is the placeholder 
-        that&#8217;s used in the method definition, while the <em>argument</em> 
-        is the value that&#8217;s passed in when the method is called. While 
-        this distinction may seem nitpicky, and in practice the two terms are 
-        often used interchangeably, for purposes of this discussion it&#8217;s 
-        important to keep the distinction in mind.</p>
-
-        <p>When we call the method above, we pass an <em>argument</em>, which 
-        can either be a variable or a literal:</p>
-
-<pre>
-<code>
-greeting(arg)
-</code>
-</pre>
-        <p>or </p>
-<pre>
-<code>
-greeting(&quot;Alex&quot;)
-</code>
-</pre>
-
-        <p>In the first example, the variable <code>arg</code> is the argument, 
-        while in the second the string literal &#8220;Alex&#8221; is the argument. 
-        If the value of the variable <code>arg</code> in the first example is set 
-        equal to &#8220;Alex&#8221;, the two method calls will yield the same result.</p>
-
-        <h3>Passing Multiple Arguments</h3>
-
-        <p>It&#8217;s also possible to define a method that accepts multiple 
-            arguments:</p>
+        <p>In this example, all three arguments are required:</p>
 
 <pre>
 <code>
@@ -79,214 +25,181 @@ end
 </code>
 </pre>
 
-        <p>Here the <em>parameters</em> are <code>first_name</code>, 
-        <code>last_name</code> and <code>hobby</code> and we can call the method 
-        by executing:</p>
+        <p>If this method is called with fewer than 3 arguments, an argument error will be thrown. But let&#8217;s say we want the last name to be optional. One way to do that is to provide a default value:</p>
 
 <pre>
 <code>
-greeting(&quot;Alex&quot;, &quot;Cho&quot;, &quot;fantasy birding&quot;)
+def greeting(first_name, last_name=&quot;Doe&quot;, hobby)
+    puts &quot;Hello #{first_name} #{last_name}, we hear you love #{hobby}.&quot;
+end
 </code>
 </pre>
 
-        <p>or </p>
+        <p>If the method is called with only two arguments, those arguments will be assigned to <code>first_name</code> and <code>hobby</code> and the default value will be used for the last name. </p>
+
+        <p>It&#8217;s unlikely that we would want to assign a fake last name, however, so a more realistic solution would be to set the default value to nil, making that variable truly optional:</p>
 
 <pre>
 <code>
-greeting(first_name, last_name, hobby)
+def greeting(first_name, last_name=nil, hobby)
+    puts &quot;Hello #{first_name} #{last_name}, we hear you love #{hobby}.&quot;
+end
 </code>
 </pre>
 
-        <p>or</p>
+        <p>Calling </p>
 
 <pre>
 <code>
-greeting(fname, lname, fav_activity)
+greeting(&quot;Alex&quot;, &quot;fantasy birding&quot;)
 </code>
 </pre>
 
-        <p>As you can see in the second and third examples, the variables being 
-            passed in as arguments <em>can</em> have the same names as the parameters 
-            but they don&#8217;t need to. All three examples work exactly the 
-            same (assuming, of course, that the values are the same). But that 
-            brings us to one of the complicating factors.</p>
-
-        <h3>Order matters</h3>
-
-        <p>If the variables being passed in as arguments have different names 
-            than the parameters defined in the method definition, or if 
-            we&#8217;re passing in literals rather than variables, how does 
-            the code know which argument goes with which parameter? It&#8217;s 
-            based solely on the order in which the arguments are passed. When 
-            we call the method, we must pass the arguments in the order in which 
-            the parameters are listed in the method definition. If we were to call 
-            our greeting method like this:</p>
+        <p>gives</p>
 
 <pre>
 <code>
-greeting(last_name, first_name, hobby)
+Hello Alex , we hear you love fantasy birding.
 </code>
 </pre>
 
-        <p>the first and last names will be reversed in the <code>puts</code>ed 
-        greeting. Furthermore, if we are passing arguments of different types 
-        (if one of them is an integer, for example), then passing the arguments 
-        in the wrong order will result in a TypeError. </p>
+        <p>Which, aside from the extraneous space, gives the result we&#8217;re after.</p>
 
-        <p>While this may not seem like a big deal if there are only two or 
-            three arguments, as our methods get more complex this way of 
-            defining parameters and passing arguments will get more and more 
-            unwieldy. Enter keyword arguments.</p>
+        <h3>Keyword Arguments with Default Values</h3>
 
-        <h3>Keyword Arguments</h3>
-
-        <p>In order to pass arguments as keywords, we need to make one simple 
-            modification to how the parameters are defined in our method 
-            definition &#8211; we need to add a colon to the end:</p>
+        <p>Using default values with keyword arguments is straightforward:</p>
 
 <pre>
 <code>
-def greeting(first_name:, last_name:, hobby:)
+def greeting(first_name:, last_name: nil, hobby:)
     puts &quot;Hello #{first_name} #{last_name}, we hear you love #{hobby}&quot;
 end
 </code>
 </pre>
 
-        <p>Note, however, that we still reference the parameters in the same 
-            way within the body of the method. </p>
-
-        <p>When we call the method, we then explicitly specify the values for 
-            each parameter, using the keywords as defined in the method 
-            definition:</p>
+        <p>We have a couple different options for calling our method. We can pass in the arguments directly as key/value pairs: 
 
 <pre>
 <code>
 greeting(first_name: &quot;Alex&quot;, last_name: &quot;Cho&quot;, hobby: &quot;fantasy birding&quot;)
 </code>
 </pre>
-
-        <p>or</p>
-
-<pre>
-<code>
-greeting(first_name: first_name, last_name: last_name, hobby: hobby)
-</code>
-</pre>
-
-        <p>This syntax here should look familiar: we&#8217;re using hash syntax, 
-            with a key/value pair, to pass in each argument. What this means is 
-            that the <code>key</code> portion of each argument must match the 
-            associated keyword parameter defined in the method. The <code>value</code> portion, 
-            on the other hand (assuming we&#8217;re using a variable name and not a 
-            literal), <em>can</em> be the same but it doesn&#8217;t need to be. So in 
-            the example above, we <em>could</em> use</p>
+                
+        <p> Or we can pass them inside a variable :</p>
 
 <pre>
 <code>
-greeting(first_name: fname, last_name: lname, hobby: fav_activity)
+person_attributes = {first_name: &quot;Alex&quot;, last_name: &quot;Cho&quot;, hobby: &quot;fantasy birding&quot;}
+
+greeting(person_attributes)
 </code>
 </pre>
 
-        <p>but this would <em>not</em> work:</p>
+        <p>In either case, the hash can be passed in with or without <code>last_name</code> since it defaults to nil.</p>
+
+
+        <p>Finally, you can define the method to accept a single parameter: a hash containing all of the key/value pairs. In this case, you can pass in any number of arguments in the hash (including zero) as long as missing data are handled inside the method:</p>
 
 <pre>
 <code>
-greeting(fname: first_name, lname: last_name, fav_activity: hobby)
+def greeting(person_attributes)
+    message = &quot;Hello&quot;
+    message += &quot; #{person_attributes[:first_name]}&quot; if person_attributes[:first_name]
+    message += &quot; #{person_attributes[:last_name]}&quot; if person_attributes[:last_name]
+    message += &quot;, we hear you love #{person_attributes[:hobby]}.&quot; if person_attributes[:hobby]
+    puts message
+end
 </code>
 </pre>
 
-        <p>The keys must be <code>first_name</code>, <code>last_name</code>, 
-        and <code>hobby</code> because those are the keywords we used when we 
-        defined our method.</p>
+        <h3>Splat</h3>
 
-        <p>Now we can pass the arguments in any order and our method 
-            will still correctly <code>puts</code> our message. </p>
+        <p>Another way to handle optional arguments is through the use of the splat operator:</p>
 
 <pre>
 <code>
-greeting(hobby: hobby, first_name: first_name, last_name: last_name)
+def shopping_list(*items)
+    puts items.class
+    return items
+end
 </code>
 </pre>
 
-        <p>At first glance, going from this:</p>
+        <p>When this method is called with zero or more arguments, &#8220;Array&#8221; is <code>puts</code>ed to the screen and an array is returned which either contains the values passed in as arguments or is empty if no arguments are passed. The values assigned to the <code>items</code> variable can be handled using an enumerator:</p>
 
 <pre>
 <code>
-greeting(first_name, last_name, hobby)
-</code>
-</pre>
-
-        <p>to this: </p>
-
-<pre>
-<code>
-greeting(first_name: first_name, last_name: last_name, hobby: hobby)
-</code>
-</pre>
-
-        <p>might not seem like an especially good trade. However, the use of 
-            keyword arguments allows us to use mass assignment, which will 
-            substantially simplify matters when our applications get more 
-            complex.</p>
-
-        <h3>Mass Assignment</h3>
-
-        <p>Let&#8217;s say that we want to create a <code>Person</code> class 
-        with the attributes used in our <code>greeting</code> method. 
-        Let&#8217;s use keyword arguments for our <code>initialize</code> 
-        method:</p>
-
-<pre>
-<code>    
-class Person
-    attr_accessor :first_name, :last_name, :hobby
-
-    def initialize(first_name:, last_name:, hobby:)
-        @first_name = first_name
-        @last_name = last_name
-        @hobby = hobby
+def shopping_list(*items)
+    if items.length &gt; 0
+        puts &quot;Your shopping list:&quot;
+        items.each { |item| puts item }
+    else
+        puts &quot;Nothing to buy today!&quot;
     end
 end
 </code>
 </pre>
 
-        <p>When we create a new instance of <code>Person</code>, it might look 
-        like this:</p>
+        <h3>Combining Required and Optional Arguments</h3>
+
+        <p>It is possible to combine required parameters, parameters with default values and optional parameters in a method definition: </p>
 
 <pre>
 <code>
-@person = Person.new(first_name: &quot;Alex&quot;, last_name: &quot;Cho&quot;, hobby: &quot;fantasy birding&quot;)
+def greeting(first_name, last_name=nil, *hobbies)
+    &lt;body of method&gt; 
+end
 </code>
 </pre>
 
-        <p>But note that the information inside the parentheses is nothing more 
-            or less than a hash! As a result, we can accomplish the same thing 
-            by doing this:</p>
+        <p>In this example, the method must be passed at least one argument 
+        since <code>first_name</code> is required, but it can be called with as 
+        many arguments as you like. The first (or only) argument will be assigned 
+        to <code>first_name</code>; the second (if present) will be assigned 
+        to <code>last_name</code>, and all remaining arguments (if present) will 
+        be added to the <code>hobbies</code> array. But note the effect of how 
+        the arguments are assigned: <code>last_name</code> isn&#8217;t truly 
+        optional in this example, it&#8217;s only optional if there aren&#8217;t 
+        any hobbies being passed! If you try to pass in just the first name and 
+        hobbies, the first hobby will be assigned as the last name.</p>
+
+        <p>There are some other weirdnesses about trying to combine required and optional arguments. For example, all of these are allowed:</p>
 
 <pre>
 <code>
-person_attributes = {first_name: &quot;Alex&quot;, last_name: &quot;Cho&quot;, hobby: &quot;fantasy birding&quot;}
-@person = Person.new(person_attributes)
+def greeting(first_name, last_name=nil, hobby)
+
+def greeting(first_name=nil, last_name, hobby)
+
+def greeting(first_name, last_name=nil, *hobbies)
 </code>
 </pre>
-        <p>We do not need to explicitly list out the individual arguments 
-            &mdash; we can simply pass in the hash. Furthermore, the 
-            order of the key/value pairs inside the hash doesn&#8217;t matter. The 
-            <code>initialize</code> method will find the value associated with 
-            each key and correctly assign the attribute values. </p>
 
-        <p>While this may not seem like a big deal at first glance, it does have
-            a couple of pretty big advantages. One is that if we want to add 
-            another attribute to the Person 
-            class, we only need to change code in two places: in our 
-            <code>attr_accessor</code>s and in the <code>initialize</code> 
-            method. A second advantage is it can greatly simplify handling of 
-            data submitted through a form. For example, if we have a signup 
-            form in our application, when the form is submitted the values 
-            the user entered are automatically stored in a <code>params</code> 
-            hash. To create a new user (i.e., a new instance of a User class), 
-            the values in the <code>params</code> hash can be accessed as above 
-            to assign the attribute values.</p>
+        <p>But this throws an error:</p>
+
+<pre>
+<code>
+def greeting(first_name=nil, last_name, *hobbies)
+</code>
+</pre>
+
+        <p>Given these limitations and somewhat unpredictable behaviors, it seems safest to use required arguments with <em>either</em> default values <em>or</em> a splat operator, but not both. More complicated cases can be handled through the use of a variable containing a hash along with the splat operator:</p>
+
+<pre>
+<code>
+def greeting(name, *hobbies)
+    message = &quot;Hello&quot;
+    message += &quot; #{name[:first_name]}&quot; if name[:first_name]
+    message += &quot; #{name[:last_name]}&quot; if name[:last_name]
+    if hobbies.length &gt; 0
+        message += &quot;, we hear you love: #{hobbies.join(&quot;, &quot;)}&quot;
+    end
+    puts message
+end
+</code>
+</pre>
+
+        <p>This code will run without error if the name hash includes both <code>first_name</code> and <code>last_name</code>, just one or the other, or neither. It will also work with any number of hobbies, including zero.</p>
 
             <br>
             <hr>
