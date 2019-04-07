@@ -6,200 +6,161 @@ include("header.php");
         <h1 class="visually-hidden">Liz Burton's Blog</h1>
 
         <article class="blog-post">
-        <h2>Required vs. Optional Arguments in Ruby</h2>
 
-        <p class="posted-date">Posted March 31, 2019</p>
+        <h2>Setters and Getters in Ruby</h2>
+        <p class="posted-date">Posted April 7, 2019</p>
 
 
-        <p>In <a class="text-link" href="/blog-032419.php">my last post</a> I talked about passing arguments in Ruby. In this post, I&#8217;ll cover a related topic: required vs. optional arguments. </p>
+<p>Instance variables in Ruby are scoped to a specific object. This makes sense. If, for example, <code>@alex</code> is an instance of class <code>Person</code> and <code>@alex</code> has an instance variable <code>name</code> with the value &#8220;Alex&#8221;, it seems reasonable that this value of <code>name</code> is scoped to the <code>@alex</code> object. What this means is that you can&#8217;t access or change the value of <code>@alex</code>&#8217;s <code>name</code> variable from outside the object itself. Setters and getters in Ruby are methods that make it possible to access and manipulate an instance variable from outside the specific instance: the setter method assigns an attribute value to an object, and the getter method retrieves the value.</p>
 
-        <h3>Using default arguments</h3>
-
-        <p>In this example, all three arguments are required:</p>
+<p>The setter and getter for the <code>name</code> attribute of our <code>Person</code> class would look like this: </p>
 
 <pre>
 <code>
-def greeting(first_name, last_name, hobby)
-    puts &quot;Hello #{first_name} #{last_name}, we hear you love #{hobby}&quot;
-end
-</code>
-</pre>
+class Person
+    def name=(name)
+        @name = name
+    end
 
-        <p>If this method is called with fewer than 3 arguments, an argument error will be thrown. But let&#8217;s say we want the last name to be optional. One way to do that is to provide a default value:</p>
-
-<pre>
-<code>
-def greeting(first_name, last_name=&quot;Doe&quot;, hobby)
-    puts &quot;Hello #{first_name} #{last_name}, we hear you love #{hobby}.&quot;
-end
-</code>
-</pre>
-
-        <p>If the method is called with only two arguments, those arguments will be assigned to <code>first_name</code> and <code>hobby</code> and the default value will be used for the last name. </p>
-
-        <p>It&#8217;s unlikely that we would want to assign a fake last name, however, so a more realistic solution would be to set the default value to nil, making that variable truly optional:</p>
-
-<pre>
-<code>
-def greeting(first_name, last_name=nil, hobby)
-    puts &quot;Hello #{first_name} #{last_name}, we hear you love #{hobby}.&quot;
-end
-</code>
-</pre>
-
-        <p>Calling </p>
-
-<pre>
-<code>
-greeting(&quot;Alex&quot;, &quot;fantasy birding&quot;)
-</code>
-</pre>
-
-        <p>gives</p>
-
-<pre>
-<code>
-Hello Alex , we hear you love fantasy birding.
-</code>
-</pre>
-
-        <p>Which, aside from the extraneous space, gives the result we&#8217;re after.</p>
-
-        <h3>Keyword Arguments with Default Values</h3>
-
-        <p>Using default values with keyword arguments is straightforward:</p>
-
-<pre>
-<code>
-def greeting(first_name:, last_name: nil, hobby:)
-    puts &quot;Hello #{first_name} #{last_name}, we hear you love #{hobby}&quot;
-end
-</code>
-</pre>
-
-        <p>We have a couple different options for calling our method. We can pass in the arguments directly as key/value pairs: 
-
-<pre>
-<code>
-greeting(first_name: &quot;Alex&quot;, last_name: &quot;Cho&quot;, hobby: &quot;fantasy birding&quot;)
-</code>
-</pre>
-                
-        <p> Or we can pass them inside a variable :</p>
-
-<pre>
-<code>
-person_attributes = {first_name: &quot;Alex&quot;, last_name: &quot;Cho&quot;, hobby: &quot;fantasy birding&quot;}
-
-greeting(person_attributes)
-</code>
-</pre>
-
-        <p>In either case, the hash can be passed in with or without <code>last_name</code> since it defaults to nil.</p>
-
-
-        <p>Finally, you can define the method to accept a single parameter: a hash containing all of the key/value pairs. In this case, you can pass in any number of arguments in the hash (including zero) as long as missing data are handled inside the method:</p>
-
-<pre>
-<code>
-def greeting(person_attributes)
-    message = &quot;Hello&quot;
-    message += &quot; #{person_attributes[:first_name]}&quot; if person_attributes[:first_name]
-    message += &quot; #{person_attributes[:last_name]}&quot; if person_attributes[:last_name]
-    message += &quot;, we hear you love #{person_attributes[:hobby]}.&quot; if person_attributes[:hobby]
-    puts message
-end
-</code>
-</pre>
-
-        <h3>Splat</h3>
-
-        <p>Another way to handle optional arguments is through the use of the splat operator:</p>
-
-<pre>
-<code>
-def shopping_list(*items)
-    puts items.class
-    return items
-end
-</code>
-</pre>
-
-        <p>When this method is called with zero or more arguments, &#8220;Array&#8221; is <code>puts</code>ed to the screen and an array is returned which either contains the values passed in as arguments or is empty if no arguments are passed. The values assigned to the <code>items</code> variable can be handled using an enumerator:</p>
-
-<pre>
-<code>
-def shopping_list(*items)
-    if items.length &gt; 0
-        puts &quot;Your shopping list:&quot;
-        items.each { |item| puts item }
-    else
-        puts &quot;Nothing to buy today!&quot;
+    def name
+        @name
     end
 end
 </code>
 </pre>
 
-        <h3>Combining Required and Optional Arguments</h3>
-
-        <p>It is possible to combine required parameters, parameters with default values and optional parameters in a method definition: </p>
+<p>We can use the setter and getter as follows:</p>
 
 <pre>
 <code>
-def greeting(first_name, last_name=nil, *hobbies)
-    &lt;body of method&gt; 
+// create a new instance of the Person class:
+@alex = Person.new
+
+// call the `name=` (setter) method to assign the value &quot;Alex&quot; to the instance variable `name`:
+@alex.name = &quot;Alex&quot;
+
+// call the getter method to access the value of the `name` instance variable and write it out:
+puts @alex.name
+</code>
+</pre>
+
+<p>Note that the second line, <code>@alex.name = &quot;Alex&quot;</code>, is Ruby&#8217;s syntactic sugar at work. It looks like a variable assignment, but what&#8217;s actually happening is a method call: the method <code>name=</code> is called on the <code>@alex</code> instance and the value &#8220;Alex&#8221; is passed in as an argument. The line could therefore also be written as:</p>
+
+<pre>
+<code>
+@alex.name=(&quot;Alex&quot;)
+</code>
+</pre>
+
+<p>This code works exactly the same, but at the price of more complexity and less clarity.</p>
+
+<p>The value of an instance variable can be assigned without using a setter in a class&#8217;s <code>initialize</code> method:</p>
+
+<pre>
+<code>
+def initialize(name)
+    @name = name
 end
 </code>
 </pre>
 
-        <p>In this example, the method must be passed at least one argument 
-        since <code>first_name</code> is required, but it can be called with as 
-        many arguments as you like. The first (or only) argument will be assigned 
-        to <code>first_name</code>; the second (if present) will be assigned 
-        to <code>last_name</code>, and all remaining arguments (if present) will 
-        be added to the <code>hobbies</code> array. But note the effect of how 
-        the arguments are assigned: <code>last_name</code> isn&#8217;t truly 
-        optional in this example, it&#8217;s only optional if there aren&#8217;t 
-        any hobbies being passed! If you try to pass in just the first name and 
-        hobbies, the first hobby will be assigned as the last name.</p>
+<p>However, if you don&#8217;t necessarily want to set the value when the object 
+is instantiated, or if you want to be able to change it later, you&#8217;ll 
+need a setter method. And if you want to access the value, you&#8217;ll need a 
+getter method. Luckily, there are ways of abstracting out this functionality 
+&mdash; through the use of <code>attr_accessor</code>, for example, or by using 
+Rails, which creates setters and getters for us &mdash; so our model files 
+aren&#8217;t bulging with repetitive setter and getter methods. This abstraction 
+is desireable, both for keeping our code lean and for limiting duplication of 
+effort.</p>
 
-        <p>There are some other weirdnesses about trying to combine required and optional arguments. For example, all of these are allowed:</p>
+<h3>Custom setters and getters</h3>
 
-<pre>
-<code>
-def greeting(first_name, last_name=nil, hobby)
+<p>So if setter/getter functionality is abstracted away and hidden from view, why do we need to know about it at all? Aside from the fact that it&#8217;s a good idea to understand how your code operates under the hood, there are also times when you might want to write custom setters and getters. </p>
 
-def greeting(first_name=nil, last_name, hobby)
-
-def greeting(first_name, last_name=nil, *hobbies)
-</code>
-</pre>
-
-        <p>But this throws an error:</p>
+<h4>Example 1</h4>
+<p>Let&#8217;s say you want to refactor your code for your Person class to have <code>first_name</code> and <code>last_name</code> attributes instead of just <code>name</code>. To make this change, you would need to comb through your code to find everyplace you call <code>name=</code> or <code>name</code> and change it to work with the new instance variables. But another way to solve the problem would be to create a custom setter and getter:</p>
 
 <pre>
 <code>
-def greeting(first_name=nil, last_name, *hobbies)
-</code>
-</pre>
-
-        <p>Given these limitations and somewhat unpredictable behaviors, it seems safest to use required arguments with <em>either</em> default values <em>or</em> a splat operator, but not both. More complicated cases can be handled through the use of a variable containing a hash along with the splat operator:</p>
-
-<pre>
-<code>
-def greeting(name, *hobbies)
-    message = &quot;Hello&quot;
-    message += &quot; #{name[:first_name]}&quot; if name[:first_name]
-    message += &quot; #{name[:last_name]}&quot; if name[:last_name]
-    if hobbies.length &gt; 0
-        message += &quot;, we hear you love: #{hobbies.join(&quot;, &quot;)}&quot;
+class Person
+    def name=(full_name)
+        @first_name = full_name.split[0]
+        @last_name = full_name.split[1]
     end
-    puts message
+
+    def name
+        &quot;#{@first_name} #{@last_name}&quot;
+    end
 end
 </code>
 </pre>
 
-        <p>This code will run without error if the name hash includes both <code>first_name</code> and <code>last_name</code>, just one or the other, or neither. It will also work with any number of hobbies, including zero.</p>
+<p>In this case, if we run:</p>
+
+<pre>
+<code>
+@alex.name = &quot;Alex Saavedra&quot;
+</code>
+</pre>
+
+<p>it will correctly assign the first and last name inside the <code>name=</code> method and the <code>name</code> method will still write out the full name. </p>
+
+<p>As an aside, it is interesting to note that, in Ruby, it is not possible to pass in two arguments to a method that ends with &#8220;=&#8221;. This, again, is syntactic sugar at work &mdash; Ruby can correctly interpret what looks like a variable assignment (<code>@alex.name = &quot;Alex Saavedra&quot;</code>) as a method call, but the corresponding syntax with two arguments would not make sense:</p>
+
+<pre>
+<code>
+@alex.name = &quot;Alex&quot;, &quot;Saavedra&quot;
+</code>
+</pre>
+
+<p>It should be apparent that this would result in a syntax error. As a result, it is <strong>not</strong> possible to do this:</p>
+
+<pre>
+<code>
+def name=(first_name, last_name)
+    @first_name = first_name
+    @last_name = last_name
+end
+</code>
+</pre>
+
+<h4>Example 2</h4>
+<p>We can also use a custom setter to help set up associations between objects. 
+In the example below, novels belong to an author and an author
+has many novels. If we just wanted to assign the <code>author</code> instance 
+to the <code>@author</code> instance variable, we could use the default setter 
+method, but the custom setter below also sets up the association in the other 
+direction:</p>
+
+<pre>
+<code>
+class Novel
+  def author=(author)
+    @author = author
+    @author.novels &lt;&lt; self unless @author.novels.include?(self)
+  end
+end
+</code>
+</pre>
+
+<p>So the <code>Novel</code> instance knows who its <code>Author</code> is and the <code>Author</code> instance knows that the <code>Novel</code> instance belongs to it.</p>
+
+<h4>Example 3</h4>
+<p>Even when we use Active Record, which does a lot of the association handling for us, there are still some cases when we might want to use a custom setter. Consider the following:</p>
+
+<pre>
+<code>
+class Novel &lt; ActiveRecord::Base
+   def genre_name=(name)
+     self.genre = Genre.find_or_create_by(name: name)
+   end
+end
+</code>
+</pre>
+
+<p>If an instance of <code>Novel</code> (<code>@moby_dick</code>) is initialized with a <code>genre_name</code> field, the custom <code>genre_name=</code> method overrides the default Active Record behavior. The code checks to see whether a <code>Genre</code> instance already exists with the <code>name</code> attribute equal to <code>genre_name</code>. If it does, it assigns the existing instance to <code>@moby_dick</code> and, if not, it creates a new <code>Genre</code> instance and assigns that instead. This ensures 1) that the genre instance exists before it is assigned to <code>@moby_dick</code> and 2) that it won&#8217;t be duplicated in the database.</p>
+
 
             <br>
             <hr>
