@@ -7,7 +7,7 @@ include("header.php");
 
         <article class="blog-post">
 
-        <h2>Going to Harvard!</h2>
+        <h2>Enrolled at Harvard!</h2>
         <p class="posted-date">Posted April 14, 2019</p>
 
 <p>I am a big fan of coding bootcamps &mdash; particularly the one I graduated from, at the Flatiron School. They provide opportunities for students who don&#8217;t have the financial or academic or logistical wherewithal to enroll in a conventional degree-granting college or university. Some of them give their students substantial flexibility in terms of when and how and over what time period they learn the material. The best ones provide an intensive experience that gives their students a foundation from which they can grow and develop as a developer. They teach students how to code, but even more importantly, they teach them how to learn how to code. </p>
@@ -16,8 +16,8 @@ include("header.php");
 
 <p>What a bootcamp can&#8217;t do, however, is replace a conventional four-year computer science degree. CS majors get much more thorough instruction on computer science principles and concepts such as, for example, data structures and algorithms. This expertise makes CS graduates highly sought after to potential employers, and for good reason. Fortunately, there are resources available to those of us who don&#8217;t complete a CS degree to help address some of those deficits. One of them is <a class="text-link" href="https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x">Harvard&#8217;s CS50 class</a>, which is available to anyone for free through edX&#8217;s online platform. </p>
 
-<p>CS50 has actually been on my to-do list for quite a while but certain recent events prompted me to finally start the class this week. The first lecture (i.e., Week 0, because computer scientists start counting at zero) was a revelation: in 70 minutes, the instructor covered (comprehensibly):
-<ul class="triangle-list">
+<p>CS50 has actually been on my to-do list for quite a while but certain recent events prompted me to finally start the class this week. The first lecture (i.e., Week 0, because computer scientists start counting at zero) was a revelation. Probably the most important thing I learned this week was that this is the most popular emoji: <a target="_blank" class="text-link" href="https://emojiguide.org/face-with-tears-of-joy">11111011000000010</a>.<super>*</super> But, in addition, in a 70 minute lecture, the professor covered (comprehensibly):
+<ul class="triangle-list left-indent">
 <li>binary, ASCII, and unicode,</li>
 <li>abstraction,</li>
 <li>efficiency of search algorithms,</li>
@@ -29,9 +29,8 @@ include("header.php");
 <li>variables,</li>
 <li>threads,</li>
 <li>events, and</li>
-<li>programming with Scratch (a programming language created for kids)</p></li>
+<li>how to program with Scratch</p></li>
 </ul>
-<p>But probably the most important thing I learned this week is that this is the most popular emoji: <a target="_blank" class="text-link" href="https://emojiguide.org/face-with-tears-of-joy">11111011000000010</a><super>*</super></p>
 
 <p>Rumor has it that, in the second lecture (i.e., Week 1), we&#8217;re going to learn C&#8230;</p>
 

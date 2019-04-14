@@ -231,8 +231,10 @@ section.home {
 
 ul.triangle-list {
   margin-left: 1em;
-  padding-left: 0;
   list-style-type: disc;
+  &.left-indent {
+    padding-left: 1em;
+  }
   li {
     position: relative;
 /*     &:before {
