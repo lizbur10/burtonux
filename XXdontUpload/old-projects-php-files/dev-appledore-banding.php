@@ -23,7 +23,7 @@ include("header.php");
 
 				<h3>The Result</h3>
 				<p>Using WordPress as the CMS, I developed a dedicated website with the following features:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>A custom home page that displays images, general information about the banding station, and recent news and updates</li>
 					<li>Daily reports that include a list of the birds banded that day, a narrative, and pictures</li>
 					<li>A tool for scheduling volunteers and posting the schedule calendar</li>
@@ -32,7 +32,7 @@ include("header.php");
 				<p>I continue to maintain and update the site as webmaster.</p>
 				<h3>Development Details</h3>
 				<p>I used the following techniques to develop the site:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>Custom pages were created for the home page, daily report landing page, individual daily report pages, season Banding Summary page, and Banding Station Staff page.</li>
 					<li>Custom post types were created for home page news items, staff scheduler and staff profiles.</li>
 					<li>Custom fields were created (using the <a target="_blank" class="text-link" href="https://www.advancedcustomfields.com/">Advanced Custom Fields plugin</a>) for the daily reports, volunteer schedule, staff profiles, and home page photo gallery.</li>
@@ -40,7 +40,7 @@ include("header.php");
 					<li>The Season Banding Summary page, which is created dynamically, was programmed using PHP.</li>
 				</ul>
 				<p>Planned improvements and additions:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>Address performance issues (slow loading)</li>
 					<li>Create archives of daily reports and banding summaries from previous seasons</li>
 					<li>Develop a web application to centralize and streamline data entry for the station</li>

@@ -24,14 +24,14 @@ include("header.php");
 			<div>
 				<h3>The Project</h3>
 				<p>As the final project for the Minneapolis College of Art and Design (MCAD) Responsive Design class, design and develop a site to:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>share my background and qualifications</li>
 					<li>showcase projects that demonstrate my skills and experience in research, design, and Web development.</li>
 				</ul>
 				<p>I have continued to develop and refine the site since completing the class project and I use it as my portfolio site.</p>
 				<h3>Development Details</h3>
 				<p>I used the following techniques to develop the site:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>HTML/CSS with SASS</li>
 					<li>PHP to include separate header and footer files in each page</li>
 					<li>PHP to create the page title, menu and selected page indicator programmatically</li>

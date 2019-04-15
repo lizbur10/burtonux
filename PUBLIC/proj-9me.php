@@ -33,7 +33,7 @@
 			<div>
 				<h3>Development Details</h3>
 				<p>The project includes (or will eventually include) the following elements:</p>
-				<ul class="triangle-list">
+				<ul>
                     <li>A front-end built using React</li>
 					<li>A Rails API to handle data persistence</li>
 					<li>Redux to handle changes to application state</li>
@@ -44,7 +44,7 @@
 			<div>
 				<h3>The Result</h3>
 				<p>When complete, the planned application will include the following features:</p>
-				<ul class="triangle-list">
+				<ul>
                     <li>Account login and authentication for company employees</li>
 					<li>A single, centralized location to store and maintain account information</li>
 					<li>A user-friendly interface to facilitate creating, modifying, and viewing the schedule</li>

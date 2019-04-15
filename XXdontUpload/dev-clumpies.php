@@ -21,7 +21,7 @@ include("header.php");
 				<p>As the final project for the Minneapolis College of Art and Design HTML/CSS class, I partially re-created the site for Clumpies Ice Cream using HTML and CSS only.</p>
 				<h3>Development Details</h3>
 				<p>I used the following techniques to develop the site:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>HTML/CSS with SASS</li>
 					<li>Gulp for live page updates</li>
 					<li>Hover behaviors created using CSS :hover, sprites, and CSS animation</li>

@@ -45,7 +45,7 @@
 
 			<div>
 				<h3>My Role</h3>
-				<ul class="triangle-list">
+				<ul>
 					<li>Worked in collaboration with staff to conduct research and iterate on the design of the app.</li>
 					<li>Planned, conducted, and reported out on research.</li>
 					<li>Provided design recommendations to product owners and design team members.</li>

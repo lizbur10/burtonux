@@ -27,7 +27,7 @@
 			<div>
  				<h3>The Approach</h3>
 				<p>Project activities included:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>Competitive analysis of other email marketing products</li>
 					<li>Meta-analysis of previous research on the email editor</li>
 					<li>Baseline usability testing against which to measure future improvements</li>
@@ -47,7 +47,7 @@
 
 			<div>
 				<h3>My Role</h3>
-				<ul class="triangle-list">
+				<ul>
 					<li>Work in collaboration with design team members and other researchers to conduct studies and iterate on the design of the editor.</li>
 					<li>Plan, conduct, and report out on research.</li>
 					<li>Provide design recommendations to product owners and design team members.</li>

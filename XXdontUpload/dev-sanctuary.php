@@ -21,7 +21,7 @@ include("header.php");
 				<p>As a class project for the Minneapolis College of Art and Design WordPress/PHP class, I created the home page and one internal page of a site using WordPress. </p>
 				<h3>Development Details</h3>
 				<p>I used the following techniques to develop the site:</p>
-				<ul class="triangle-list">
+				<uL>
 					<li>Custom page templates for the home page and internal page</li>
 					<li>Use of a Javascript plugin to create the image carousel on the internal page</li>
 					<li>Designing to Photoshop comps</li>

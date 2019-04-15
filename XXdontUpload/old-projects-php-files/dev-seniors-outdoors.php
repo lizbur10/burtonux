@@ -22,7 +22,7 @@ include("header.php");
 				<p>The new site was launched in March 2017. </p>
 				<h3>The Result</h3>
 				<p>Using WordPress as the CMS, I created a new site with the following features:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>Dynamic display of the club's extensive schedule of outings</li>
 					<li>A custom home page that displays images from a recent outing, provides information about upcoming events, and highlights new events and schedule changes</li>
 					<li>Both a calendar view and a printable list view of the schedule</li>
@@ -31,7 +31,7 @@ include("header.php");
 				<p>Over time, my involvement will decrease and responsibility for updating and maintaining the site will be increasingly assumed by the club's webmaster.</p> 
 				<h3>Development Details</h3>
 				<p>I used the following techniques to develop the site:</p>
-				<ul class="triangle-list">
+				<ul >
 					<li>A commercial events plugin (<a target="_blank" class="text-link" href="https://theeventscalendar.com/">The Events Calendar</a>) was used and customized to accommodate the club's outing specifics.</li> 
 					<li>Custom pages were created for the home page and the printable list view of the schedule.</li>
 					<li>Custom fields were created (using the <a target="_blank" class="text-link" href="https://www.advancedcustomfields.com/">Advanced Custom Fields plugin</a>) for the individual events and the home page photo gallery.</li>

@@ -33,7 +33,7 @@
 			<div>
 				<h3>Development Details</h3>
 				<p>I used the following tools/techniques in developing the app:</p>
-				<ul class="triangle-list">
+				<ul>
                     <li>The Ruby on Rails framework to build the app and handle data persistence</li>
                     <li>User authentication either using a conventional login process or through Google</li>
                     <li>JavaScript to render pages dynamically</li>

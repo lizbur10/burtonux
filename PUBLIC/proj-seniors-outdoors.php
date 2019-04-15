@@ -50,7 +50,7 @@
 
 				<h3>Development Details</h3>
 				<p>I used the following techniques to develop the site:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>A commercial events plugin (<a target="_blank" class="text-link" href="https://theeventscalendar.com/">The Events Calendar</a>) was used and customized to accommodate the club's outing specifics.</li> 
 					<li>Custom pages were created for the home page and the printable list view of the schedule.</li>
 					<li>Custom fields were created (using the <a target="_blank" class="text-link" href="https://www.advancedcustomfields.com/">Advanced Custom Fields plugin</a>) for the individual events and the home page photo gallery.</li>
@@ -64,7 +64,7 @@
 			<div>
 				<h3>The Result</h3>
 				<p>Features of the redesigned site include:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>A fresher, more modern look</li>
 					<li>A custom home page that displays images from a recent outing, provides information about upcoming events, and highlights new events and schedule changes</li>
 					<li>Dynamic presentation of the club's extensive schedule of outings</li>

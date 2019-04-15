@@ -30,7 +30,7 @@
 				<p>I started by interviewing the head bander to gather information about her goals for the new site and then expanded the research to include all banding station volunteers. I then sketched out a proposed site map, created several style tiles showing some options for the visual treatment of the site, and worked with the head bander to <a class="text-link" target="_blank" href="http://burtonux.com/AIMS_styleTile/">finalize the style tile</a>. Once the design was finalized, I developed the site using WordPress as the CMS.</p>
 				<h3>Development Details</h3>
 				<p>I used the following techniques to develop the site:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>Custom pages were created for the home page, daily report landing page, individual daily report pages, season Banding Summary page, and Banding Station Staff page.</li>
 					<li>Custom post types were created for home page news items, staff scheduler and staff profiles.</li>
 					<li>Custom fields were created (using the <a target="_blank" class="text-link" href="https://www.advancedcustomfields.com/">Advanced Custom Fields plugin</a>) for the daily reports, volunteer schedule, staff profiles, and home page photo gallery.</li>
@@ -46,7 +46,7 @@
 			<div>
 				<h3>The Result</h3>
 				<p>The features of the new website include:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>engaging content to attract and retain site visitors, including images and updates of banding activity during banding seasons</li>
 					<li>general information about the station and the research being conducted</li>
 					<li>scheduling and logistical information for station volunteers</li>

@@ -198,24 +198,24 @@ section:first-of-type {
  padding-bottom: 50px;
 */}
 
-ul.triangle-list {
-  margin-left: 1em;
-  li {
-    position: relative;
-    padding-left: 12px;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 6px;
-      left: 0px;
-      width: 0; 
-      height: 0; 
-      border-top: 4px solid transparent;
-      border-bottom: 4px solid transparent;
-      border-left: 5px solid $color-purple;
-    }
-  }
-}
+// ul.triangle-list {
+//   margin-left: 1em;
+//   li {
+//     position: relative;
+//     padding-left: 12px;
+//     &:before {
+//       content: '';
+//       position: absolute;
+//       top: 6px;
+//       left: 0px;
+//       width: 0; 
+//       height: 0; 
+//       border-top: 4px solid transparent;
+//       border-bottom: 4px solid transparent;
+//       border-left: 5px solid $color-purple;
+//     }
+//   }
+// }
 
   a {
     color: $color-black;

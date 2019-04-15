@@ -32,7 +32,7 @@
 			<div>
 				<h3>The Result</h3>
 				<p>Based on the results of the study we compiled:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>Sub-categories of NP organizations, based on usage factors, priorities, limitations, etc.</li> 
 					<li>Descriptions of usage factors that are particularly salient for this segment of users</li>
 					<li>Ratings of the importance of each of the usage factors for each sub-category</li>
@@ -42,7 +42,7 @@
 
 			<div>
 				<h3>My Role</h3>
-				<ul class="triangle-list">
+				<ul>
 					<li>Design the study; create the protocol and interview questions.</li>
 					<li>Conduct the visits, analyze the data, and report out on the results.</li>
 					<li>Coordinate the efforts of multiple two-person visiting teams, consisting of a researcher and a design team member.</li>

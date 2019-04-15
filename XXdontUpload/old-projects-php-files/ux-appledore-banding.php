@@ -31,7 +31,7 @@
 			<div>
 				<h3>The Result</h3>
 				<p>The features of the new website include:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>engaging content to attract and retain site visitors, including images and updates of banding activity during banding seasons</li>
 					<li>general information about the station and the research being conducted</li>
 					<li>scheduling and logistical information for station volunteers</li>

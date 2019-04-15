@@ -34,7 +34,7 @@
 			<div>
 				<h3>The Result</h3>
 				<p>The features of both versions of the redesigned home page include:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>Increased emphasis on the freshest content</li>
 					<li>Simplified navigation</li>
 					<li>Increased opportunities for user interactions with site content (favorite, share, comment, etc.)</li>

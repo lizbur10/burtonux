@@ -6,18 +6,18 @@
 		<h2>Freelance Web Development/Consulting Projects</h2>
 		<h3>9 Miles East Farm, Saratoga Springs, NY</h3>
 		<p>Providing technical assistance with the company’s website, catering site, and email marketing:</p>
-		<ul class="triangle-list">
+		<ul>
 			<li>Currently using React/Redux to develop a <a class="text-link" href="proj-9me.php">scheduling app</a> for employees that will streamline the process of creating, modifying and viewing the company’s weekly schedule</li>
 			<li>Helped implement online ordering on the company's Shopify catering site</li>
 			<li>Currently working on a plan to overhaul the company's Squarespace website</li>
 		</ul>
 		<h3>Seniors Outdoors, Durango, CO</h3>
-		<ul class="triangle-list">
+		<ul>
 			<li>Designed and developed their <a class="text-link" href="proj-seniors-outdoors.php">new website</a> using WordPress custom theming</li>
 			<li>Continue to provide support as needed</li>
 		</ul>
 		<h3>Appledore Island Migration Station, Appledore Island, ME</h3>
-		<ul class="triangle-list">
+		<ul>
 			<li>Designed, developed and maintain <a class="text-link" href="proj-appledore-banding.php">the station's new website</a> using WordPress custom theming</li>
 			<li>Currently working on a <a class="text-link" href="proj-appledore-data-entry.php">data entry app</a> for staff that will simplify data entry tasks and the creation of daily reports</li>
 		</ul>
@@ -30,7 +30,7 @@
 			<h3>User Experience Researcher <span>Constant Contact<span class="bullet"> &bull; </span>Oct 2013 - Feb 2016<span class="bullet"> &bull; </span>Waltham, MA</span></h3>
 			<p>As a researcher embedded in the UX department, I collaborated with product teams to plan and conduct a wide range of research studies. </p>
 			<h4>Major projects:</h4>
-			<ul class="triangle-list">
+			<ul>
 				<li>ongoing evaluations of the new <a class="text-link" href="proj-mobile-app.php" target="_blank">mobile app</a>, including wants and needs analysis of functionalities being considered as well as usability tests of prototype and coded versions of the app; </li>
 				<li>multiple iterations of usability studies of the company's <a class="text-link" href="proj-email-editor.php" target="_blank">next-generation email editor</a>; </li>
 				<li>a <a class="text-link" href="proj-np-site-visits.php" target="_blank">contextual inquiry study</a> that took an in-depth look at the unique needs of the company's non-profit customers; and </li>
@@ -62,7 +62,7 @@
 			<h4>Study methods:</h4>
 			<ul>
 				<li>Usability testing:
-					<ul class="triangle-list">
+					<ul>
 						<li>Websites and applications</li>
 						<li>Live code and prototype</li>
 						<li>Desktop and mobile</li>

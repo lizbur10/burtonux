@@ -43,7 +43,7 @@
 			<div>
 				<h3>The Result</h3>
 				<p>The redesigned site was <a class="text-link" href="dev-seniors-outdoors.php">developed</a> using WordPress. Features of the redesigned site include:</p>
-				<ul class="triangle-list">
+				<ul>
 					<li>A fresher, more modern look</li>
 					<li>Dynamic presentation of upcoming outings</li>
 					<li>A calendar view for the club's outing schedule</li>
