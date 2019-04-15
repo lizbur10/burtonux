@@ -87,8 +87,11 @@
 		<div class="sub-section">
 			<h2>Prior Work Experience</h2>
 			<h3>Psychometrician<span>Measured Progress<span class="bullet"> &bull; </span>2002 - 2011<span class="bullet"> &bull; </span>Dover, NH</span></h3>
+			<p>Member of a psychometric team that was responsible for the technical statistical analyses of large-scale standardized assessment programs.</p>
 			<h3>Director of Assessment<span>Aurora Public Schools<span class="bullet"> &bull; </span>1996 - 2002<span class="bullet"> &bull; </span>Aurora, CO</span></h3>
+			<p>Coordinated district-wide assessment and program evaluation for a large, urban school district.</p>
 			<h3>Adjunct Faculty<span>University of Colorado - Denver<span class="bullet"> &bull; </span>1993 - 1996<span class="bullet"> &bull; </span>Denver, CO</span></h3>
+			<p>Taught graduate level statistics and educational measurement courses.</p>
 		</div>
 
 	</div>
