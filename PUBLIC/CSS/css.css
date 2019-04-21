@@ -100,6 +100,10 @@ iframe {
   display: block;
   margin: 0 auto; }
 
+ul.no-bullets {
+  list-style-type: none;
+  padding-left: 0; }
+
 .skillset ul li, .tools ul li {
   display: inline; }
   .skillset ul li:after, .tools ul li:after {
@@ -214,6 +218,8 @@ article.project {
   margin: 3em auto 0;
   display: block;
   max-width: 800px; }
+  .project ul, .project ol {
+    padding-left: 20px; }
   .project img {
     display: block;
     margin: 0 auto;
@@ -297,6 +303,14 @@ article.project {
    */ }
   .resume .sub-section {
     margin-top: 3em; }
+  .resume ul, .resume ol {
+    padding-left: 20px; }
+    .resume ul.no-bullets, .resume ol.no-bullets {
+      padding-left: 0px; }
+    .resume ul ul, .resume ol ul {
+      list-style-type: disc; }
+  .resume .skillset ul, .resume .tools ul {
+    padding-left: 0px; }
   .resume .classes h2 {
     margin-bottom: 0; }
   .resume h3 > span:first-of-type {
@@ -354,8 +368,6 @@ pre > code {
   font-size: .8em;
   color: #555;
   overflow: auto; }
-  pre > code::-webkit-scrollbar {
-    display: none; }
 
 pre {
   margin-bottom: -1em; }

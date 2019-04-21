@@ -131,10 +131,10 @@ iframe {
 }
 
 
-// ul {
-//   // list-style-type: none;
-//   padding-left: 0;
-// }
+ul.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}
 
 .skillset ul li, .tools ul li {
   display: inline;
@@ -301,6 +301,10 @@ article.project {
   display: block;
   max-width: 800px;
 
+  ul, ol {
+    padding-left: 20px;
+  }
+
   img {
     display: block;
     margin: 0 auto;
@@ -418,6 +422,20 @@ article.project {
     margin-top: 3em;
   }
 
+  ul, ol {
+    padding-left: 20px;
+    &.no-bullets {
+      padding-left: 0px;
+    }
+    ul {
+      list-style-type: disc;
+    }
+  }
+
+  .skillset ul, .tools ul {
+    padding-left: 0px;
+  }
+
   .classes h2 {
     margin-bottom: 0;
   }
@@ -524,8 +542,6 @@ pre {
 #source-control-button {
   width: 100px;
 }
-
-
 
 //END BLOG PAGE
 

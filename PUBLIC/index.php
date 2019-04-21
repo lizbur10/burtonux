@@ -17,7 +17,7 @@ include("header.php");
     <div class="contact" >
         <h1 class="visually-hidden">Liz Burton's Home Page</h1>
         <h2>Contact Info:</h2>
-            <ul>
+            <ul class="no-bullets">
                 <li><i class="fas fa-envelope-square"></i></i><a href="mailto:liz.burton147@gmail.com"><span>liz.burton147@gmail.com</span></a></li>
                 <li><i class="fab fa-linkedin-in"></i></i><a href="https://www.linkedin.com/in/burtonux" target="_blank"><span>www.linkedin.com/in/burtonux</span></a></li>
                 <li><i class="fab fa-github"></i><a href="https://github.com/lizbur10" target="_blank"><span>github.com/lizbur10</span></a>

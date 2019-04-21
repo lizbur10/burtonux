@@ -37,7 +37,7 @@
 				<li>a large <a class="text-link" target="_blank" href="https://www.slideshare.net/MichaelKennedy17/you-want-me-to-what-a-practical-guide-to-diary-studies-61532487?qid=b1744552-059a-44f4-b537-0778a8b210ec&v=&b=&from_search=1">diary study</a> examining how best to support customers as they transitioned to the new version of the email editor.</li>
 			</ul>
 			<h4>Methods  used:</h4> 
-			<ul>
+			<ul class="no-bullets">
 				<li>Usability tests (moderated and unmoderated; in-person and remote)</li> 
 				<li>Longitudinal research (diary study)</li> 
 				<li>Contextual inquiry</li> 
@@ -60,7 +60,7 @@
 				<li>Interactive Agencies and Consultants</li>
 			</ul>
 			<h4>Study methods:</h4>
-			<ul>
+			<ul class="no-bullets">
 				<li>Usability testing:
 					<ul>
 						<li>Websites and applications</li>
@@ -185,14 +185,14 @@
 		<div class="classes">
 			<h2>Relevant Courses</h2>
 			<h3>Minneapolis College of Art and Design</h3>
-			<ul class="hanging">
+			<ul class="no-bullets hanging">
 				<li>Web Development: HTML + CSS</li>
 				<li>Web Development: JavaScript + jQuery</li>
 				<li>Responsive Design</li>
 				<li>Web Development: PHP + Wordpress</li>
 			</ul>
 			<h3>Bentley University</h3>
-			<ul class="hanging">
+			<ul class="no-bullets hanging">
 				<li>Foundations in Human Factors</li>
 				<li>Object-Oriented Application Development</li>
 				<li>Information Architecture</li>
@@ -204,7 +204,7 @@
 				<li>Field Methods in HCI</li>
 			</ul>
 			<h3>University of Colorado</h3>
-			<ul class="hanging">
+			<ul class="no-bullets hanging">
 				<li>Experimental Design</li>
 				<li>Ethnographic Methods</li>
 			</ul>
