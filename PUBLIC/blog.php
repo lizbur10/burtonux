@@ -7,36 +7,53 @@ include("header.php");
 
         <article class="blog-post">
 
-        <h2>Enrolled at Harvard! (sort of)</h2>
-        <p class="posted-date">Posted April 14, 2019</p>
+        <h2>An Annoying Bug</h2>
+        <p class="posted-date">Posted April 21, 2019</p>
 
-            <p>I am a big fan of coding bootcamps &mdash; particularly the one I graduated from, at the Flatiron School. They provide opportunities for students who don&#8217;t have the financial or academic or logistical wherewithal to enroll in a conventional degree-granting college or university. Some of them give their students substantial flexibility in terms of when and how and over what time period they learn the material, which can make them a great option for many career-changers. The best ones provide an intensive experience that gives their students a foundation from which they can grow and develop as a developer. They teach students how to code, but even more importantly, they teach them how to learn how to code. </p>
+        <p>When using html <code>&lt;pre&gt;</code> tags, a horizontal scrollbar is created if the content is wider than the containing element. This is because the purpose of the <code>&lt;pre&gt;</code> tag is to preserve spaces and line breaks in preformatted text. In other words, text inside <code>&lt;pre&gt;</code> tags will not be wrapped. This same behavior can be obtained by including <code>overflow-x: auto</code> in the css for an element. This <a class="text-link" target="_blank" href="https://guides.rubyonrails.org/v3.2/form_helpers.html#multiple-hashes-in-form-helper-calls">example from RailsGuides</a> illustrates the behavior:</p>
 
-            <p>While there are certain languages, technologies, frameworks, etc. that are in demand at any given time, it is not unusual for any of those things to pass in and out of vogue. And those that stay popular over the long term aren&#8217;t static: they continually expand and improve. What this means is that any software engineer who wants to remain employable has to keep her toolkit current. In other words, she can never stop learning. One could argue, therefore, that it is far less important which languages or frameworks an aspiring engineer learns than it is that she understands the programming principles that apply across languages, and understands what it is that goes on under the hood of a framework. A good bootcamp program can do that.</p>
+<pre>
+<code>
+form_tag(:controller =&gt; &quot;people&quot;, :action =&gt; &quot;search&quot;, :method =&gt; &quot;get&quot;, :class =&gt; &quot;nifty_form&quot;)
+# =&gt; '&lt;form accept-charset=&quot;UTF-8&quot; action=&quot;/people/search?method=get&amp;class=nifty_form&quot; method=&quot;post&quot;&gt;'
+</code>
+</pre>
 
-            <p>What a bootcamp can&#8217;t do, however, is replace a conventional four-year computer science degree. CS majors get much more thorough instruction on computer science principles and concepts such as, for example, data structures and algorithms. This expertise makes CS graduates highly sought after to potential employers, and for good reason. Fortunately, there are resources available to those of us who don&#8217;t complete a CS degree to help address some of those deficits. One of them is <a class="text-link" target="_blank" href="https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x">Harvard&#8217;s CS50 class</a>, which is available to anyone for free through edX&#8217;s online platform. </p>
+        <p>This behavior makes providing multi-line code snippets in a blog post much easier. However, Chrome has a bug that can turn this convenience into a major annoyance. </p>
 
-            <p>CS50 has actually been on my to-do list for quite a while but certain recent events prompted me to finally start the class this week. The first lecture (i.e., Week 0, because computer scientists start counting at zero) was a revelation. Probably the most important thing I learned this week was that this is the most popular emoji: <a target="_blank" class="text-link" href="https://emojiguide.org/face-with-tears-of-joy">11111011000000010</a>.<super>*</super> But, in addition, in a 70 minute lecture, the professor covered (comprehensibly):
-            <ul>
-                <li>binary, ASCII, and unicode,</li>
-                <li>abstraction,</li>
-                <li>efficiency of search algorithms,</li>
-                <li>pseudocode,</li>
-                <li>functions,</li>
-                <li>conditions,</li>
-                <li>booleans,</li>
-                <li>loops,</li>
-                <li>variables,</li>
-                <li>threads,</li>
-                <li>events, and</li>
-                <li>how to program with Scratch</p></li>
-            </ul>
+        <p>The scrollbar is initially hidden:</p>
 
-            <p>Rumor has it that, in the second lecture (i.e., Week 1), we&#8217;re going to learn C&#8230;</p>
+        <img src="img/blog/scrollbar_hidden.jpg" alt="snippet without scrollbar">
 
-            <br>
-            <p><super>*</super>According to Apple and at the time the lecture was recorded.
+        <p>and it appears when you start scrolling:</p>
 
+        <img src="img/blog/scrollbar_scrolling.jpg" alt="snippet with scrollbar">
+
+        <p>all of which is fine unless your cursor touches the scrollbar while it&#8217;s visible. Then this happens:</p>
+
+        <img src="img/blog/scrollbar_stuck.jpg" alt="snippet with stuck scrollbar">
+
+        <p>and it doesn&#8217;t go away. The second line of the snippet is obscured by the scrollbar and the only way to read that content is to refresh the page then try to scroll again without touching the scrollbar with your cursor. This can be tricky to do if the code snippet is short.</p>
+
+        <p>Finding a solution to this problem took a while. Googling the issue was frustrating because all I could find were threads about using CSS to keep the scrollbar visible or invisible. This was fine (sort of) for my own blog post, but I was having the issue on other websites (like RailsGuides). Furthermore, the problem didn&#8217;t occur if I used Firefox instead: there the scrollbar appears during scrolling but disappears shortly after you stop scrolling. This wasn&#8217;t a CSS issue: it was a Chrome issue (or, more specifically, a Chrome for OSX issue). </p>
+
+        <p>Nonetheless, it drove me nuts enough that I initially &#8220;fixed&#8221; it for my blog posts by adding the following to the SASS for the <code>&lt;pre&gt;</code> tag:</p>
+
+<pre>
+<code>
+&amp;::-webkit-scrollbar {
+ display: none;
+ }
+</pre>
+</code>
+
+<p>This also solved another problem I was having: if I scrolled up the page on my blog post with the scrollbar &#8220;stuck on&#8221;, it stayed visible on top of my pinned header. (A problem which, annoyingly, I cannot recreate to get a screenshot.) But, of course, with this change the scrollbar was <em>never</em> visible inside my multiline code snippets, which is almost as annoying as the &#8220;stuck on&#8221; situation. So the search continued. </p>
+
+<p>It took me quite a while to find the right combination of Google terms but, once I did, I learned that the solution (which is really a workaround) is annoyingly simple. Thanks to <a class="text-link" target="_blank" href="https://meta.stackoverflow.com/questions/326473/one-line-codeblock-scrollbars-wont-disappear/326476#326476">this stack overflow post</a>, I learned that Mac&#8217;s System Preferences, under the &#8216;General&#8217; tab, include the following options:</p>
+
+    <img src="img/blog/scrollbar_prefs.jpg" alt="system scrollbar prefs">
+
+<p>Switching from &#8216;Automatically based on mouse or trackpad&#8217; to &#8216;When scrolling&#8217; solved the whole problem. Now code snippets&#8217; scrollbar behavior in Chrome is the same as in Firefox: it appears when scrolling and stays visible only briefly. I haven&#8217;t yet discovered what other &mdash; no doubt less desirable &mdash; behaviors this setting causes.</p>
 
             <br>
             <hr>
