@@ -10,7 +10,7 @@ include("header.php");
         <h2>An Annoying Bug</h2>
         <p class="posted-date">Posted April 21, 2019</p>
 
-        <p>When using html <code>&lt;pre&gt;</code> tags, a horizontal scrollbar is created if the content is wider than the containing element. This is because the purpose of the <code>&lt;pre&gt;</code> tag is to preserve spaces and line breaks in preformatted text. In other words, text inside <code>&lt;pre&gt;</code> tags will not be wrapped. This same behavior can be obtained by including <code>overflow-x: auto</code> in the css for an element. This <a class="text-link" target="_blank" href="https://guides.rubyonrails.org/v3.2/form_helpers.html#multiple-hashes-in-form-helper-calls">example from RailsGuides</a> illustrates the behavior:</p>
+        <p>When using html <code>&lt;pre&gt;</code> tags, a horizontal scrollbar is created if the content is wider than the containing element. This is because the purpose of the <code>&lt;pre&gt;</code> tag is to preserve spaces and line breaks in preformatted text. In other words, text inside <code>&lt;pre&gt;</code> tags will not wrap to the next line. This same behavior can be obtained by including <code>overflow-x: auto</code> in the CSS for an element. This <a class="text-link" target="_blank" href="https://guides.rubyonrails.org/v3.2/form_helpers.html#multiple-hashes-in-form-helper-calls">example from RailsGuides</a> illustrates the behavior:</p>
 
 <pre>
 <code>
@@ -47,13 +47,13 @@ form_tag(:controller =&gt; &quot;people&quot;, :action =&gt; &quot;search&quot;,
 </pre>
 </code>
 
-<p>This also solved another problem I was having: if I scrolled up the page on my blog post with the scrollbar &#8220;stuck on&#8221;, it stayed visible on top of my pinned header. (A problem which, annoyingly, I cannot recreate to get a screenshot.) But, of course, with this change the scrollbar was <em>never</em> visible inside my multiline code snippets, which is almost as annoying as the &#8220;stuck on&#8221; situation. So the search continued. </p>
+<p>This also solved another problem I was having: if I scrolled up the page on my blog post with the scrollbar &#8220;stuck on&#8221;, it stayed visible on top of my pinned header. (A problem which, annoyingly, I cannot recreate to get a screenshot.) But, of course, with the change above the scrollbar is <em>never</em> visible inside my multiline code snippets, which is almost as annoying as the &#8220;stuck on&#8221; situation. So the search continued. </p>
 
 <p>It took me quite a while to find the right combination of Google terms but, once I did, I learned that the solution (which is really a workaround) is annoyingly simple. Thanks to <a class="text-link" target="_blank" href="https://meta.stackoverflow.com/questions/326473/one-line-codeblock-scrollbars-wont-disappear/326476#326476">this stack overflow post</a>, I learned that Mac&#8217;s System Preferences, under the &#8216;General&#8217; tab, include the following options:</p>
 
     <img src="img/blog/scrollbar_prefs.jpg" alt="system scrollbar prefs">
 
-<p>Switching from &#8216;Automatically based on mouse or trackpad&#8217; to &#8216;When scrolling&#8217; solved the whole problem. Now code snippets&#8217; scrollbar behavior in Chrome is the same as in Firefox: it appears when scrolling and stays visible only briefly. I haven&#8217;t yet discovered what other &mdash; no doubt less desirable &mdash; behaviors this setting causes.</p>
+<p>Switching from &#8216;Automatically based on mouse or trackpad&#8217; to &#8216;When scrolling&#8217; solved the whole problem. Now the scrollbar behavior for code snippets is the same in Chrome as in Firefox: it appears when scrolling and stays visible only briefly. I haven&#8217;t yet discovered what other &mdash; no doubt less desirable &mdash; behaviors this setting causes.</p>
 
             <br>
             <hr>
